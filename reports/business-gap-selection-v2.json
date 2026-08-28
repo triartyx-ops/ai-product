@@ -1,0 +1,4126 @@
+{
+  "generatedAt": "2026-08-24T13:13:49.530Z",
+  "discovery": {
+    "eligibleRepositories": 812,
+    "gapFillCandidates": 2,
+    "targetCoverage": [
+      {
+        "categories": [
+          "CRM",
+          "SALES",
+          "LEAD_MANAGEMENT"
+        ],
+        "target": 10,
+        "actual": 0
+      },
+      {
+        "categories": [
+          "BOOKING",
+          "APPOINTMENTS",
+          "CALENDAR_BUSINESS"
+        ],
+        "target": 10,
+        "actual": 0
+      },
+      {
+        "categories": [
+          "HR",
+          "HRM",
+          "ATS"
+        ],
+        "target": 10,
+        "actual": 0
+      },
+      {
+        "categories": [
+          "INVOICING",
+          "FINANCE",
+          "ACCOUNTING",
+          "EXPENSES",
+          "PAYROLL"
+        ],
+        "target": 10,
+        "actual": 3
+      },
+      {
+        "categories": [
+          "CUSTOMER_SUPPORT",
+          "HELPDESK",
+          "LIVE_CHAT"
+        ],
+        "target": 10,
+        "actual": 1
+      },
+      {
+        "categories": [
+          "MARKETING",
+          "EMAIL_MARKETING",
+          "SOCIAL_MEDIA"
+        ],
+        "target": 10,
+        "actual": 1
+      },
+      {
+        "categories": [
+          "ECOMMERCE",
+          "POS",
+          "INVENTORY"
+        ],
+        "target": 10,
+        "actual": 2
+      },
+      {
+        "categories": [
+          "PROJECT_MANAGEMENT",
+          "TIME_TRACKING"
+        ],
+        "target": 10,
+        "actual": 0
+      },
+      {
+        "categories": [
+          "PROPERTY_MANAGEMENT",
+          "REAL_ESTATE"
+        ],
+        "target": 5,
+        "actual": 0
+      },
+      {
+        "categories": [
+          "RESTAURANT",
+          "HOTEL"
+        ],
+        "target": 5,
+        "actual": 0
+      },
+      {
+        "categories": [
+          "LMS",
+          "COURSE_PLATFORM"
+        ],
+        "target": 5,
+        "actual": 0
+      },
+      {
+        "categories": [
+          "CLIENT_PORTAL",
+          "FORM_BUILDER",
+          "SURVEY"
+        ],
+        "target": 5,
+        "actual": 0
+      }
+    ]
+  },
+  "secondPass": {
+    "sent": 102,
+    "completed": 102,
+    "errors": 0,
+    "modelRequests": 11,
+    "tiers": {
+      "STRONG": 3,
+      "POSSIBLE": 45,
+      "WEAK": 30,
+      "REJECT": 24
+    },
+    "newStrong": 3,
+    "newPossible": 45,
+    "rescued": 46,
+    "newGapFillAccepted": 2
+  },
+  "qualityAudit": {
+    "passed": 21,
+    "corrected": 6,
+    "auditedStrong": 6,
+    "auditedPossible": 20,
+    "auditedRescued": 20,
+    "note": "Only 6 V2 STRONG existed before corrections, so all 6 were audited; 20 was not available."
+  },
+  "commercialCandidatePoolV2": {
+    "total": 203,
+    "tiers": {
+      "STRONG": 67,
+      "POSSIBLE": 136,
+      "WEAK": 0,
+      "REJECT": 0
+    },
+    "rescued": 46,
+    "newGapFill": 2,
+    "categoryDistribution": {
+      "CRM": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "SALES": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "LEAD_MANAGEMENT": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "ERP": {
+        "total": 1,
+        "strong": 1,
+        "possible": 0
+      },
+      "PROJECT_MANAGEMENT": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "BOOKING": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "APPOINTMENTS": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "CALENDAR_BUSINESS": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "ECOMMERCE": {
+        "total": 2,
+        "strong": 1,
+        "possible": 1
+      },
+      "INVENTORY": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "POS": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "CMS": {
+        "total": 3,
+        "strong": 2,
+        "possible": 1
+      },
+      "ANALYTICS": {
+        "total": 13,
+        "strong": 4,
+        "possible": 9
+      },
+      "DASHBOARD": {
+        "total": 2,
+        "strong": 1,
+        "possible": 1
+      },
+      "CUSTOMER_SUPPORT": {
+        "total": 1,
+        "strong": 0,
+        "possible": 1
+      },
+      "HELPDESK": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "LIVE_CHAT": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "KNOWLEDGE_BASE": {
+        "total": 11,
+        "strong": 9,
+        "possible": 2
+      },
+      "HR": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "HRM": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "ATS": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "FINANCE": {
+        "total": 3,
+        "strong": 2,
+        "possible": 1
+      },
+      "INVOICING": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "ACCOUNTING": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "EXPENSES": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "PAYROLL": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "MARKETING": {
+        "total": 1,
+        "strong": 0,
+        "possible": 1
+      },
+      "EMAIL_MARKETING": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "AUTOMATION": {
+        "total": 13,
+        "strong": 5,
+        "possible": 8
+      },
+      "AI_ASSISTANT": {
+        "total": 17,
+        "strong": 3,
+        "possible": 14
+      },
+      "AI_AGENT": {
+        "total": 5,
+        "strong": 2,
+        "possible": 3
+      },
+      "CONTENT": {
+        "total": 21,
+        "strong": 5,
+        "possible": 16
+      },
+      "SOCIAL_MEDIA": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "PROPERTY_MANAGEMENT": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "REAL_ESTATE": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "RESTAURANT": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "HOTEL": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "LMS": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "COURSE_PLATFORM": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "FORM_BUILDER": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "SURVEY": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "TIME_TRACKING": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "DOCUMENT_MANAGEMENT": {
+        "total": 1,
+        "strong": 0,
+        "possible": 1
+      },
+      "CLIENT_PORTAL": {
+        "total": 0,
+        "strong": 0,
+        "possible": 0
+      },
+      "SUBSCRIPTION_MANAGEMENT": {
+        "total": 1,
+        "strong": 0,
+        "possible": 1
+      },
+      "COMMUNICATION": {
+        "total": 10,
+        "strong": 3,
+        "possible": 7
+      },
+      "PRODUCTIVITY": {
+        "total": 21,
+        "strong": 9,
+        "possible": 12
+      },
+      "FILE_MANAGEMENT": {
+        "total": 14,
+        "strong": 7,
+        "possible": 7
+      },
+      "SECURITY": {
+        "total": 17,
+        "strong": 6,
+        "possible": 11
+      },
+      "DEVELOPER_PRODUCT": {
+        "total": 43,
+        "strong": 5,
+        "possible": 38
+      },
+      "OTHER": {
+        "total": 3,
+        "strong": 2,
+        "possible": 1
+      }
+    }
+  },
+  "beforeAfter": {
+    "CRM": {
+      "before": 0,
+      "after": 0
+    },
+    "BOOKING": {
+      "before": 0,
+      "after": 0
+    },
+    "HR": {
+      "before": 0,
+      "after": 0
+    },
+    "INVOICING": {
+      "before": 0,
+      "after": 0
+    },
+    "CUSTOMER_SUPPORT": {
+      "before": 1,
+      "after": 1
+    },
+    "MARKETING": {
+      "before": 1,
+      "after": 1
+    },
+    "ECOMMERCE": {
+      "before": 1,
+      "after": 2
+    },
+    "ERP": {
+      "before": 1,
+      "after": 1
+    },
+    "PROJECT_MANAGEMENT": {
+      "before": 0,
+      "after": 0
+    },
+    "PROPERTY_MANAGEMENT": {
+      "before": 0,
+      "after": 0
+    },
+    "LMS": {
+      "before": 0,
+      "after": 0
+    }
+  },
+  "top150": [
+    {
+      "rank": 1,
+      "repository": "lfnovo/open-notebook",
+      "description": "A self-hosted research and knowledge application for organizing sources, searching content, chatting with research context, taking notes, and generating podcasts.",
+      "license": "MIT",
+      "stars": 37491,
+      "lastPush": "2026-08-16T14:51:59.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "KNOWLEDGE_BASE",
+      "commercialBundleScore": 92,
+      "tier": "STRONG",
+      "homepage": "https://www.open-notebook.ai",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 2,
+      "repository": "super-productivity/super-productivity",
+      "description": "Local-first task manager combining projects, timeboxing, time tracking, habits, notes, and issue-tracker integrations.",
+      "license": "MIT",
+      "stars": 21545,
+      "lastPush": "2026-08-24T07:29:17.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 92,
+      "tier": "STRONG",
+      "homepage": "http://super-productivity.com?ref=github",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 3,
+      "repository": "aureuserp/aureuserp",
+      "description": "Modular web ERP covering finance, inventory, manufacturing, sales, HR, projects, support, analytics, and related operations.",
+      "license": "MIT",
+      "stars": 11774,
+      "lastPush": "2026-08-24T08:03:43.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ERP",
+      "commercialBundleScore": 91,
+      "tier": "STRONG",
+      "homepage": "https://aureuserp.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 4,
+      "repository": "umbraco/Umbraco-CMS",
+      "description": "Extensible .NET content management system with a browser-based back office for building and managing websites and digital experiences.",
+      "license": "MIT",
+      "stars": 5229,
+      "lastPush": "2026-08-24T09:14:09.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CMS",
+      "commercialBundleScore": 91,
+      "tier": "STRONG",
+      "homepage": "https://umbraco.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 5,
+      "repository": "unopim/unopim",
+      "description": "Full web-based product information and digital asset management platform for enriching and publishing large multi-channel catalogs.",
+      "license": "MIT",
+      "stars": 10852,
+      "lastPush": "2026-08-24T00:37:52.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ECOMMERCE",
+      "commercialBundleScore": 91,
+      "tier": "STRONG",
+      "homepage": "https://unopim.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 6,
+      "repository": "Mintplex-Labs/anything-llm",
+      "description": "Full-featured local-first AI workspace for document chat, RAG, agents, scheduled tasks, multi-user access and no-code automation.",
+      "license": "MIT",
+      "stars": 65132,
+      "lastPush": "2026-08-22T03:50:06.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AI_ASSISTANT",
+      "commercialBundleScore": 90,
+      "tier": "STRONG",
+      "homepage": "https://anythingllm.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 7,
+      "repository": "excalidraw/excalidraw",
+      "description": "Local-first virtual whiteboard for hand-drawn diagrams, wireframes, image annotation, export, and encrypted collaboration.",
+      "license": "MIT",
+      "stars": 130362,
+      "lastPush": "2026-08-22T21:27:32.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 90,
+      "tier": "STRONG",
+      "homepage": "https://excalidraw.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 8,
+      "repository": "umami-software/umami",
+      "description": "Privacy-first web and product analytics platform covering traffic, campaigns, behavior, conversions, and revenue.",
+      "license": "MIT",
+      "stars": 38339,
+      "lastPush": "2026-08-20T18:26:22.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 90,
+      "tier": "STRONG",
+      "homepage": "https://umami.is",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 9,
+      "repository": "Smaug6739/Alexandrie",
+      "description": "A self-hosted, offline-first knowledge base and wiki with extended Markdown editing, team workspaces, permissions, search, Kanban boards, SSO, media management, and backup tools.",
+      "license": "MIT",
+      "stars": 2367,
+      "lastPush": "2026-08-23T19:00:02.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "KNOWLEDGE_BASE",
+      "commercialBundleScore": 89,
+      "tier": "STRONG",
+      "homepage": "https://alexandrie-hub.fr",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 10,
+      "repository": "Zleap-AI/SAG",
+      "description": "Local-first knowledge base application providing document ingestion, traceable retrieval, knowledge graphs, cited chat, APIs, and MCP access.",
+      "license": "MIT",
+      "stars": 2410,
+      "lastPush": "2026-08-24T08:37:28.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "KNOWLEDGE_BASE",
+      "commercialBundleScore": 89,
+      "tier": "STRONG",
+      "homepage": "https://zleap.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 11,
+      "repository": "actualbudget/actual",
+      "description": "Local-first personal finance and envelope-budgeting application with desktop clients, optional self-hosted synchronization, and multi-device support.",
+      "license": "MIT",
+      "stars": 28344,
+      "lastPush": "2026-08-23T22:46:25.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FINANCE",
+      "commercialBundleScore": 89,
+      "tier": "STRONG",
+      "homepage": "https://actualbudget.org",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 12,
+      "repository": "DrizzleTime/Foxel",
+      "description": "Self-hosted private cloud file-management platform with multiple storage adapters, previews, sharing, RBAC, audit logs, semantic search, and automation.",
+      "license": "MIT",
+      "stars": 1048,
+      "lastPush": "2026-08-01T07:35:21.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FILE_MANAGEMENT",
+      "commercialBundleScore": 88,
+      "tier": "STRONG",
+      "homepage": "https://foxel.cc",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 13,
+      "repository": "apache/superset",
+      "description": "An enterprise-ready web application for exploring SQL data, building visualizations, authoring queries, and publishing interactive business dashboards.",
+      "license": "Apache-2.0",
+      "stars": 74442,
+      "lastPush": "2026-08-24T08:13:05.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 88,
+      "tier": "STRONG",
+      "homepage": "https://superset.apache.org/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 14,
+      "repository": "kestra-io/kestra",
+      "description": "Event-driven orchestration platform for creating, scheduling, executing, and monitoring data, AI, infrastructure, and business workflows.",
+      "license": "Apache-2.0",
+      "stars": 27901,
+      "lastPush": "2026-08-24T09:20:49.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AUTOMATION",
+      "commercialBundleScore": 88,
+      "tier": "STRONG",
+      "homepage": "https://go.kestra.io/home",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 15,
+      "repository": "lissy93/dashy",
+      "description": "Highly customizable self-hosted dashboard and application homepage with pages, widgets, status checks, search, themes, authentication, and a visual configuration editor.",
+      "license": "MIT",
+      "stars": 26282,
+      "lastPush": "2026-08-21T12:22:27.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DASHBOARD",
+      "commercialBundleScore": 88,
+      "tier": "STRONG",
+      "homepage": "https://dashy.to",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 16,
+      "repository": "presenton/presenton",
+      "description": "A self-hosted and desktop AI presentation generator with visual editing, custom templates, multi-user workspaces, API access, and editable PPTX/PDF export.",
+      "license": "Apache-2.0",
+      "stars": 9819,
+      "lastPush": "2026-08-24T08:29:49.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CONTENT",
+      "commercialBundleScore": 88,
+      "tier": "STRONG",
+      "homepage": "https://presenton.ai",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 17,
+      "repository": "suitenumerique/docs",
+      "description": "Self-hosted collaborative document editor and knowledge workspace with rich text, live presence, comments, hierarchy, presentations, and import/export.",
+      "license": "MIT",
+      "stars": 16748,
+      "lastPush": "2026-08-24T09:21:35.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "KNOWLEDGE_BASE",
+      "commercialBundleScore": 88,
+      "tier": "STRONG",
+      "homepage": "https://docs.la-suite.eu/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 18,
+      "repository": "BookStackApp/BookStack",
+      "description": "A self-hosted web application for creating, organizing, and sharing documentation and institutional knowledge.",
+      "license": "MIT",
+      "stars": 19002,
+      "lastPush": "2026-08-24T04:31:03.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "KNOWLEDGE_BASE",
+      "commercialBundleScore": 87,
+      "tier": "STRONG",
+      "homepage": "https://codeberg.org/bookstack/bookstack",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 19,
+      "repository": "clidey/whodb",
+      "description": "A lightweight browser, desktop, and terminal database workspace for browsing data, editing records, querying, schema visualization, and optional AI assistance.",
+      "license": "Apache-2.0",
+      "stars": 5011,
+      "lastPush": "2026-08-22T03:31:01.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 87,
+      "tier": "STRONG",
+      "homepage": "https://whodb.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 20,
+      "repository": "fabriziosalmi/certmate",
+      "description": "Self-hosted TLS certificate lifecycle platform for discovery, inventory, issuance, renewal, deployment, auditing, backup, and API automation.",
+      "license": "MIT",
+      "stars": 1399,
+      "lastPush": "2026-08-21T17:59:14.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "SECURITY",
+      "commercialBundleScore": 87,
+      "tier": "STRONG",
+      "homepage": "https://www.certmate.org/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 21,
+      "repository": "flarum/flarum",
+      "description": "Responsive, extensible web forum platform for running branded online communities and discussion sites.",
+      "license": "MIT",
+      "stars": 16380,
+      "lastPush": "2026-08-23T20:44:37.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "COMMUNICATION",
+      "commercialBundleScore": 87,
+      "tier": "STRONG",
+      "homepage": "https://flarum.org",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 22,
+      "repository": "gchq/CyberChef",
+      "description": "Browser-based workbench for composing encoding, encryption, compression, parsing, hashing, and data-analysis operations.",
+      "license": "Apache-2.0",
+      "stars": 35652,
+      "lastPush": "2026-08-21T02:06:22.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "SECURITY",
+      "commercialBundleScore": 87,
+      "tier": "STRONG",
+      "homepage": "https://gchq.github.io/CyberChef",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 23,
+      "repository": "AtalayaLabs/OxiCloud",
+      "description": "Lightweight self-hosted cloud suite for files, sharing, calendars, contacts, DAV access, and optional office editing.",
+      "license": "MIT",
+      "stars": 3505,
+      "lastPush": "2026-08-22T21:31:25.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FILE_MANAGEMENT",
+      "commercialBundleScore": 86,
+      "tier": "STRONG",
+      "homepage": "https://atalayalabs.github.io/OxiCloud/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 24,
+      "repository": "DayuanJiang/next-ai-draw-io",
+      "description": "Web and desktop application for generating and editing draw.io diagrams through natural-language AI commands.",
+      "license": "Apache-2.0",
+      "stars": 35224,
+      "lastPush": "2026-08-22T11:47:10.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 86,
+      "tier": "STRONG",
+      "homepage": "https://next-ai-drawio.jiang.jp/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 25,
+      "repository": "cjpais/Handy",
+      "description": "Cross-platform desktop dictation application that performs speech-to-text locally and inserts transcriptions into other applications.",
+      "license": "MIT",
+      "stars": 30192,
+      "lastPush": "2026-08-24T08:57:57.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 86,
+      "tier": "STRONG",
+      "homepage": "https://handy.computer",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 26,
+      "repository": "gamosoft/NoteDiscovery",
+      "description": "A responsive self-hosted markdown knowledge base with editing, search, backlinks, graph visualization, themes, plugins, exports, drawing tools, and AI-assistant integration.",
+      "license": "MIT",
+      "stars": 2765,
+      "lastPush": "2026-08-24T07:28:35.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "KNOWLEDGE_BASE",
+      "commercialBundleScore": 86,
+      "tier": "STRONG",
+      "homepage": "https://www.notediscovery.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 27,
+      "repository": "go-gitea/gitea",
+      "description": "Self-hosted software development service with Git hosting, code review, issues, Kanban, wiki, packages, and CI/CD.",
+      "license": "MIT",
+      "stars": 57572,
+      "lastPush": "2026-08-24T08:36:06.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 86,
+      "tier": "STRONG",
+      "homepage": "https://gitea.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 28,
+      "repository": "netbox-community/netbox",
+      "description": "Network infrastructure source-of-truth application combining IP address management, data-center infrastructure management, APIs, validation, and automation hooks.",
+      "license": "Apache-2.0",
+      "stars": 21356,
+      "lastPush": "2026-08-23T00:11:56.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FILE_MANAGEMENT",
+      "commercialBundleScore": 86,
+      "tier": "STRONG",
+      "homepage": "https://netboxlabs.com/products/netbox/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 29,
+      "repository": "webmin/webmin",
+      "description": "Web-based administration control panel for Unix-like servers, operating-system settings, and common server applications.",
+      "license": "BSD-3-Clause",
+      "stars": 6025,
+      "lastPush": "2026-08-23T22:30:32.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 86,
+      "tier": "STRONG",
+      "homepage": "http://www.webmin.com/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 30,
+      "repository": "BidingCC/BuildingAI",
+      "description": "Self-hosted visual platform for assembling AI agents, knowledge bases, RAG applications, model integrations, extensions, memberships, and billing.",
+      "license": "Apache-2.0",
+      "stars": 1866,
+      "lastPush": "2026-08-21T04:01:21.000Z",
+      "repositoryKind": "FRAMEWORK",
+      "category": "AUTOMATION",
+      "commercialBundleScore": 85,
+      "tier": "STRONG",
+      "homepage": "https://www.buildingai.cc",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 31,
+      "repository": "readur/readur",
+      "description": "Self-hosted document management and OCR platform with uploads, search, labels, synchronized sources, user roles, analytics, and a responsive web interface.",
+      "license": "MIT",
+      "stars": 788,
+      "lastPush": "2026-08-24T02:13:38.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FILE_MANAGEMENT",
+      "commercialBundleScore": 85,
+      "tier": "STRONG",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 32,
+      "repository": "ArchiveBox/ArchiveBox",
+      "description": "Self-hosted web archiving system that captures URLs and stores durable copies in formats including HTML, PDF, screenshots, WARC, media, JSON, and SQLite.",
+      "license": "MIT",
+      "stars": 28165,
+      "lastPush": "2026-08-19T12:57:58.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "KNOWLEDGE_BASE",
+      "commercialBundleScore": 84,
+      "tier": "STRONG",
+      "homepage": "https://archivebox.io",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 33,
+      "repository": "OpenWhispr/openwhispr",
+      "description": "Cross-platform desktop voice workspace offering system-wide dictation, meeting transcription, notes, AI assistance, and local or cloud speech processing.",
+      "license": "MIT",
+      "stars": 5686,
+      "lastPush": "2026-08-23T14:57:23.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 84,
+      "tier": "STRONG",
+      "homepage": "https://openwhispr.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 34,
+      "repository": "colanode/colanode",
+      "description": "Local-first team workspace combining chat, collaborative documents, databases, file management, and self-hosting.",
+      "license": "Apache-2.0",
+      "stars": 5023,
+      "lastPush": "2026-04-03T14:23:17.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "COMMUNICATION",
+      "commercialBundleScore": 84,
+      "tier": "STRONG",
+      "homepage": "https://colanode.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 35,
+      "repository": "emdash-cms/emdash",
+      "description": "Astro-based full-stack CMS with an admin panel, structured content, media management, authentication, themes, and sandboxed plugins.",
+      "license": "MIT",
+      "stars": 11708,
+      "lastPush": "2026-08-24T09:17:53.000Z",
+      "repositoryKind": "FRAMEWORK",
+      "category": "CMS",
+      "commercialBundleScore": 84,
+      "tier": "STRONG",
+      "homepage": "https://emdashcms.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 36,
+      "repository": "gogs/gogs",
+      "description": "Self-hosted Git collaboration service with repository hosting, organizations, issues, pull requests, wikis, webhooks, authentication, and a browser interface.",
+      "license": "MIT",
+      "stars": 47759,
+      "lastPush": "2026-08-22T21:32:23.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 84,
+      "tier": "STRONG",
+      "homepage": "https://gogs.io",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 37,
+      "repository": "gtsteffaniak/filebrowser",
+      "description": "Lightweight self-hosted web file manager with multiple file sources, sharing, previews, editing, search, user access controls, and SSO.",
+      "license": "Apache-2.0",
+      "stars": 7881,
+      "lastPush": "2026-08-23T04:34:42.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FILE_MANAGEMENT",
+      "commercialBundleScore": 84,
+      "tier": "STRONG",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 38,
+      "repository": "pascalorg/editor",
+      "description": "Local-first browser-based 3D architectural editor for creating, storing, extending, and sharing building models.",
+      "license": "MIT",
+      "stars": 21674,
+      "lastPush": "2026-08-24T04:14:42.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 84,
+      "tier": "STRONG",
+      "homepage": "https://editor.pascal.app",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 39,
+      "repository": "pipeshub-ai/pipeshub-ai",
+      "description": "A self-hosted workplace AI platform for permission-aware enterprise search, cited answers, knowledge integration, and visual agent workflows.",
+      "license": "Apache-2.0",
+      "stars": 3676,
+      "lastPush": "2026-08-24T06:28:24.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "KNOWLEDGE_BASE",
+      "commercialBundleScore": 84,
+      "tier": "STRONG",
+      "homepage": "https://pipeshub.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 40,
+      "repository": "companion-inc/feynman",
+      "description": "Локальный AI-агент и научный workbench для поиска литературы, анализа доказательств и подготовки цитируемых исследовательских материалов.",
+      "license": "MIT",
+      "stars": 8548,
+      "lastPush": "2026-08-24T08:01:06.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AI_AGENT",
+      "commercialBundleScore": 83,
+      "tier": "STRONG",
+      "homepage": "https://feynman.is",
+      "buyerValueProposition": "Покупатель получает локальный брендируемый AI-workbench для научного поиска, проверки источников и подготовки отчетов.",
+      "clientProjectExamples": [
+        "корпоративный центр конкурентных исследований",
+        "платформа обзора медицинской литературы",
+        "внутренний помощник университетской лаборатории"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 41,
+      "repository": "cupcakearmy/cryptgeon",
+      "description": "Self-hosted web service for sharing client-side-encrypted, expiring text notes and files.",
+      "license": "MIT",
+      "stars": 1508,
+      "lastPush": "2026-06-28T16:52:01.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "SECURITY",
+      "commercialBundleScore": 83,
+      "tier": "STRONG",
+      "homepage": "https://cryptgeon.org/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 42,
+      "repository": "pshenok/server-survival",
+      "description": "Browser-based 3D tower-defense game that teaches cloud architecture through infrastructure-building simulations.",
+      "license": "MIT",
+      "stars": 6367,
+      "lastPush": "2026-08-23T00:59:22.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "OTHER",
+      "commercialBundleScore": 83,
+      "tier": "STRONG",
+      "homepage": "https://pshenok.github.io/server-survival/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 43,
+      "repository": "tmoroney/auto-subs",
+      "description": "Local-first desktop application for transcribing media, editing subtitles, identifying speakers, and exporting or sending captions to video editors.",
+      "license": "MIT",
+      "stars": 4076,
+      "lastPush": "2026-08-02T21:47:49.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CONTENT",
+      "commercialBundleScore": 83,
+      "tier": "STRONG",
+      "homepage": "https://tom-moroney.com/auto-subs/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 44,
+      "repository": "9001/copyparty",
+      "description": "Portable all-in-one file server with a browser file manager, resumable uploads, sharing, search, media playback, indexing, and multiple network protocols.",
+      "license": "MIT",
+      "stars": 46344,
+      "lastPush": "2026-08-23T22:28:58.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FILE_MANAGEMENT",
+      "commercialBundleScore": 82,
+      "tier": "STRONG",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 45,
+      "repository": "ItzCrazyKns/Vane",
+      "description": "Self-hosted AI answering and research engine with cited web results, document Q&A, media search, and local or cloud model support.",
+      "license": "MIT",
+      "stars": 36423,
+      "lastPush": "2026-04-11T14:33:06.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AI_ASSISTANT",
+      "commercialBundleScore": 82,
+      "tier": "STRONG",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 46,
+      "repository": "LearningCircuit/local-deep-research",
+      "description": "Self-hosted research assistant that searches web, academic, and private sources and produces cited reports through a web interface.",
+      "license": "MIT",
+      "stars": 8976,
+      "lastPush": "2026-08-24T06:48:06.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AI_ASSISTANT",
+      "commercialBundleScore": 82,
+      "tier": "STRONG",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 47,
+      "repository": "MCSManager/MCSManager",
+      "description": "Distributed, multi-user web panel for deploying and operating Minecraft, Steam, and other game servers.",
+      "license": "Apache-2.0",
+      "stars": 4929,
+      "lastPush": "2026-08-23T10:14:09.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 82,
+      "tier": "STRONG",
+      "homepage": "https://mcsmanager.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 48,
+      "repository": "f/textream",
+      "description": "Native Apple-platform teleprompter with speech-following, automatic scrolling, overlays, external-display support, recording, remote viewing, and browser-based director control.",
+      "license": "MIT",
+      "stars": 3664,
+      "lastPush": "2026-08-23T00:22:14.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 82,
+      "tier": "STRONG",
+      "homepage": "https://textream.net/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 49,
+      "repository": "jamiepine/voicebox",
+      "description": "Local-first desktop AI voice studio for voice cloning, speech generation, dictation, transcription, audio effects, and multi-voice story editing.",
+      "license": "MIT",
+      "stars": 51272,
+      "lastPush": "2026-08-09T00:03:42.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CONTENT",
+      "commercialBundleScore": 82,
+      "tier": "STRONG",
+      "homepage": "https://voicebox.sh",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 50,
+      "repository": "likaia/nginxpulse",
+      "description": "Self-hosted Nginx access-log analytics dashboard with real-time traffic statistics, client parsing, geographic enrichment, and desktop/mobile views.",
+      "license": "MIT",
+      "stars": 2635,
+      "lastPush": "2026-05-19T16:46:38.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 82,
+      "tier": "STRONG",
+      "homepage": "https://nginx-pulse.kaisir.cn/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 51,
+      "repository": "paperclipai/paperclip",
+      "description": "Web control plane for organizing teams of AI agents with tasks, goals, org charts, budgets, approvals, schedules and audit trails.",
+      "license": "MIT",
+      "stars": 79275,
+      "lastPush": "2026-08-24T09:07:50.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AI_AGENT",
+      "commercialBundleScore": 82,
+      "tier": "STRONG",
+      "homepage": "https://paperclip.ing",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 52,
+      "repository": "pixlcore/xyops",
+      "description": "Self-hosted operations platform combining job scheduling, visual workflows, infrastructure monitoring, alerts, incident response, and ticketing.",
+      "license": "BSD-3-Clause",
+      "stars": 5058,
+      "lastPush": "2026-08-22T18:39:36.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AUTOMATION",
+      "commercialBundleScore": 82,
+      "tier": "STRONG",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 53,
+      "repository": "rcourtman/Pulse",
+      "description": "Self-hosted infrastructure monitoring workspace for Proxmox, Docker, Kubernetes, TrueNAS, machines, and early-access vSphere.",
+      "license": "MIT",
+      "stars": 6609,
+      "lastPush": "2026-08-24T09:17:34.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 82,
+      "tier": "STRONG",
+      "homepage": "https://pulserelay.pro",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 54,
+      "repository": "sgasser/pasteguard",
+      "description": "Local-first privacy proxy and dashboard that detects and masks personal data and secrets before requests reach cloud AI providers.",
+      "license": "Apache-2.0",
+      "stars": 738,
+      "lastPush": "2026-08-24T08:52:16.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "SECURITY",
+      "commercialBundleScore": 82,
+      "tier": "STRONG",
+      "homepage": "https://pasteguard.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 55,
+      "repository": "zulip/zulip",
+      "description": "Self-hosted team communication platform combining real-time chat with topic-based threading for organized synchronous and asynchronous collaboration.",
+      "license": "Apache-2.0",
+      "stars": 25765,
+      "lastPush": "2026-08-24T05:36:08.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "COMMUNICATION",
+      "commercialBundleScore": 82,
+      "tier": "STRONG",
+      "homepage": "https://zulip.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 56,
+      "repository": "Crosstalk-Solutions/project-nomad",
+      "description": "Offline-first browser-accessible knowledge and education server managing Wikipedia, courses, maps, notes, local AI and additional containerized tools.",
+      "license": "Apache-2.0",
+      "stars": 36259,
+      "lastPush": "2026-08-19T15:39:49.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "KNOWLEDGE_BASE",
+      "commercialBundleScore": 81,
+      "tier": "STRONG",
+      "homepage": "https://www.projectnomad.us",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 57,
+      "repository": "HoshinoSuzumi/chronoframe",
+      "description": "Self-hosted personal photo gallery with web-based photo administration, albums, EXIF metadata, Live Photos, location maps, and flexible storage.",
+      "license": "MIT",
+      "stars": 1909,
+      "lastPush": "2026-08-24T02:49:52.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CONTENT",
+      "commercialBundleScore": 81,
+      "tier": "STRONG",
+      "homepage": "https://chronoframe.bh8.ga/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 58,
+      "repository": "InterceptSuite/ProxyBridge",
+      "description": "Cross-platform desktop and CLI proxy client for routing, allowing, or blocking TCP and UDP traffic per application.",
+      "license": "MIT",
+      "stars": 6009,
+      "lastPush": "2026-08-13T15:14:25.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "SECURITY",
+      "commercialBundleScore": 81,
+      "tier": "STRONG",
+      "homepage": "https://interceptsuite.com/",
+      "buyerValueProposition": "Покупатель получает готовый кроссплатформенный клиент для маршрутизации и блокировки трафика отдельных приложений.",
+      "clientProjectExamples": [
+        "Corporate per-app proxy client",
+        "Security-testing traffic router",
+        "Managed endpoint network policy tool"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 59,
+      "repository": "JerryZLiu/Dayflow",
+      "description": "Local-first macOS work journal that turns screen activity into timelines, standups, reviews, and searchable AI summaries.",
+      "license": "MIT",
+      "stars": 6941,
+      "lastPush": "2026-08-19T08:54:53.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 81,
+      "tier": "STRONG",
+      "homepage": "https://www.dayflow.so/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 60,
+      "repository": "MarSeventh/CloudFlare-ImgBed",
+      "description": "A self-hosted image and file management hub with uploads, galleries, authentication, directories, APIs, WebDAV, and multiple storage backends.",
+      "license": "MIT",
+      "stars": 6274,
+      "lastPush": "2026-08-24T04:09:45.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FILE_MANAGEMENT",
+      "commercialBundleScore": 81,
+      "tier": "STRONG",
+      "homepage": "https://cfbed.sanyue.de",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 61,
+      "repository": "Snouzy/workout-cool",
+      "description": "A fitness coaching web application for creating workout plans, browsing exercises, and tracking training progress.",
+      "license": "MIT",
+      "stars": 8411,
+      "lastPush": "2026-07-31T11:30:12.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "OTHER",
+      "commercialBundleScore": 81,
+      "tier": "STRONG",
+      "homepage": "https://workout.cool",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 62,
+      "repository": "iflytek/astron-agent",
+      "description": "Enterprise visual platform for designing, deploying, integrating, and collaborating on agentic AI workflows and RPA automation.",
+      "license": "Apache-2.0",
+      "stars": 8947,
+      "lastPush": "2026-08-24T09:19:32.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AUTOMATION",
+      "commercialBundleScore": 81,
+      "tier": "STRONG",
+      "homepage": "http://astron.ai/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 63,
+      "repository": "vas3k/TaxHacker",
+      "description": "Self-hosted AI accounting application for extracting, organizing, converting, filtering, and exporting receipt and invoice data.",
+      "license": "MIT",
+      "stars": 6652,
+      "lastPush": "2026-08-17T18:05:06.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FINANCE",
+      "commercialBundleScore": 81,
+      "tier": "STRONG",
+      "homepage": "https://taxhacker.app",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 64,
+      "repository": "whyour/qinglong",
+      "description": "Web-based platform for scheduling and managing Python, JavaScript, TypeScript, and shell tasks, configurations, environment variables, logs, and notifications.",
+      "license": "Apache-2.0",
+      "stars": 19801,
+      "lastPush": "2026-08-24T08:24:42.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AUTOMATION",
+      "commercialBundleScore": 81,
+      "tier": "STRONG",
+      "homepage": "https://qinglong.online",
+      "buyerValueProposition": "Покупатель получает готовую self-hosted панель для расписания, запуска и контроля бизнес-скриптов.",
+      "clientProjectExamples": [
+        "Панель автоматизации для агентства",
+        "Планировщик интеграционных заданий",
+        "Операционная консоль фоновых скриптов"
+      ],
+      "origin": "new_gap_fill"
+    },
+    {
+      "rank": 65,
+      "repository": "Zackriya-Solutions/meetily",
+      "description": "Cross-platform desktop meeting assistant providing local recording, live transcription, and AI-generated summaries.",
+      "license": "MIT",
+      "stars": 29806,
+      "lastPush": "2026-06-05T13:53:17.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 80,
+      "tier": "STRONG",
+      "homepage": "https://meetily.ai",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 66,
+      "repository": "jason5ng32/MyIP",
+      "description": "Self-hosted web toolbox for IP information, leak detection, connectivity diagnostics, latency, speed, Whois, and browser fingerprint checks.",
+      "license": "MIT",
+      "stars": 11736,
+      "lastPush": "2026-08-24T09:14:50.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "SECURITY",
+      "commercialBundleScore": 80,
+      "tier": "STRONG",
+      "homepage": "https://ipcheck.ing",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 67,
+      "repository": "open-pencil/open-pencil",
+      "description": "A browser and desktop design editor with Figma file support, components, collaboration, design-to-code export, automation, and optional AI assistance.",
+      "license": "MIT",
+      "stars": 7960,
+      "lastPush": "2026-08-23T16:02:55.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CONTENT",
+      "commercialBundleScore": 80,
+      "tier": "STRONG",
+      "homepage": "https://openpencil.dev",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 68,
+      "repository": "blackcandy-org/blackcandy",
+      "description": "Self-hosted web music server for organizing and streaming a personal media collection, with companion mobile apps.",
+      "license": "MIT",
+      "stars": 4403,
+      "lastPush": "2026-08-13T13:24:47.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CONTENT",
+      "commercialBundleScore": 79,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 69,
+      "repository": "open-edge-platform/geti",
+      "description": "End-to-end computer-vision application for annotation, training, optimization, inference pipelines, and model export.",
+      "license": "Apache-2.0",
+      "stars": 1317,
+      "lastPush": "2026-08-24T09:14:43.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 79,
+      "tier": "POSSIBLE",
+      "homepage": "https://docs.geti.intel.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 70,
+      "repository": "DrewThomasson/ebook2audiobook",
+      "description": "A local web and command-line application that converts ebooks and documents into multilingual audiobooks using selectable TTS engines.",
+      "license": "Apache-2.0",
+      "stars": 20022,
+      "lastPush": "2026-08-22T21:46:36.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CONTENT",
+      "commercialBundleScore": 78,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 71,
+      "repository": "authelia/authelia",
+      "description": "Self-hosted identity portal and authorization server providing SSO, OpenID Connect, MFA, passkeys, password recovery, and proxy-integrated access control.",
+      "license": "Apache-2.0",
+      "stars": 28670,
+      "lastPush": "2026-08-24T09:14:46.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "SECURITY",
+      "commercialBundleScore": 78,
+      "tier": "POSSIBLE",
+      "homepage": "https://www.authelia.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 72,
+      "repository": "hackjutsu/Lepton",
+      "description": "Cross-platform desktop code-snippet manager backed by GitHub Gist, with search, tags, dashboards, themes, Markdown, and notebook rendering.",
+      "license": "MIT",
+      "stars": 10339,
+      "lastPush": "2026-08-09T20:06:02.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 78,
+      "tier": "POSSIBLE",
+      "homepage": "https://hackjutsu.com/Lepton",
+      "buyerValueProposition": "Покупатель получает готовый брендируемый менеджер сниппетов для macOS, Windows и Linux с поиском, тегами и темами.",
+      "clientProjectExamples": [
+        "company-branded developer knowledge vault",
+        "GitHub Enterprise snippet client",
+        "desktop reference manager for a coding course"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 73,
+      "repository": "jundot/omlx",
+      "description": "Apple Silicon LLM inference server with a native menu-bar app, admin dashboard, chat, model management, and compatible APIs.",
+      "license": "Apache-2.0",
+      "stars": 20490,
+      "lastPush": "2026-08-23T11:41:06.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AI_ASSISTANT",
+      "commercialBundleScore": 78,
+      "tier": "POSSIBLE",
+      "homepage": "https://omlx.ai",
+      "buyerValueProposition": "Покупатель получает готовый локальный AI-сервер для Mac с панелью управления, чатом и совместимыми API.",
+      "clientProjectExamples": [
+        "private AI workstation for a legal team",
+        "local coding-assistant server",
+        "offline model gateway for a design studio"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 74,
+      "repository": "seriousm4x/UpSnap",
+      "description": "Self-hosted web dashboard for discovering, waking, monitoring, scheduling, and remotely shutting down LAN devices.",
+      "license": "MIT",
+      "stars": 6211,
+      "lastPush": "2026-07-26T10:20:40.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AUTOMATION",
+      "commercialBundleScore": 78,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 75,
+      "repository": "yikart/AiToEarn",
+      "description": "AI-assisted content marketing platform for creating, scheduling, publishing, engaging, and monetizing content across social networks.",
+      "license": "MIT",
+      "stars": 25202,
+      "lastPush": "2026-08-15T15:20:35.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "MARKETING",
+      "commercialBundleScore": 78,
+      "tier": "POSSIBLE",
+      "homepage": "https://aitoearn.ai/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 76,
+      "repository": "aelassas/servy",
+      "description": "Windows service wrapper and management suite with desktop, Manager, Console, CLI, and PowerShell interfaces for operating arbitrary applications as monitored services.",
+      "license": "MIT",
+      "stars": 1982,
+      "lastPush": "2026-08-24T08:51:03.000Z",
+      "repositoryKind": "DEV_TOOL",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 77,
+      "tier": "POSSIBLE",
+      "homepage": "https://servy-win.github.io",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 77,
+      "repository": "isso-comments/isso",
+      "description": "A lightweight self-hosted commenting server with an embeddable JavaScript client, moderation, Markdown comments, and migration from Disqus or WordPress.",
+      "license": "MIT",
+      "stars": 5304,
+      "lastPush": "2026-08-21T22:25:10.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CONTENT",
+      "commercialBundleScore": 77,
+      "tier": "POSSIBLE",
+      "homepage": "https://isso-comments.de",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 78,
+      "repository": "szabodanika/microbin",
+      "description": "Lightweight self-hosted paste, file-sharing, secret-sharing, and URL-shortening web application distributed as a single Rust executable or Docker container.",
+      "license": "BSD-3-Clause",
+      "stars": 4528,
+      "lastPush": "2026-06-13T13:45:49.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FILE_MANAGEMENT",
+      "commercialBundleScore": 77,
+      "tier": "POSSIBLE",
+      "homepage": "https://microbin.eu",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 79,
+      "repository": "zaproxy/zaproxy",
+      "description": "Desktop and automation-oriented web application security scanner for vulnerability discovery and manual penetration testing.",
+      "license": "Apache-2.0",
+      "stars": 15674,
+      "lastPush": "2026-08-21T13:16:22.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "SECURITY",
+      "commercialBundleScore": 77,
+      "tier": "POSSIBLE",
+      "homepage": "https://www.zaproxy.org",
+      "buyerValueProposition": "Покупатель получает готовый сканер веб-приложений для автоматического и ручного поиска уязвимостей.",
+      "clientProjectExamples": [
+        "developer security-testing workstation",
+        "web agency vulnerability assessment toolkit",
+        "internal application-security scanner"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 80,
+      "repository": "ModelEngine-Group/app-platform",
+      "description": "Low-code web platform for visually creating, debugging, publishing, and managing AI applications and agent workflows.",
+      "license": "MIT",
+      "stars": 1455,
+      "lastPush": "2026-05-18T02:44:53.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AI_AGENT",
+      "commercialBundleScore": 76,
+      "tier": "POSSIBLE",
+      "homepage": "https://modelengine-ai.net",
+      "buyerValueProposition": "Покупатель получает брендируемую low-code платформу для создания, отладки и публикации AI-приложений и агентов.",
+      "clientProjectExamples": [
+        "enterprise AI workflow studio",
+        "internal agent marketplace",
+        "vertical low-code AI application builder"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 81,
+      "repository": "Osmantic/ODS",
+      "description": "Self-hosted private AI server appliance combining local inference, browser chat, model and service management, voice, agents, workflows, RAG, search, image generation, and observability.",
+      "license": "Apache-2.0",
+      "stars": 4660,
+      "lastPush": "2026-08-21T17:18:44.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AI_ASSISTANT",
+      "commercialBundleScore": 76,
+      "tier": "POSSIBLE",
+      "homepage": "https://discord.gg/qGVygYada3",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 82,
+      "repository": "antgroup/CloudRec",
+      "description": "Multi-cloud security posture management platform for asset discovery, policy-based risk detection, remediation workflows, and multi-tenant operations.",
+      "license": "Apache-2.0",
+      "stars": 190,
+      "lastPush": "2026-06-12T07:37:17.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "SECURITY",
+      "commercialBundleScore": 76,
+      "tier": "POSSIBLE",
+      "homepage": "https://demo.cloudrec.cloud",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 83,
+      "repository": "composio-community/open-claude-cowork",
+      "description": "Cross-platform Electron AI workspace for persistent chats, tool execution, skills, and work-app automation through Composio.",
+      "license": "MIT",
+      "stars": 4329,
+      "lastPush": "2026-05-23T11:52:19.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AI_ASSISTANT",
+      "commercialBundleScore": 76,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": "Покупатель получает готового настольного ИИ‑ассистента для автоматизации работы в сотнях SaaS‑сервисов.",
+      "clientProjectExamples": [
+        "Branded operations coworker",
+        "Customer-support automation desktop",
+        "Executive assistant connected to company SaaS tools"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 84,
+      "repository": "eclaire-labs/eclaire",
+      "description": "Local-first personal AI workspace for tasks, notes, documents, photos, bookmarks, search, OCR, chat, and automation.",
+      "license": "MIT",
+      "stars": 899,
+      "lastPush": "2026-05-14T05:20:20.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AI_ASSISTANT",
+      "commercialBundleScore": 76,
+      "tier": "POSSIBLE",
+      "homepage": "https://eclaire.co",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 85,
+      "repository": "hamed-elfayome/Claude-Usage-Tracker",
+      "description": "Native macOS menu-bar application for monitoring Claude limits, costs, usage history, and multiple profiles.",
+      "license": "MIT",
+      "stars": 3322,
+      "lastPush": "2026-07-12T01:17:56.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 76,
+      "tier": "POSSIBLE",
+      "homepage": "https://claudetracker.com",
+      "buyerValueProposition": "Покупатель получает готовый macOS‑трекер лимитов, расходов и истории использования Claude.",
+      "clientProjectExamples": [
+        "Branded Claude cost monitor for an AI consultancy",
+        "Internal multi-account usage dashboard",
+        "Localized developer productivity companion"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 86,
+      "repository": "jgraph/drawio-desktop",
+      "description": "Cross-platform Electron desktop application for creating and editing diagrams offline.",
+      "license": "Apache-2.0",
+      "stars": 62771,
+      "lastPush": "2026-08-22T11:33:03.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 76,
+      "tier": "POSSIBLE",
+      "homepage": "https://www.diagrams.net",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 87,
+      "repository": "laravelio/laravel.io",
+      "description": "Full Laravel community portal combining forums, articles, user accounts, search, moderation-related workflows, and social publishing integrations.",
+      "license": "MIT",
+      "stars": 2497,
+      "lastPush": "2026-08-21T03:06:34.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CMS",
+      "commercialBundleScore": 76,
+      "tier": "POSSIBLE",
+      "homepage": "https://laravel.io",
+      "buyerValueProposition": "Покупатель получает готовый портал сообщества с форумом, статьями, аккаунтами и поиском.",
+      "clientProjectExamples": [
+        "Industry association community",
+        "Customer developer forum",
+        "Branded knowledge-and-discussion portal"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 88,
+      "repository": "m1k1o/neko",
+      "description": "Self-hosted WebRTC virtual browser and desktop for collaborative browsing, presentations, support, and watch parties.",
+      "license": "Apache-2.0",
+      "stars": 22181,
+      "lastPush": "2026-08-15T13:39:15.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "COMMUNICATION",
+      "commercialBundleScore": 76,
+      "tier": "POSSIBLE",
+      "homepage": "https://neko.m1k1o.net/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 89,
+      "repository": "mcmonkeyprojects/SwarmUI",
+      "description": "Модульный веб-интерфейс для локальной генерации изображений, видео и аудио с поддержкой нескольких AI-моделей и GPU.",
+      "license": "MIT",
+      "stars": 4484,
+      "lastPush": "2026-08-24T07:03:31.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CONTENT",
+      "commercialBundleScore": 76,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": "Покупатель получает брендируемую локальную AI-студию для генерации изображений, видео и аудио.",
+      "clientProjectExamples": [
+        "студия рекламных креативов",
+        "портал генерации изображений для агентства",
+        "внутренняя ComfyUI-платформа дизайн-команды"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 90,
+      "repository": "meshery/meshery",
+      "description": "Visual self-service platform for designing, deploying, governing, and measuring Kubernetes-based infrastructure across clusters and clouds.",
+      "license": "Apache-2.0",
+      "stars": 11561,
+      "lastPush": "2026-08-24T00:44:37.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 76,
+      "tier": "POSSIBLE",
+      "homepage": "https://meshery.io",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 91,
+      "repository": "AnInsomniacy/motrix-next",
+      "description": "A cross-platform desktop download manager supporting HTTP, FTP, BitTorrent, Magnet, ED2K, scheduling, browser integration, history, diagnostics, and extensive personalization.",
+      "license": "MIT",
+      "stars": 9713,
+      "lastPush": "2026-08-24T05:30:20.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FILE_MANAGEMENT",
+      "commercialBundleScore": 75,
+      "tier": "POSSIBLE",
+      "homepage": "https://motrix-next.pages.dev",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 92,
+      "repository": "chubin/wttr.in",
+      "description": "Self-hostable weather forecast service with terminal, browser, image, JSON, and Prometheus outputs.",
+      "license": "Apache-2.0",
+      "stars": 30395,
+      "lastPush": "2026-08-02T16:08:37.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "OTHER",
+      "commercialBundleScore": 75,
+      "tier": "POSSIBLE",
+      "homepage": "https://wttr.in",
+      "buyerValueProposition": "Покупатель получает готовый брендируемый сервис прогноза погоды с веб-, терминальным и API-доступом.",
+      "clientProjectExamples": [
+        "regional weather portal",
+        "branded weather API for mobile apps",
+        "airport or tourism weather display"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 93,
+      "repository": "dockpeek/dockpeek",
+      "description": "Self-hosted Docker dashboard for opening container interfaces, viewing logs, managing multiple hosts, and applying image updates.",
+      "license": "MIT",
+      "stars": 2088,
+      "lastPush": "2026-08-07T16:57:55.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 75,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 94,
+      "repository": "imzyb/MiSub",
+      "description": "Web panel for managing proxy nodes and upstream subscriptions, transforming them, and publishing client-ready profiles.",
+      "license": "MIT",
+      "stars": 2224,
+      "lastPush": "2026-08-22T01:24:13.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "SUBSCRIPTION_MANAGEMENT",
+      "commercialBundleScore": 75,
+      "tier": "POSSIBLE",
+      "homepage": "https://misub.ooxoo.bond",
+      "buyerValueProposition": "Покупатель получает брендируемую панель для управления прокси-подписками и публикации конфигураций для разных клиентов.",
+      "clientProjectExamples": [
+        "managed proxy subscription portal",
+        "small-team node administration panel",
+        "white-label multi-client configuration service"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 95,
+      "repository": "marktext/marktext",
+      "description": "Cross-platform WYSIWYG Markdown editor with themes, focused writing modes, math support, and HTML and PDF export.",
+      "license": "MIT",
+      "stars": 60501,
+      "lastPush": "2026-07-27T03:16:54.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CONTENT",
+      "commercialBundleScore": 75,
+      "tier": "POSSIBLE",
+      "homepage": "https://www.marktext.me",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 96,
+      "repository": "block/buzz",
+      "description": "A self-hosted team workspace where people and AI agents collaborate through channels, threads, direct messages, workflows, Git events, media, search, and auditable signed events.",
+      "license": "Apache-2.0",
+      "stars": 30319,
+      "lastPush": "2026-08-24T08:46:08.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "COMMUNICATION",
+      "commercialBundleScore": 74,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 97,
+      "repository": "harness/harness",
+      "description": "Self-hosted software-development platform combining source-code hosting, CI/CD pipelines, hosted development environments, and artifact registries.",
+      "license": "Apache-2.0",
+      "stars": 38104,
+      "lastPush": "2026-08-21T19:21:23.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 74,
+      "tier": "POSSIBLE",
+      "homepage": "https://www.harness.io/open-source",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 98,
+      "repository": "steipete/CodexBar",
+      "description": "Native macOS menu-bar application for monitoring AI provider quotas, reset windows, spend, credits, incidents, and local usage history.",
+      "license": "MIT",
+      "stars": 20520,
+      "lastPush": "2026-08-24T08:30:17.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 74,
+      "tier": "POSSIBLE",
+      "homepage": "https://codex.bar",
+      "buyerValueProposition": "Покупатель получает готовое macOS-приложение для контроля лимитов, расходов и статуса десятков AI-сервисов.",
+      "clientProjectExamples": [
+        "branded AI quota monitor for a consultancy",
+        "internal AI spend dashboard for developers",
+        "provider-usage utility bundled with an AI subscription"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 99,
+      "repository": "wangwangit/SubsTracker",
+      "description": "A lightweight Cloudflare Workers application for tracking subscription expirations, renewal payments, spending, and multichannel reminders.",
+      "license": "MIT",
+      "stars": 3185,
+      "lastPush": "2026-07-12T11:54:50.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FINANCE",
+      "commercialBundleScore": 74,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 100,
+      "repository": "FranciscoMoretti/chat-js",
+      "description": "A production-oriented, multi-provider AI chat foundation with authentication, streaming, attachments, conversation branching, sharing, tools, and desktop packaging.",
+      "license": "Apache-2.0",
+      "stars": 1190,
+      "lastPush": "2026-08-24T08:52:56.000Z",
+      "repositoryKind": "STARTER",
+      "category": "AI_ASSISTANT",
+      "commercialBundleScore": 73,
+      "tier": "POSSIBLE",
+      "homepage": "https://chatjs.dev",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 101,
+      "repository": "MemeMeow-Studio/MemeMeow",
+      "description": "Локальное веб-приложение для загрузки, коллекционирования и поиска мемов по естественному языку и визуальному сходству.",
+      "license": "MIT",
+      "stars": 1260,
+      "lastPush": "2026-08-23T14:26:32.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FILE_MANAGEMENT",
+      "commercialBundleScore": 73,
+      "tier": "POSSIBLE",
+      "homepage": "https://zvv.quest",
+      "buyerValueProposition": "Покупатель получает брендируемую AI-медиатеку для смыслового поиска изображений и управления коллекциями.",
+      "clientProjectExamples": [
+        "каталог корпоративных стикеров",
+        "поиск креативов маркетинговой команды",
+        "медиатека реакций для онлайн-сообщества"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 102,
+      "repository": "amir1376/ab-download-manager",
+      "description": "Cross-platform desktop download manager with queues, scheduling, browser integration, themes, and organized download workflows.",
+      "license": "Apache-2.0",
+      "stars": 17431,
+      "lastPush": "2026-08-22T20:13:36.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FILE_MANAGEMENT",
+      "commercialBundleScore": 73,
+      "tier": "POSSIBLE",
+      "homepage": "https://abdownloadmanager.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 103,
+      "repository": "coze-dev/coze-loop",
+      "description": "A self-hostable platform for prompt development, AI-agent evaluation, experiment management, tracing, and operational observability.",
+      "license": "Apache-2.0",
+      "stars": 5703,
+      "lastPush": "2026-08-24T08:51:00.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 73,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 104,
+      "repository": "e2b-dev/fragments",
+      "description": "Готовое веб-приложение на Next.js для генерации и безопасного запуска AI-созданного кода с потоковым интерфейсом и несколькими технологическими стеками.",
+      "license": "Apache-2.0",
+      "stars": 6372,
+      "lastPush": "2026-08-17T13:29:07.000Z",
+      "repositoryKind": "STARTER",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 73,
+      "tier": "POSSIBLE",
+      "homepage": "https://fragments.e2b.dev",
+      "buyerValueProposition": "Покупатель получает брендируемый веб-сервис, который генерирует и безопасно запускает приложения по текстовому запросу.",
+      "clientProjectExamples": [
+        "Корпоративный генератор внутренних прототипов",
+        "Обучающая AI-песочница программирования",
+        "Брендированный конструктор mini-apps"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 105,
+      "repository": "home-assistant/core",
+      "description": "Local-first home automation platform that connects devices, presents their state, and supports configurable automations through a modular integration architecture.",
+      "license": "Apache-2.0",
+      "stars": 90081,
+      "lastPush": "2026-08-24T08:54:59.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AUTOMATION",
+      "commercialBundleScore": 73,
+      "tier": "POSSIBLE",
+      "homepage": "https://www.home-assistant.io",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 106,
+      "repository": "Quenary/tugtainer",
+      "description": "Self-hosted web application for monitoring and automating Docker container updates across multiple hosts.",
+      "license": "MIT",
+      "stars": 1507,
+      "lastPush": "2026-08-09T23:33:13.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 107,
+      "repository": "QuentinFuxa/WhisperLiveKit",
+      "description": "Self-hosted real-time speech-to-text server with a bundled web interface, streaming APIs, translation, diarization, and subtitle generation.",
+      "license": "Apache-2.0",
+      "stars": 10907,
+      "lastPush": "2026-08-24T04:38:41.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CONTENT",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 108,
+      "repository": "alvinunreal/tmuxai",
+      "description": "Terminal-native AI pair programmer that observes tmux panes, chats with users, proposes and executes approved commands, and supports knowledge bases and skills.",
+      "license": "Apache-2.0",
+      "stars": 1929,
+      "lastPush": "2026-08-22T02:59:19.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AI_ASSISTANT",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": "https://tmuxai.dev",
+      "buyerValueProposition": "Покупатель получает настраиваемого AI-помощника для tmux, который понимает терминал и выполняет подтверждённые команды.",
+      "clientProjectExamples": [
+        "branded DevOps terminal copilot",
+        "internal support assistant with company runbooks",
+        "interactive Linux training assistant"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 109,
+      "repository": "backnotprop/plannotator",
+      "description": "Local browser-based application for annotating agent plans, documents, HTML artifacts, code diffs, pull requests, and returning structured feedback to coding agents.",
+      "license": "Apache-2.0",
+      "stars": 7977,
+      "lastPush": "2026-08-23T21:20:25.000Z",
+      "repositoryKind": "DEV_TOOL",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": "https://plannotator.ai",
+      "buyerValueProposition": "Покупатель получает локальный визуальный интерфейс для проверки планов и кода AI-агентов с возвратом замечаний в один клик.",
+      "clientProjectExamples": [
+        "internal AI change-approval tool",
+        "branded code-review companion for an agency",
+        "plan annotation workflow for a regulated engineering team"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 110,
+      "repository": "barry-ran/QtScrcpy",
+      "description": "Cross-platform Qt desktop application for displaying, controlling, recording, and managing one or more Android devices over USB or a network.",
+      "license": "Apache-2.0",
+      "stars": 31608,
+      "lastPush": "2026-08-20T08:29:47.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": "https://blog.csdn.net/rankun1/article/details/87970523",
+      "buyerValueProposition": "Покупатель получает брендируемое настольное приложение для управления и записи экранов Android-устройств.",
+      "clientProjectExamples": [
+        "Пульт управления устройствами для мобильной лаборатории",
+        "Брендированный инструмент удалённой поддержки Android",
+        "Приложение для демонстрации и тестирования мобильных продуктов"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 111,
+      "repository": "carbon-app/carbon",
+      "description": "Web application for turning source-code snippets into customized PNG or SVG images for sharing and presentations.",
+      "license": "MIT",
+      "stars": 36090,
+      "lastPush": "2026-02-10T05:07:19.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CONTENT",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": "https://carbon.now.sh",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 112,
+      "repository": "cloudflare/vibesdk",
+      "description": "Agentic web platform that generates, previews, verifies, versions, and exports full-stack applications.",
+      "license": "MIT",
+      "stars": 5328,
+      "lastPush": "2026-08-20T12:45:41.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": "https://build.cloudflare.dev",
+      "buyerValueProposition": "Покупатель получает брендируемую AI-платформу для генерации, проверки и публикации полноценных веб-приложений.",
+      "clientProjectExamples": [
+        "branded AI app builder SaaS",
+        "internal application prototyping portal",
+        "vertical low-code generator for agencies"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 113,
+      "repository": "hanshuaikang/AI-Media2Doc",
+      "description": "A locally deployable web application that converts video or audio into styled articles, notes, mind maps, summaries, screenshots, and subtitle files using AI services.",
+      "license": "MIT",
+      "stars": 3992,
+      "lastPush": "2026-02-05T15:34:45.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CONTENT",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 114,
+      "repository": "lasselian/prism-desktop",
+      "description": "Native Windows and Linux dashboard for controlling Home Assistant entities, automations, cameras, and notifications.",
+      "license": "MIT",
+      "stars": 526,
+      "lastPush": "2026-08-10T19:26:30.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AUTOMATION",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 115,
+      "repository": "momenbasel/PureMac",
+      "description": "A native macOS disk cleaner and application uninstaller with orphan detection, scheduled cleaning, and developer-cache cleanup.",
+      "license": "MIT",
+      "stars": 6048,
+      "lastPush": "2026-08-21T10:24:09.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": "https://www.moamenbasel.com/PureMac/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 116,
+      "repository": "oliverschwendener/ueli",
+      "description": "Cross-platform desktop keystroke launcher with search, favorites, settings, and a broad collection of productivity extensions.",
+      "license": "MIT",
+      "stars": 4582,
+      "lastPush": "2026-08-20T12:17:14.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": "https://ueli.app",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 117,
+      "repository": "restsend/rustpbx",
+      "description": "Programmable SIP PBX with media relay, queues, recording, WebRTC phone, administration console, and integration APIs.",
+      "license": "MIT",
+      "stars": 754,
+      "lastPush": "2026-08-24T07:10:19.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "COMMUNICATION",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": "https://miuda.ai?ref=rustpbx",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 118,
+      "repository": "tangyoha/telegram_media_downloader",
+      "description": "Self-hosted Telegram media archiver with a progress web UI, bot commands, filters, and cloud-drive uploads.",
+      "license": "MIT",
+      "stars": 5489,
+      "lastPush": "2026-03-04T03:01:52.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FILE_MANAGEMENT",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": "Покупатель получает готовый сервис для архивирования медиа из Telegram через веб-интерфейс и бота.",
+      "clientProjectExamples": [
+        "архив медиа корпоративных Telegram-каналов",
+        "сервис резервного копирования контента сообщества",
+        "загрузчик Telegram-материалов в облачное хранилище"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 119,
+      "repository": "tw93/Kaku",
+      "description": "Готовый терминал для macOS с вкладками, панелями, Lua-настройкой и встроенными AI-функциями для работы с командами и кодом.",
+      "license": "MIT",
+      "stars": 5796,
+      "lastPush": "2026-08-23T13:43:51.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": "https://kaku.fun",
+      "buyerValueProposition": "Покупатель получает настраиваемый macOS-терминал с готовыми AI-функциями для командной строки.",
+      "clientProjectExamples": [
+        "корпоративный терминал для инженерной команды",
+        "брендированная среда AI-разработки",
+        "терминал для учебного курса программирования"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 120,
+      "repository": "vectorize-io/hindsight",
+      "description": "Production-oriented agent-memory server with retrieval, reflection, learning, administration UI, SDKs, and broad integrations.",
+      "license": "MIT",
+      "stars": 21010,
+      "lastPush": "2026-08-24T09:14:19.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": "https://hindsight.vectorize.io/",
+      "buyerValueProposition": "Покупатель получает готовую платформу долговременной памяти, которая позволяет AI-агентам запоминать опыт и улучшать поведение.",
+      "clientProjectExamples": [
+        "персонализированная память для клиентского AI-ассистента",
+        "корпоративная память для AI-агентов поддержки и продаж",
+        "брендированный memory backend для no-code автоматизаций"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 121,
+      "repository": "viarotel-org/escrcpy",
+      "description": "Cross-platform desktop GUI for mirroring, controlling, recording, and automating one or more Android devices through scrcpy and ADB.",
+      "license": "Apache-2.0",
+      "stars": 10817,
+      "lastPush": "2026-08-03T08:56:32.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": "https://viarotel.eu.org/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 122,
+      "repository": "wavetermdev/waveterm",
+      "description": "A cross-platform graphical terminal with AI assistance, durable SSH sessions, file editing, previews, and customizable workspaces.",
+      "license": "Apache-2.0",
+      "stars": 22095,
+      "lastPush": "2026-08-11T18:53:52.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": "https://www.waveterm.dev",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 123,
+      "repository": "xanderfrangos/twinkle-tray",
+      "description": "Polished Windows system-tray application for controlling brightness and other DDC/CI settings across multiple external monitors.",
+      "license": "MIT",
+      "stars": 8926,
+      "lastPush": "2026-08-19T02:12:14.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 72,
+      "tier": "POSSIBLE",
+      "homepage": "https://twinkletray.com",
+      "buyerValueProposition": "Покупатель получает готовую Windows-утилиту для централизованного управления яркостью внешних мониторов.",
+      "clientProjectExamples": [
+        "Фирменный контроллер мониторов для офисных рабочих мест",
+        "Утилита управления дисплеями для компьютерного производителя",
+        "Корпоративное приложение автоматической настройки яркости"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 124,
+      "repository": "Maciek-roboblog/Claude-Code-Usage-Monitor",
+      "description": "Installable terminal application for live Claude Code usage, forecasting, cost analysis, warnings, exports, and local history.",
+      "license": "MIT",
+      "stars": 8653,
+      "lastPush": "2026-07-05T04:52:21.000Z",
+      "repositoryKind": "CLI_TOOL",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 71,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": "Покупатель получает готовый терминальный монитор лимитов, затрат и темпа использования Claude Code.",
+      "clientProjectExamples": [
+        "Internal AI cost monitor",
+        "Branded developer status dashboard",
+        "Claude usage export service"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 125,
+      "repository": "kurikomi-labs/komi-store",
+      "description": "Cross-platform storefront for discovering, downloading, installing, and managing open-source applications published through GitHub, Codeberg, and Forgejo releases.",
+      "license": "Apache-2.0",
+      "stars": 17902,
+      "lastPush": "2026-07-29T17:44:50.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ECOMMERCE",
+      "commercialBundleScore": 71,
+      "tier": "POSSIBLE",
+      "homepage": "https://www.komistore.app",
+      "buyerValueProposition": "Покупатель получает готовый к ребрендингу магазин приложений для каталогизации и установки релизов из открытых Git-репозиториев.",
+      "clientProjectExamples": [
+        "Корпоративный каталог одобренного ПО",
+        "Магазин приложений сообщества",
+        "Каталог релизов независимого разработчика"
+      ],
+      "origin": "new_gap_fill"
+    },
+    {
+      "rank": 126,
+      "repository": "AlexxIT/go2rtc",
+      "description": "Standalone camera-streaming gateway that ingests, converts, publishes, and exposes live video and audio across numerous protocols.",
+      "license": "MIT",
+      "stars": 14033,
+      "lastPush": "2026-07-13T10:54:06.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "COMMUNICATION",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://go2rtc.org",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 127,
+      "repository": "CatchTheTornado/text-extract-api",
+      "description": "Самостоятельно размещаемый API и CLI для OCR, преобразования документов в Markdown или JSON и удаления персональных данных.",
+      "license": "MIT",
+      "stars": 3173,
+      "lastPush": "2025-12-08T21:27:14.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DOCUMENT_MANAGEMENT",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://demo.doctractor.com",
+      "buyerValueProposition": "Покупатель получает приватный OCR-сервис для преобразования документов в JSON или Markdown и удаления PII.",
+      "clientProjectExamples": [
+        "обработка счетов для бухгалтерии",
+        "анонимизация медицинских документов",
+        "API оцифровки договорного архива"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 128,
+      "repository": "HKUDS/LightRAG",
+      "description": "A graph-based retrieval-augmented generation platform with document ingestion, querying, visualization, REST APIs, and a web interface.",
+      "license": "MIT",
+      "stars": 39130,
+      "lastPush": "2026-08-24T06:21:03.000Z",
+      "repositoryKind": "FRAMEWORK",
+      "category": "KNOWLEDGE_BASE",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://arxiv.org/abs/2410.05779",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 129,
+      "repository": "ZhuLinsen/daily_stock_analysis",
+      "description": "LLM-powered multi-market stock analysis application with a web and desktop workspace, automated reports, backtesting, portfolios, strategy chat, and notification delivery.",
+      "license": "MIT",
+      "stars": 63745,
+      "lastPush": "2026-08-23T14:39:56.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://dsa.zhulinsen.tech",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 130,
+      "repository": "arkime/arkime",
+      "description": "Large-scale network packet capture, indexing, search, and investigation platform with a web interface.",
+      "license": "Apache-2.0",
+      "stars": 7454,
+      "lastPush": "2026-08-23T23:40:36.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "SECURITY",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://arkime.com",
+      "buyerValueProposition": "Покупатель получает готовую платформу сетевой криминалистики для захвата, поиска и анализа полного трафика.",
+      "clientProjectExamples": [
+        "SOC packet investigation platform",
+        "managed network forensics appliance",
+        "incident-response traffic archive"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 131,
+      "repository": "cyclops-ui/cyclops",
+      "description": "Веб-интерфейс для развертывания и настройки Kubernetes-приложений через формы, создаваемые из Helm charts.",
+      "license": "Apache-2.0",
+      "stars": 3319,
+      "lastPush": "2026-01-22T09:59:04.000Z",
+      "repositoryKind": "DEV_TOOL",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://cyclops-ui.com",
+      "buyerValueProposition": "Покупатель получает настраиваемый веб-портал для безопасного упрощения развертываний в Kubernetes.",
+      "clientProjectExamples": [
+        "внутренний портал развертывания микросервисов",
+        "каталог окружений для QA-команды",
+        "self-service платформа для продуктовых разработчиков"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 132,
+      "repository": "goharbor/harbor",
+      "description": "Self-hosted cloud-native artifact registry with access control, replication, vulnerability scanning, auditing, and a management portal.",
+      "license": "Apache-2.0",
+      "stars": 29217,
+      "lastPush": "2026-08-24T07:46:02.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://goharbor.io",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 133,
+      "repository": "mayocream/koharu",
+      "description": "Cross-platform desktop manga translation workspace combining detection, OCR, translation, inpainting, proofreading, typesetting, canvas editing, and export.",
+      "license": "Apache-2.0",
+      "stars": 5378,
+      "lastPush": "2026-08-24T08:06:25.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CONTENT",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://koharu.rs",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 134,
+      "repository": "phuryn/claude-usage",
+      "description": "Local web dashboard and CLI that convert Claude Code transcript logs into token, model, project, session, and estimated-cost analytics.",
+      "license": "MIT",
+      "stars": 2170,
+      "lastPush": "2026-07-10T10:08:48.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://www.productcompass.pm/",
+      "buyerValueProposition": "Покупатель получает готовую локальную панель аналитики токенов, сессий и расходов Claude Code.",
+      "clientProjectExamples": [
+        "Внутренняя панель AI-расходов команды",
+        "Отчётность по использованию Claude Code",
+        "Брендированный мониторинг токенов разработчиков"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 135,
+      "repository": "reconurge/flowsint",
+      "description": "Visual graph-based OSINT investigation platform with entity enrichment, local data storage, authentication, and team-server deployment.",
+      "license": "Apache-2.0",
+      "stars": 7737,
+      "lastPush": "2026-08-24T09:03:14.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "SECURITY",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://flowsint.io",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 136,
+      "repository": "rohitg00/agentmemory",
+      "description": "Local-first persistent memory server for coding agents with automatic capture, hybrid retrieval, replay, and a real-time viewer.",
+      "license": "Apache-2.0",
+      "stars": 27340,
+      "lastPush": "2026-08-24T06:11:16.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://agent-memory.dev",
+      "buyerValueProposition": "Покупатель получает локальную память для AI-разработчиков с автоматическим сбором контекста, поиском и просмотром сессий.",
+      "clientProjectExamples": [
+        "корпоративный центр памяти для coding-агентов",
+        "брендированный журнал и replay-сервис AI-сессий",
+        "общая база проектного контекста для нескольких AI-инструментов"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 137,
+      "repository": "schollz/croc",
+      "description": "A cross-platform encrypted file-transfer tool with CLI, browser client, relay hosting, resumable transfers, and optional encrypted temporary storage.",
+      "license": "MIT",
+      "stars": 40070,
+      "lastPush": "2026-08-24T08:40:24.000Z",
+      "repositoryKind": "CLI_TOOL",
+      "category": "FILE_MANAGEMENT",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://getcroc.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 138,
+      "repository": "subsy/ralph-tui",
+      "description": "Terminal application that autonomously runs coding agents through prioritized task lists with monitoring, persistence, and remote control.",
+      "license": "MIT",
+      "stars": 2426,
+      "lastPush": "2026-05-13T19:16:05.000Z",
+      "repositoryKind": "CLI_TOOL",
+      "category": "AUTOMATION",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://ralph-tui.com",
+      "buyerValueProposition": "Покупатель получает брендируемый терминальный центр для автономного выполнения задач несколькими AI-агентами.",
+      "clientProjectExamples": [
+        "Branded autonomous coding console",
+        "Remote AI-agent operations dashboard",
+        "Internal PRD-to-code automation tool"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 139,
+      "repository": "typst/typst",
+      "description": "Local markup-based typesetting compiler and CLI for producing documents and PDFs with scripting, math, bibliographies, and custom styling.",
+      "license": "Apache-2.0",
+      "stars": 55624,
+      "lastPush": "2026-08-21T15:09:38.000Z",
+      "repositoryKind": "CLI_TOOL",
+      "category": "CONTENT",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://typst.app",
+      "buyerValueProposition": "Покупатель получает быстрый локальный движок для создания фирменных PDF-документов из разметки.",
+      "clientProjectExamples": [
+        "Branded invoice and report generator",
+        "Academic publishing pipeline",
+        "Automated contract and certificate renderer"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 140,
+      "repository": "vercel/hyper",
+      "description": "Кроссплатформенный desktop-терминал на Electron и React с расширяемыми темами, плагинами и веб-технологиями.",
+      "license": "MIT",
+      "stars": 44702,
+      "lastPush": "2026-08-21T20:44:39.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://hyper.is",
+      "buyerValueProposition": "Покупатель получает кроссплатформенный брендируемый терминал с темами и расширениями на веб-технологиях.",
+      "clientProjectExamples": [
+        "корпоративный терминал разработчика",
+        "терминал для облачной платформы",
+        "учебная CLI-среда с фирменной темой"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 141,
+      "repository": "Mail-0/Zero",
+      "description": "Self-hosted AI-assisted email client with a unified inbox and integrations for external email providers.",
+      "license": "MIT",
+      "stars": 10784,
+      "lastPush": "2026-05-26T20:27:28.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "COMMUNICATION",
+      "commercialBundleScore": 69,
+      "tier": "POSSIBLE",
+      "homepage": "https://discord.gg/mzJ227YJR",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 142,
+      "repository": "TomBadash/Mouser",
+      "description": "Local cross-platform desktop application for remapping and configuring supported Logitech HID++ mice.",
+      "license": "MIT",
+      "stars": 5156,
+      "lastPush": "2026-08-13T10:09:08.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 69,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 143,
+      "repository": "angristan/openvpn-install",
+      "description": "Интерактивный и автоматизируемый CLI для установки, настройки и управления собственным OpenVPN-сервером и клиентскими сертификатами.",
+      "license": "MIT",
+      "stars": 16108,
+      "lastPush": "2026-08-19T13:50:25.000Z",
+      "repositoryKind": "CLI_TOOL",
+      "category": "SECURITY",
+      "commercialBundleScore": 69,
+      "tier": "POSSIBLE",
+      "homepage": "https://stanislas.blog/2019/01/how-to-setup-vpn-server-wireguard-nat-ipv6/",
+      "buyerValueProposition": "Покупатель получает готовый автоматизатор развертывания и управления собственным защищенным OpenVPN-сервером.",
+      "clientProjectExamples": [
+        "частный VPN для малого бизнеса",
+        "удаленный доступ к офисной сети",
+        "VPN-шлюз для домашней инфраструктуры"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 144,
+      "repository": "blakeblackshear/frigate",
+      "description": "Local network video recorder with real-time AI object detection, camera recording, low-latency viewing, review tools, and Home Assistant integration.",
+      "license": "MIT",
+      "stars": 35341,
+      "lastPush": "2026-08-23T23:29:12.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "SECURITY",
+      "commercialBundleScore": 69,
+      "tier": "POSSIBLE",
+      "homepage": "https://frigate.video",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 145,
+      "repository": "hugohe3/ppt-master",
+      "description": "Локальный агентный workflow для создания нативно редактируемых PowerPoint-презентаций из документов, тем и существующих PPTX-шаблонов.",
+      "license": "MIT",
+      "stars": 48947,
+      "lastPush": "2026-08-24T04:42:21.000Z",
+      "repositoryKind": "CLI_TOOL",
+      "category": "CONTENT",
+      "commercialBundleScore": 69,
+      "tier": "POSSIBLE",
+      "homepage": "https://hugohe3.github.io/ppt-master-examples/",
+      "buyerValueProposition": "Покупатель получает локальный AI-инструмент для выпуска нативно редактируемых презентаций в фирменном стиле.",
+      "clientProjectExamples": [
+        "Генератор консалтинговых презентаций",
+        "Корпоративный сервис заполнения бренд-шаблонов",
+        "Конвейер отчетов для финансовой команды"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 146,
+      "repository": "ibelick/zola",
+      "description": "Self-hostable responsive AI chat application supporting multiple cloud and local model providers, file uploads, themes, and BYOK access.",
+      "license": "Apache-2.0",
+      "stars": 1532,
+      "lastPush": "2025-12-11T21:27:10.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "AI_ASSISTANT",
+      "commercialBundleScore": 69,
+      "tier": "POSSIBLE",
+      "homepage": "https://zola.chat",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 147,
+      "repository": "igniterealtime/Openfire",
+      "description": "Self-hosted XMPP server with a web-based administration interface and plugin ecosystem for organizational instant messaging.",
+      "license": "Apache-2.0",
+      "stars": 3059,
+      "lastPush": "2026-08-17T13:45:58.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "COMMUNICATION",
+      "commercialBundleScore": 69,
+      "tier": "POSSIBLE",
+      "homepage": "https://igniterealtime.org/projects/openfire/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 148,
+      "repository": "maximhq/bifrost",
+      "description": "A self-hosted multi-provider AI gateway with routing, failover, governance, monitoring, analytics, and a built-in web administration interface.",
+      "license": "Apache-2.0",
+      "stars": 7531,
+      "lastPush": "2026-08-24T09:00:29.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 69,
+      "tier": "POSSIBLE",
+      "homepage": "https://www.getmaxim.ai/bifrost",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 149,
+      "repository": "minbrowser/min",
+      "description": "Minimal privacy-focused Electron web browser with tracker blocking, reader view, full-text history search, tasks, and bookmark tagging.",
+      "license": "Apache-2.0",
+      "stars": 9157,
+      "lastPush": "2026-08-23T21:28:01.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "PRODUCTIVITY",
+      "commercialBundleScore": 69,
+      "tier": "POSSIBLE",
+      "homepage": "https://minbrowser.org/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 150,
+      "repository": "polyaxon/polyaxon",
+      "description": "Kubernetes-native MLOps platform for running, tracking, automating, comparing, and scaling machine-learning experiments and pipelines.",
+      "license": "Apache-2.0",
+      "stars": 3722,
+      "lastPush": "2026-08-22T17:32:35.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DEVELOPER_PRODUCT",
+      "commercialBundleScore": 69,
+      "tier": "POSSIBLE",
+      "homepage": "https://polyaxon.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    }
+  ],
+  "topBusinessApplications": [
+    {
+      "rank": 3,
+      "repository": "aureuserp/aureuserp",
+      "description": "Modular web ERP covering finance, inventory, manufacturing, sales, HR, projects, support, analytics, and related operations.",
+      "license": "MIT",
+      "stars": 11774,
+      "lastPush": "2026-08-24T08:03:43.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ERP",
+      "commercialBundleScore": 91,
+      "tier": "STRONG",
+      "homepage": "https://aureuserp.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 4,
+      "repository": "umbraco/Umbraco-CMS",
+      "description": "Extensible .NET content management system with a browser-based back office for building and managing websites and digital experiences.",
+      "license": "MIT",
+      "stars": 5229,
+      "lastPush": "2026-08-24T09:14:09.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CMS",
+      "commercialBundleScore": 91,
+      "tier": "STRONG",
+      "homepage": "https://umbraco.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 5,
+      "repository": "unopim/unopim",
+      "description": "Full web-based product information and digital asset management platform for enriching and publishing large multi-channel catalogs.",
+      "license": "MIT",
+      "stars": 10852,
+      "lastPush": "2026-08-24T00:37:52.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ECOMMERCE",
+      "commercialBundleScore": 91,
+      "tier": "STRONG",
+      "homepage": "https://unopim.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 8,
+      "repository": "umami-software/umami",
+      "description": "Privacy-first web and product analytics platform covering traffic, campaigns, behavior, conversions, and revenue.",
+      "license": "MIT",
+      "stars": 38339,
+      "lastPush": "2026-08-20T18:26:22.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 90,
+      "tier": "STRONG",
+      "homepage": "https://umami.is",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 11,
+      "repository": "actualbudget/actual",
+      "description": "Local-first personal finance and envelope-budgeting application with desktop clients, optional self-hosted synchronization, and multi-device support.",
+      "license": "MIT",
+      "stars": 28344,
+      "lastPush": "2026-08-23T22:46:25.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FINANCE",
+      "commercialBundleScore": 89,
+      "tier": "STRONG",
+      "homepage": "https://actualbudget.org",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 13,
+      "repository": "apache/superset",
+      "description": "An enterprise-ready web application for exploring SQL data, building visualizations, authoring queries, and publishing interactive business dashboards.",
+      "license": "Apache-2.0",
+      "stars": 74442,
+      "lastPush": "2026-08-24T08:13:05.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 88,
+      "tier": "STRONG",
+      "homepage": "https://superset.apache.org/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 15,
+      "repository": "lissy93/dashy",
+      "description": "Highly customizable self-hosted dashboard and application homepage with pages, widgets, status checks, search, themes, authentication, and a visual configuration editor.",
+      "license": "MIT",
+      "stars": 26282,
+      "lastPush": "2026-08-21T12:22:27.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DASHBOARD",
+      "commercialBundleScore": 88,
+      "tier": "STRONG",
+      "homepage": "https://dashy.to",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 35,
+      "repository": "emdash-cms/emdash",
+      "description": "Astro-based full-stack CMS with an admin panel, structured content, media management, authentication, themes, and sandboxed plugins.",
+      "license": "MIT",
+      "stars": 11708,
+      "lastPush": "2026-08-24T09:17:53.000Z",
+      "repositoryKind": "FRAMEWORK",
+      "category": "CMS",
+      "commercialBundleScore": 84,
+      "tier": "STRONG",
+      "homepage": "https://emdashcms.com",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 50,
+      "repository": "likaia/nginxpulse",
+      "description": "Self-hosted Nginx access-log analytics dashboard with real-time traffic statistics, client parsing, geographic enrichment, and desktop/mobile views.",
+      "license": "MIT",
+      "stars": 2635,
+      "lastPush": "2026-05-19T16:46:38.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 82,
+      "tier": "STRONG",
+      "homepage": "https://nginx-pulse.kaisir.cn/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 53,
+      "repository": "rcourtman/Pulse",
+      "description": "Self-hosted infrastructure monitoring workspace for Proxmox, Docker, Kubernetes, TrueNAS, machines, and early-access vSphere.",
+      "license": "MIT",
+      "stars": 6609,
+      "lastPush": "2026-08-24T09:17:34.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 82,
+      "tier": "STRONG",
+      "homepage": "https://pulserelay.pro",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 63,
+      "repository": "vas3k/TaxHacker",
+      "description": "Self-hosted AI accounting application for extracting, organizing, converting, filtering, and exporting receipt and invoice data.",
+      "license": "MIT",
+      "stars": 6652,
+      "lastPush": "2026-08-17T18:05:06.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FINANCE",
+      "commercialBundleScore": 81,
+      "tier": "STRONG",
+      "homepage": "https://taxhacker.app",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 75,
+      "repository": "yikart/AiToEarn",
+      "description": "AI-assisted content marketing platform for creating, scheduling, publishing, engaging, and monetizing content across social networks.",
+      "license": "MIT",
+      "stars": 25202,
+      "lastPush": "2026-08-15T15:20:35.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "MARKETING",
+      "commercialBundleScore": 78,
+      "tier": "POSSIBLE",
+      "homepage": "https://aitoearn.ai/",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 85,
+      "repository": "hamed-elfayome/Claude-Usage-Tracker",
+      "description": "Native macOS menu-bar application for monitoring Claude limits, costs, usage history, and multiple profiles.",
+      "license": "MIT",
+      "stars": 3322,
+      "lastPush": "2026-07-12T01:17:56.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 76,
+      "tier": "POSSIBLE",
+      "homepage": "https://claudetracker.com",
+      "buyerValueProposition": "Покупатель получает готовый macOS‑трекер лимитов, расходов и истории использования Claude.",
+      "clientProjectExamples": [
+        "Branded Claude cost monitor for an AI consultancy",
+        "Internal multi-account usage dashboard",
+        "Localized developer productivity companion"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 87,
+      "repository": "laravelio/laravel.io",
+      "description": "Full Laravel community portal combining forums, articles, user accounts, search, moderation-related workflows, and social publishing integrations.",
+      "license": "MIT",
+      "stars": 2497,
+      "lastPush": "2026-08-21T03:06:34.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "CMS",
+      "commercialBundleScore": 76,
+      "tier": "POSSIBLE",
+      "homepage": "https://laravel.io",
+      "buyerValueProposition": "Покупатель получает готовый портал сообщества с форумом, статьями, аккаунтами и поиском.",
+      "clientProjectExamples": [
+        "Industry association community",
+        "Customer developer forum",
+        "Branded knowledge-and-discussion portal"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 94,
+      "repository": "imzyb/MiSub",
+      "description": "Web panel for managing proxy nodes and upstream subscriptions, transforming them, and publishing client-ready profiles.",
+      "license": "MIT",
+      "stars": 2224,
+      "lastPush": "2026-08-22T01:24:13.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "SUBSCRIPTION_MANAGEMENT",
+      "commercialBundleScore": 75,
+      "tier": "POSSIBLE",
+      "homepage": "https://misub.ooxoo.bond",
+      "buyerValueProposition": "Покупатель получает брендируемую панель для управления прокси-подписками и публикации конфигураций для разных клиентов.",
+      "clientProjectExamples": [
+        "managed proxy subscription portal",
+        "small-team node administration panel",
+        "white-label multi-client configuration service"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 98,
+      "repository": "steipete/CodexBar",
+      "description": "Native macOS menu-bar application for monitoring AI provider quotas, reset windows, spend, credits, incidents, and local usage history.",
+      "license": "MIT",
+      "stars": 20520,
+      "lastPush": "2026-08-24T08:30:17.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 74,
+      "tier": "POSSIBLE",
+      "homepage": "https://codex.bar",
+      "buyerValueProposition": "Покупатель получает готовое macOS-приложение для контроля лимитов, расходов и статуса десятков AI-сервисов.",
+      "clientProjectExamples": [
+        "branded AI quota monitor for a consultancy",
+        "internal AI spend dashboard for developers",
+        "provider-usage utility bundled with an AI subscription"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 99,
+      "repository": "wangwangit/SubsTracker",
+      "description": "A lightweight Cloudflare Workers application for tracking subscription expirations, renewal payments, spending, and multichannel reminders.",
+      "license": "MIT",
+      "stars": 3185,
+      "lastPush": "2026-07-12T11:54:50.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "FINANCE",
+      "commercialBundleScore": 74,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 103,
+      "repository": "coze-dev/coze-loop",
+      "description": "A self-hostable platform for prompt development, AI-agent evaluation, experiment management, tracing, and operational observability.",
+      "license": "Apache-2.0",
+      "stars": 5703,
+      "lastPush": "2026-08-24T08:51:00.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 73,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 124,
+      "repository": "Maciek-roboblog/Claude-Code-Usage-Monitor",
+      "description": "Installable terminal application for live Claude Code usage, forecasting, cost analysis, warnings, exports, and local history.",
+      "license": "MIT",
+      "stars": 8653,
+      "lastPush": "2026-07-05T04:52:21.000Z",
+      "repositoryKind": "CLI_TOOL",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 71,
+      "tier": "POSSIBLE",
+      "homepage": null,
+      "buyerValueProposition": "Покупатель получает готовый терминальный монитор лимитов, затрат и темпа использования Claude Code.",
+      "clientProjectExamples": [
+        "Internal AI cost monitor",
+        "Branded developer status dashboard",
+        "Claude usage export service"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 125,
+      "repository": "kurikomi-labs/komi-store",
+      "description": "Cross-platform storefront for discovering, downloading, installing, and managing open-source applications published through GitHub, Codeberg, and Forgejo releases.",
+      "license": "Apache-2.0",
+      "stars": 17902,
+      "lastPush": "2026-07-29T17:44:50.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ECOMMERCE",
+      "commercialBundleScore": 71,
+      "tier": "POSSIBLE",
+      "homepage": "https://www.komistore.app",
+      "buyerValueProposition": "Покупатель получает готовый к ребрендингу магазин приложений для каталогизации и установки релизов из открытых Git-репозиториев.",
+      "clientProjectExamples": [
+        "Корпоративный каталог одобренного ПО",
+        "Магазин приложений сообщества",
+        "Каталог релизов независимого разработчика"
+      ],
+      "origin": "new_gap_fill"
+    },
+    {
+      "rank": 127,
+      "repository": "CatchTheTornado/text-extract-api",
+      "description": "Самостоятельно размещаемый API и CLI для OCR, преобразования документов в Markdown или JSON и удаления персональных данных.",
+      "license": "MIT",
+      "stars": 3173,
+      "lastPush": "2025-12-08T21:27:14.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "DOCUMENT_MANAGEMENT",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://demo.doctractor.com",
+      "buyerValueProposition": "Покупатель получает приватный OCR-сервис для преобразования документов в JSON или Markdown и удаления PII.",
+      "clientProjectExamples": [
+        "обработка счетов для бухгалтерии",
+        "анонимизация медицинских документов",
+        "API оцифровки договорного архива"
+      ],
+      "origin": "rescued_false_negative"
+    },
+    {
+      "rank": 129,
+      "repository": "ZhuLinsen/daily_stock_analysis",
+      "description": "LLM-powered multi-market stock analysis application with a web and desktop workspace, automated reports, backtesting, portfolios, strategy chat, and notification delivery.",
+      "license": "MIT",
+      "stars": 63745,
+      "lastPush": "2026-08-23T14:39:56.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://dsa.zhulinsen.tech",
+      "buyerValueProposition": null,
+      "clientProjectExamples": null,
+      "origin": "existing_v1"
+    },
+    {
+      "rank": 134,
+      "repository": "phuryn/claude-usage",
+      "description": "Local web dashboard and CLI that convert Claude Code transcript logs into token, model, project, session, and estimated-cost analytics.",
+      "license": "MIT",
+      "stars": 2170,
+      "lastPush": "2026-07-10T10:08:48.000Z",
+      "repositoryKind": "APPLICATION",
+      "category": "ANALYTICS",
+      "commercialBundleScore": 70,
+      "tier": "POSSIBLE",
+      "homepage": "https://www.productcompass.pm/",
+      "buyerValueProposition": "Покупатель получает готовую локальную панель аналитики токенов, сессий и расходов Claude Code.",
+      "clientProjectExamples": [
+        "Внутренняя панель AI-расходов команды",
+        "Отчётность по использованию Claude Code",
+        "Брендированный мониторинг токенов разработчиков"
+      ],
+      "origin": "rescued_false_negative"
+    }
+  ],
+  "topNewBusinessApplications": [
+    {
+      "rank": 1,
+      "repository": "laravelio/laravel.io",
+      "description": "Full Laravel community portal combining forums, articles, user accounts, search, moderation-related workflows, and social publishing integrations.",
+      "category": "CMS",
+      "score": 76,
+      "tier": "POSSIBLE",
+      "buyerValueProposition": "Покупатель получает готовый портал сообщества с форумом, статьями, аккаунтами и поиском.",
+      "clientProjectExamples": [
+        "Industry association community",
+        "Customer developer forum",
+        "Branded knowledge-and-discussion portal"
+      ],
+      "previousStatus": "WEAK",
+      "previousScore": 53,
+      "scoreDelta": 23
+    },
+    {
+      "rank": 2,
+      "repository": "hamed-elfayome/Claude-Usage-Tracker",
+      "description": "Native macOS menu-bar application for monitoring Claude limits, costs, usage history, and multiple profiles.",
+      "category": "ANALYTICS",
+      "score": 76,
+      "tier": "POSSIBLE",
+      "buyerValueProposition": "Покупатель получает готовый macOS‑трекер лимитов, расходов и истории использования Claude.",
+      "clientProjectExamples": [
+        "Branded Claude cost monitor for an AI consultancy",
+        "Internal multi-account usage dashboard",
+        "Localized developer productivity companion"
+      ],
+      "previousStatus": "WEAK",
+      "previousScore": 59,
+      "scoreDelta": 17
+    },
+    {
+      "rank": 3,
+      "repository": "imzyb/MiSub",
+      "description": "Web panel for managing proxy nodes and upstream subscriptions, transforming them, and publishing client-ready profiles.",
+      "category": "SUBSCRIPTION_MANAGEMENT",
+      "score": 75,
+      "tier": "POSSIBLE",
+      "buyerValueProposition": "Покупатель получает брендируемую панель для управления прокси-подписками и публикации конфигураций для разных клиентов.",
+      "clientProjectExamples": [
+        "managed proxy subscription portal",
+        "small-team node administration panel",
+        "white-label multi-client configuration service"
+      ],
+      "previousStatus": "WEAK",
+      "previousScore": 58,
+      "scoreDelta": 17
+    },
+    {
+      "rank": 4,
+      "repository": "steipete/CodexBar",
+      "description": "Native macOS menu-bar application for monitoring AI provider quotas, reset windows, spend, credits, incidents, and local usage history.",
+      "category": "ANALYTICS",
+      "score": 74,
+      "tier": "POSSIBLE",
+      "buyerValueProposition": "Покупатель получает готовое macOS-приложение для контроля лимитов, расходов и статуса десятков AI-сервисов.",
+      "clientProjectExamples": [
+        "branded AI quota monitor for a consultancy",
+        "internal AI spend dashboard for developers",
+        "provider-usage utility bundled with an AI subscription"
+      ],
+      "previousStatus": "WEAK",
+      "previousScore": 59,
+      "scoreDelta": 15
+    },
+    {
+      "rank": 5,
+      "repository": "kurikomi-labs/komi-store",
+      "description": "Cross-platform storefront for discovering, downloading, installing, and managing open-source applications published through GitHub, Codeberg, and Forgejo releases.",
+      "category": "ECOMMERCE",
+      "score": 71,
+      "tier": "POSSIBLE",
+      "buyerValueProposition": "Покупатель получает готовый к ребрендингу магазин приложений для каталогизации и установки релизов из открытых Git-репозиториев.",
+      "clientProjectExamples": [
+        "Корпоративный каталог одобренного ПО",
+        "Магазин приложений сообщества",
+        "Каталог релизов независимого разработчика"
+      ],
+      "previousStatus": null,
+      "previousScore": null,
+      "scoreDelta": null
+    },
+    {
+      "rank": 6,
+      "repository": "Maciek-roboblog/Claude-Code-Usage-Monitor",
+      "description": "Installable terminal application for live Claude Code usage, forecasting, cost analysis, warnings, exports, and local history.",
+      "category": "ANALYTICS",
+      "score": 71,
+      "tier": "POSSIBLE",
+      "buyerValueProposition": "Покупатель получает готовый терминальный монитор лимитов, затрат и темпа использования Claude Code.",
+      "clientProjectExamples": [
+        "Internal AI cost monitor",
+        "Branded developer status dashboard",
+        "Claude usage export service"
+      ],
+      "previousStatus": "WEAK",
+      "previousScore": 55,
+      "scoreDelta": 16
+    },
+    {
+      "rank": 7,
+      "repository": "phuryn/claude-usage",
+      "description": "Local web dashboard and CLI that convert Claude Code transcript logs into token, model, project, session, and estimated-cost analytics.",
+      "category": "ANALYTICS",
+      "score": 70,
+      "tier": "POSSIBLE",
+      "buyerValueProposition": "Покупатель получает готовую локальную панель аналитики токенов, сессий и расходов Claude Code.",
+      "clientProjectExamples": [
+        "Внутренняя панель AI-расходов команды",
+        "Отчётность по использованию Claude Code",
+        "Брендированный мониторинг токенов разработчиков"
+      ],
+      "previousStatus": "REJECT",
+      "previousScore": 49,
+      "scoreDelta": 21
+    },
+    {
+      "rank": 8,
+      "repository": "CatchTheTornado/text-extract-api",
+      "description": "Самостоятельно размещаемый API и CLI для OCR, преобразования документов в Markdown или JSON и удаления персональных данных.",
+      "category": "DOCUMENT_MANAGEMENT",
+      "score": 70,
+      "tier": "POSSIBLE",
+      "buyerValueProposition": "Покупатель получает приватный OCR-сервис для преобразования документов в JSON или Markdown и удаления PII.",
+      "clientProjectExamples": [
+        "обработка счетов для бухгалтерии",
+        "анонимизация медицинских документов",
+        "API оцифровки договорного архива"
+      ],
+      "previousStatus": "WEAK",
+      "previousScore": 59,
+      "scoreDelta": 11
+    }
+  ],
+  "notableFalseNegatives": [
+    {
+      "repository": "angristan/openvpn-install",
+      "previousStatus": "REJECT",
+      "previousScore": 37,
+      "newTier": "POSSIBLE",
+      "newScore": 69,
+      "scoreDelta": 32,
+      "category": "SECURITY",
+      "qualityAuditStatus": null,
+      "reasons": [
+        "README доказывает завершенный инструмент установки и полного жизненного цикла сервера, клиентов, сертификатов и удаления.",
+        "Интерактивный режим, автоматизация и JSON-вывод создают надежный путь внедрения и интеграции.",
+        "Это CLI-автоматизатор без значимого web или desktop UI, поэтому он слабее как отдельное приложение коммерческого каталога.",
+        "Ребрендинг возможен, но покупатель фактически получает установщик и управляемую VPN-конфигурацию, а не готовый клиентский портал."
+      ]
+    },
+    {
+      "repository": "InterceptSuite/ProxyBridge",
+      "previousStatus": "WEAK",
+      "previousScore": 52,
+      "newTier": "STRONG",
+      "newScore": 81,
+      "scoreDelta": 29,
+      "category": "SECURITY",
+      "qualityAuditStatus": "PASS",
+      "reasons": [
+        "README proves mature GUI and CLI applications for three operating systems, packaged installers, release downloads, screenshots, documentation, and concrete operational features.",
+        "The product is standalone and needs only an external proxy, not a complex hosted stack.",
+        "Kernel/network-extension behavior raises support and signing complexity, but the MIT license and importable rules provide credible commercial adaptation potential."
+      ]
+    },
+    {
+      "repository": "aquasecurity/trivy",
+      "previousStatus": "REJECT",
+      "previousScore": 43,
+      "newTier": "POSSIBLE",
+      "newScore": 68,
+      "scoreDelta": 25,
+      "category": "SECURITY",
+      "qualityAuditStatus": null,
+      "reasons": [
+        "README proves a mature standalone scanner with simple package, binary, and Docker installation paths plus concrete commands for multiple targets.",
+        "It provides substantial business value across vulnerability, secret, license, SBOM, and misconfiguration detection.",
+        "Its primary interface is CLI/report output; richer operator and platform experiences are separate integrations or commercial Aqua products.",
+        "Stars were ignored."
+      ]
+    },
+    {
+      "repository": "companion-inc/feynman",
+      "previousStatus": "WEAK",
+      "previousScore": 59,
+      "newTier": "STRONG",
+      "newScore": 83,
+      "scoreDelta": 24,
+      "category": "AI_AGENT",
+      "qualityAuditStatus": "PASS",
+      "reasons": [
+        "README доказывает готовый standalone-дистрибутив с проверяемым однострочным установщиком для трех платформ.",
+        "Команда serve открывает полноценный workbench с проектами, чатами, артефактами, настройками и onboarding.",
+        "Поддерживаются локальные модели и несколько провайдеров, что создает реалистичный путь приватного развертывания.",
+        "Продукт сложнее типового SaaS-шаблона и потребует адаптации бренда и исследовательских интеграций."
+      ]
+    },
+    {
+      "repository": "nushell/nushell",
+      "previousStatus": "REJECT",
+      "previousScore": 31,
+      "newTier": "WEAK",
+      "newScore": 54,
+      "scoreDelta": 23,
+      "category": "DEVELOPER_PRODUCT",
+      "qualityAuditStatus": null,
+      "reasons": [
+        "README documents an installable, cross-platform shell with configuration, structured pipelines, file parsing, process inspection, and a plugin model.",
+        "The project calls itself minimum viable product and warns that some commands and designs may remain unstable.",
+        "It is highly customizable and useful, but its terminal interface and developer focus reduce client-project and white-label value.",
+        "Stars were ignored."
+      ]
+    },
+    {
+      "repository": "laravelio/laravel.io",
+      "previousStatus": "WEAK",
+      "previousScore": 53,
+      "newTier": "POSSIBLE",
+      "newScore": 76,
+      "scoreDelta": 23,
+      "category": "CMS",
+      "qualityAuditStatus": "PASS",
+      "reasons": [
+        "README explicitly identifies a running community portal and provides database setup, seeded accounts, authentication, email, search, analytics, and publishing configuration.",
+        "The Laravel application is credible as a rebrandable client portal rather than a framework or fragment.",
+        "Production deployment is less turnkey than local setup and several useful integrations require third-party accounts."
+      ]
+    },
+    {
+      "repository": "rohitg00/agentmemory",
+      "previousStatus": "REJECT",
+      "previousScore": 47,
+      "newTier": "POSSIBLE",
+      "newScore": 70,
+      "scoreDelta": 23,
+      "category": "DEVELOPER_PRODUCT",
+      "qualityAuditStatus": "CORRECTED",
+      "reasons": [
+        "README proves a complete local server, persistent storage, interactive installer, diagnostics, REST/MCP interfaces, real-time viewer, and session replay.",
+        "It offers a canonical one-command setup, keyless operation, local embeddings, Docker support, validation commands, and broad agent integrations.",
+        "It is specialized developer infrastructure, but the included viewer and operational tooling make it substantially more product-like than a library or plugin alone.",
+        "Quality audit correction: README proves a usable memory server and viewer, but the product is narrowly developer-facing agent infrastructure; corrected STRONG to POSSIBLE."
+      ]
+    },
+    {
+      "repository": "subsy/ralph-tui",
+      "previousStatus": "REJECT",
+      "previousScore": 48,
+      "newTier": "POSSIBLE",
+      "newScore": 70,
+      "scoreDelta": 22,
+      "category": "AUTOMATION",
+      "qualityAuditStatus": null,
+      "reasons": [
+        "README proves a cohesive interactive product rather than a library or plugin.",
+        "Global installation, setup wizard, comprehensive commands, persistence, themes, security, and remote management form a credible product path.",
+        "MIT licensing and prompt, tracker, agent, skill, and theme extension points aid rebranding.",
+        "Its market is limited to technical users and it depends on third-party coding agents."
+      ]
+    },
+    {
+      "repository": "asmvik/yabai",
+      "previousStatus": "REJECT",
+      "previousScore": 31,
+      "newTier": "WEAK",
+      "newScore": 53,
+      "scoreDelta": 22,
+      "category": "PRODUCTIVITY",
+      "qualityAuditStatus": null,
+      "reasons": [
+        "README proves a functional window-management product with documented installation, configuration examples, screenshot, and extensive capabilities.",
+        "The end-user experience is primarily command-line/configuration driven and commonly depends on separate shortcut software.",
+        "Permissions, OS-specific caveats, code signing, and optional SIP weakening complicate safe client delivery.",
+        "Stars were ignored."
+      ]
+    },
+    {
+      "repository": "phuryn/claude-usage",
+      "previousStatus": "REJECT",
+      "previousScore": 49,
+      "newTier": "POSSIBLE",
+      "newScore": 70,
+      "scoreDelta": 21,
+      "category": "ANALYTICS",
+      "qualityAuditStatus": null,
+      "reasons": [
+        "README proves a functioning single-page web dashboard with screenshots, filters, charts, tables, auto-refresh, CLI reports, and SQLite persistence.",
+        "Homebrew, uv/pipx, clone, Windows, and Docker paths provide unusually credible low-friction setup.",
+        "The product is tightly coupled to local Claude Code transcript formats, limiting its buyer market and longevity as a generic analytics solution."
+      ]
+    },
+    {
+      "repository": "typst/typst",
+      "previousStatus": "REJECT",
+      "previousScore": 49,
+      "newTier": "POSSIBLE",
+      "newScore": 70,
+      "scoreDelta": 21,
+      "category": "CONTENT",
+      "qualityAuditStatus": null,
+      "reasons": [
+        "README explicitly limits this repository to the compiler and CLI, but those components are complete for local document compilation.",
+        "Prebuilt binaries, package managers, Docker, source builds, update commands, and concrete compile/watch usage provide a credible setup path.",
+        "Powerful styling and scripting support makes it adaptable for branded document workflows, although the richer collaborative editor is an external service.",
+        "Stars were ignored."
+      ]
+    },
+    {
+      "repository": "jundot/omlx",
+      "previousStatus": "WEAK",
+      "previousScore": 57,
+      "newTier": "POSSIBLE",
+      "newScore": 78,
+      "scoreDelta": 21,
+      "category": "AI_ASSISTANT",
+      "qualityAuditStatus": "PASS",
+      "reasons": [
+        "README demonstrates a polished complete product: signed-style DMG workflow, native menu-bar app, web administration, chat, model downloader, monitoring, integrations, and APIs.",
+        "Installation and operation are unusually accessible through DMG, Homebrew, onboarding, managed services, and persisted settings.",
+        "Apple Silicon and recent macOS exclusivity sharply limit the addressable deployment base, while customers must supply suitable models and hardware capacity."
+      ]
+    },
+    {
+      "repository": "arkime/arkime",
+      "previousStatus": "WEAK",
+      "previousScore": 50,
+      "newTier": "POSSIBLE",
+      "newScore": 70,
+      "scoreDelta": 20,
+      "category": "SECURITY",
+      "qualityAuditStatus": null,
+      "reasons": [
+        "README explicitly describes a complete capture, indexing, API, and web investigation system originally built to replace commercial packet products.",
+        "Prebuilt binaries, official containers, configuration guidance, authentication, and browser access provide a credible deployment path.",
+        "OpenSearch or Elasticsearch, sensor storage, network placement, TLS, and capacity planning make deployment operationally demanding."
+      ]
+    },
+    {
+      "repository": "h4ckf0r0day/obscura",
+      "previousStatus": "REJECT",
+      "previousScore": 42,
+      "newTier": "WEAK",
+      "newScore": 62,
+      "scoreDelta": 20,
+      "category": "DEVELOPER_PRODUCT",
+      "qualityAuditStatus": null,
+      "reasons": [
+        "README доказывает работоспособный CLI/server с бинарниками, Docker, CDP, MCP и подробным quick start.",
+        "Установка проста и не требует Chrome или Node.js.",
+        "Проект является browser engine и инфраструктурой; пользовательской панели или конечного бизнес-workflow нет.",
+        "README прямо предупреждает об отличиях развивающегося renderer от Chromium."
+      ]
+    },
+    {
+      "repository": "TheAssassin/AppImageLauncher",
+      "previousStatus": "REJECT",
+      "previousScore": 36,
+      "newTier": "WEAK",
+      "newScore": 56,
+      "scoreDelta": 20,
+      "category": "FILE_MANAGEMENT",
+      "qualityAuditStatus": null,
+      "reasons": [
+        "README explicitly says it runs standalone and documents end-user dialogs, launcher integration, updates, removal, and a CLI.",
+        "Native packages and the rootless Lite edition provide credible installation paths, although distribution compatibility is fragmented.",
+        "It is a finished end-user utility with meaningful desktop interaction, but its narrow Linux/AppImage scope limits general bundle demand.",
+        "Stars were ignored."
+      ]
+    },
+    {
+      "repository": "flightlessmango/MangoHud",
+      "previousStatus": "REJECT",
+      "previousScore": 43,
+      "newTier": "WEAK",
+      "newScore": 62,
+      "scoreDelta": 19,
+      "category": "ANALYTICS",
+      "qualityAuditStatus": null,
+      "reasons": [
+        "README proves a complete visual overlay with release packages, distribution packages, Flatpak installation, normal usage, logging, and extensive configuration.",
+        "The HUD is highly customizable in layout, colors, metrics, fonts, presets, and per-application behavior.",
+        "Linux, graphics API, driver, and 32/64-bit compatibility constraints make deployment more specialized than a general application.",
+        "Stars were ignored."
+      ]
+    },
+    {
+      "repository": "e2b-dev/fragments",
+      "previousStatus": "WEAK",
+      "previousScore": 54,
+      "newTier": "POSSIBLE",
+      "newScore": 73,
+      "scoreDelta": 19,
+      "category": "DEVELOPER_PRODUCT",
+      "qualityAuditStatus": "PASS",
+      "reasons": [
+        "README показывает законченное web-приложение, live demo, UI streaming, production build и несколько рабочих стеков.",
+        "Подробно документированы добавление personas, моделей и провайдеров, что дает высокий потенциал ребрендинга.",
+        "Проект прямо называется open-source template и требует платного/внешнего E2B API для sandbox execution.",
+        "Production-функции могут добавлять Supabase, Upstash и PostHog, повышая инфраструктурную сложность."
+      ]
+    },
+    {
+      "repository": "openflocon/Flocon",
+      "previousStatus": "REJECT",
+      "previousScore": 43,
+      "newTier": "WEAK",
+      "newScore": 61,
+      "scoreDelta": 18,
+      "category": "DEVELOPER_PRODUCT",
+      "qualityAuditStatus": null,
+      "reasons": [
+        "README proves a functional desktop interface with extensive inspection features.",
+        "Documented Maven integration and platform requirements provide a credible setup path.",
+        "MIT licensing and custom dashboards support adaptation.",
+        "Value is restricted to teams willing to instrument Kotlin or Android applications."
+      ]
+    },
+    {
+      "repository": "tangyoha/telegram_media_downloader",
+      "previousStatus": "WEAK",
+      "previousScore": 54,
+      "newTier": "POSSIBLE",
+      "newScore": 72,
+      "scoreDelta": 18,
+      "category": "FILE_MANAGEMENT",
+      "qualityAuditStatus": "PASS",
+      "reasons": [
+        "README proves two usable operating modes, a browser progress UI, bot control, filtering, authentication, localization, and cloud uploads.",
+        "Docker Compose and native installation paths are concrete, although first-run Telegram phone authorization remains manual.",
+        "The UI appears operational rather than polished, and lawful use depends on account permissions and Telegram rules, limiting general commercial positioning."
+      ]
+    },
+    {
+      "repository": "tw93/Kaku",
+      "previousStatus": "WEAK",
+      "previousScore": 55,
+      "newTier": "POSSIBLE",
+      "newScore": 72,
+      "scoreDelta": 17,
+      "category": "DEVELOPER_PRODUCT",
+      "qualityAuditStatus": "PASS",
+      "reasons": [
+        "README подтверждает нотариально заверенное desktop-приложение, DMG/Homebrew установку, настройки и полноценный интерфейс.",
+        "Совместимость с Lua API WezTerm создает сильную основу для кастомизации и ребрендинга.",
+        "Ограничение только macOS заметно сужает клиентский рынок.",
+        "Это инструмент разработчика, а не типовое бизнес-приложение с многопользовательскими процессами."
+      ]
+    },
+    {
+      "repository": "composio-community/open-claude-cowork",
+      "previousStatus": "WEAK",
+      "previousScore": 59,
+      "newTier": "POSSIBLE",
+      "newScore": 76,
+      "scoreDelta": 17,
+      "category": "AI_ASSISTANT",
+      "qualityAuditStatus": "PASS",
+      "reasons": [
+        "README proves a complete Electron UI, backend, persistent sessions, streaming, skills, setup script, configuration, and troubleshooting path.",
+        "The core desktop coworker is usable and cross-platform; the second messaging assistant further increases adaptation options.",
+        "Dependence on Anthropic and especially Composio's hosted API limits infrastructure independence and creates ongoing credentials and service costs."
+      ]
+    },
+    {
+      "repository": "hamed-elfayome/Claude-Usage-Tracker",
+      "previousStatus": "WEAK",
+      "previousScore": 59,
+      "newTier": "POSSIBLE",
+      "newScore": 76,
+      "scoreDelta": 17,
+      "category": "ANALYTICS",
+      "qualityAuditStatus": "PASS",
+      "reasons": [
+        "README proves a signed, versioned standalone app with releases, automatic updates, onboarding, settings, charts, localization, and several installation paths.",
+        "No server infrastructure is required, although the product is limited to macOS and Claude.",
+        "MIT source and extensive appearance settings support adaptation, but deep rebranding requires native Swift development."
+      ]
+    },
+    {
+      "repository": "imzyb/MiSub",
+      "previousStatus": "WEAK",
+      "previousScore": 58,
+      "newTier": "POSSIBLE",
+      "newScore": 75,
+      "scoreDelta": 17,
+      "category": "SUBSCRIPTION_MANAGEMENT",
+      "qualityAuditStatus": "PASS",
+      "reasons": [
+        "README proves a coherent end-user application with authentication, dashboard, profile and node management, visual processing chains, localization, backup, logs, and diagnostics.",
+        "Cloudflare Pages deployment is explicit and lightweight, with clear KV or D1 bindings and environment configuration.",
+        "The product serves a specialized and potentially policy-sensitive proxy-management niche; the documented default admin password must be changed before production use."
+      ]
+    },
+    {
+      "repository": "atuinsh/atuin",
+      "previousStatus": "REJECT",
+      "previousScore": 40,
+      "newTier": "WEAK",
+      "newScore": 56,
+      "scoreDelta": 16,
+      "category": "PRODUCTIVITY",
+      "qualityAuditStatus": null,
+      "reasons": [
+        "README proves a mature standalone application with full-screen search UI, SQLite storage, encrypted sync, broad shell support, installation, and self-hosting documentation.",
+        "Its interface is terminal-based and its use case is restricted to shell users.",
+        "Rebranding is technically possible under MIT, but converting it into a distinct client project offers limited commercial leverage."
+      ]
+    },
+    {
+      "repository": "Maciek-roboblog/Claude-Code-Usage-Monitor",
+      "previousStatus": "WEAK",
+      "previousScore": 55,
+      "newTier": "POSSIBLE",
+      "newScore": 71,
+      "scoreDelta": 16,
+      "category": "ANALYTICS",
+      "qualityAuditStatus": null,
+      "reasons": [
+        "README proves a mature PyPI-distributed application with a Rich live UI, extensive configuration, machine-readable protocol, history warehouse, exports, and documented installation.",
+        "It is a complete terminal product rather than a library, and it can feed other branded dashboards without screen scraping.",
+        "Its narrow Claude Code audience and lack of a conventional desktop or web UI limit general client resale and demo appeal."
+      ]
+    },
+    {
+      "repository": "MemeMeow-Studio/MemeMeow",
+      "previousStatus": "WEAK",
+      "previousScore": 57,
+      "newTier": "POSSIBLE",
+      "newScore": 73,
+      "scoreDelta": 16,
+      "category": "FILE_MANAGEMENT",
+      "qualityAuditStatus": "PASS",
+      "reasons": [
+        "README подтверждает актуальный Vue 3 SPA, загрузку, поиск, задачи обработки, коллекции и Compose-развертывание.",
+        "Продукт имеет заметную визуальную демонстрационную ценность и может быть переориентирован на другие библиотеки изображений.",
+        "PostgreSQL, pgvector, executor, embedding provider и отдельная visual-служба существенно усложняют установку.",
+        "Исходный набор мемов имеет неясное происхождение и предупреждение о нарушении прав, поэтому коммерческая поставка должна использовать собственный контент."
+      ]
+    },
+    {
+      "repository": "alvinunreal/tmuxai",
+      "previousStatus": "WEAK",
+      "previousScore": 56,
+      "newTier": "POSSIBLE",
+      "newScore": 72,
+      "scoreDelta": 16,
+      "category": "AI_ASSISTANT",
+      "qualityAuditStatus": "PASS",
+      "reasons": [
+        "README proves a complete installable product with prebuilt binaries, interactive TUI, supervised execution, multiple operating modes, model providers, knowledge bases, skills, and MCP support.",
+        "Setup is light and the assistant can be adapted with configuration and domain knowledge.",
+        "Its terminal-only interface and dependence on tmux and external model services narrow the resale market."
+      ]
+    },
+    {
+      "repository": "winboat-org/winboat",
+      "previousStatus": "REJECT",
+      "previousScore": 45,
+      "newTier": "WEAK",
+      "newScore": 60,
+      "scoreDelta": 15,
+      "category": "PRODUCTIVITY",
+      "qualityAuditStatus": null,
+      "reasons": [
+        "README proves a polished desktop UI, packaged Linux releases, automated installation, and source builds.",
+        "It solves a concrete end-user compatibility problem.",
+        "Deployment requires virtualization, containers, FreeRDP, substantial storage, and Windows licensing.",
+        "The explicit beta warning lowers production confidence."
+      ]
+    },
+    {
+      "repository": "steipete/CodexBar",
+      "previousStatus": "WEAK",
+      "previousScore": 59,
+      "newTier": "POSSIBLE",
+      "newScore": 74,
+      "scoreDelta": 15,
+      "category": "ANALYTICS",
+      "qualityAuditStatus": "PASS",
+      "reasons": [
+        "README proves a polished standalone application with releases, Homebrew installation, settings, widgets, charts, localization, and extensive provider support.",
+        "It has immediate end-user value and minimal infrastructure requirements.",
+        "Commercial reuse is limited by macOS exclusivity, provider-dependent integrations, and a specialized developer audience."
+      ]
+    },
+    {
+      "repository": "BandarLabs/gitpodcast",
+      "previousStatus": "WEAK",
+      "previousScore": 52,
+      "newTier": "POSSIBLE",
+      "newScore": 67,
+      "scoreDelta": 15,
+      "category": "CONTENT",
+      "qualityAuditStatus": null,
+      "reasons": [
+        "README proves a working frontend, FastAPI backend, database, hosted demo, and complete local startup sequence.",
+        "Core repository-to-podcast generation is usable despite voice selection and public API being explicitly marked WIP.",
+        "Multiple paid/external AI services and split frontend/backend infrastructure increase deployment and operating effort."
+      ]
+    }
+  ],
+  "openCut": {
+    "previousScore": 38,
+    "newScore": 22,
+    "tier": "REJECT",
+    "explanation": [
+      "README explicitly states that OpenCut is being rewritten from the ground up and directs current users to a different classic repository.",
+      "The listed commands start development services; no production build, deployment, or stable end-user installation path is supplied for this repository.",
+      "Planned Editor API, plugins, mobile support, headless mode, MCP, and scripting are future capabilities rather than completeness evidence.",
+      "The project is not yet accepting outside contributions because its architecture is still being designed; stars were ignored."
+    ]
+  },
+  "poorlyRepresented": [
+    {
+      "categories": [
+        "CRM",
+        "SALES",
+        "LEAD_MANAGEMENT"
+      ],
+      "target": 10,
+      "actual": 0
+    },
+    {
+      "categories": [
+        "BOOKING",
+        "APPOINTMENTS",
+        "CALENDAR_BUSINESS"
+      ],
+      "target": 10,
+      "actual": 0
+    },
+    {
+      "categories": [
+        "HR",
+        "HRM",
+        "ATS"
+      ],
+      "target": 10,
+      "actual": 0
+    },
+    {
+      "categories": [
+        "INVOICING",
+        "FINANCE",
+        "ACCOUNTING",
+        "EXPENSES",
+        "PAYROLL"
+      ],
+      "target": 10,
+      "actual": 3
+    },
+    {
+      "categories": [
+        "CUSTOMER_SUPPORT",
+        "HELPDESK",
+        "LIVE_CHAT"
+      ],
+      "target": 10,
+      "actual": 1
+    },
+    {
+      "categories": [
+        "MARKETING",
+        "EMAIL_MARKETING",
+        "SOCIAL_MEDIA"
+      ],
+      "target": 10,
+      "actual": 1
+    },
+    {
+      "categories": [
+        "ECOMMERCE",
+        "POS",
+        "INVENTORY"
+      ],
+      "target": 10,
+      "actual": 2
+    },
+    {
+      "categories": [
+        "PROJECT_MANAGEMENT",
+        "TIME_TRACKING"
+      ],
+      "target": 10,
+      "actual": 0
+    },
+    {
+      "categories": [
+        "PROPERTY_MANAGEMENT",
+        "REAL_ESTATE"
+      ],
+      "target": 5,
+      "actual": 0
+    },
+    {
+      "categories": [
+        "RESTAURANT",
+        "HOTEL"
+      ],
+      "target": 5,
+      "actual": 0
+    },
+    {
+      "categories": [
+        "LMS",
+        "COURSE_PLATFORM"
+      ],
+      "target": 5,
+      "actual": 0
+    },
+    {
+      "categories": [
+        "CLIENT_PORTAL",
+        "FORM_BUILDER",
+        "SURVEY"
+      ],
+      "target": 5,
+      "actual": 0
+    }
+  ]
+}

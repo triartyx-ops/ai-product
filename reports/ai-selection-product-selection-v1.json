@@ -1,0 +1,3138 @@
+{
+  "analysisVersion": "product-selection-v1",
+  "model": "codex-default",
+  "poolSize": 400,
+  "successfullyAnalyzed": 400,
+  "errors": 0,
+  "modelRequests": 42,
+  "tokenUsageAvailable": false,
+  "inputTokens": null,
+  "outputTokens": null,
+  "tiers": {
+    "STRONG": 64,
+    "POSSIBLE": 91,
+    "WEAK": 75,
+    "REJECT": 170
+  },
+  "categoryDistribution": {
+    "AI_AGENT": {
+      "strong": 1,
+      "possible": 2,
+      "weak": 2,
+      "reject": 6,
+      "total": 11
+    },
+    "AI_ASSISTANT": {
+      "strong": 3,
+      "possible": 10,
+      "weak": 5,
+      "reject": 3,
+      "total": 21
+    },
+    "ANALYTICS": {
+      "strong": 4,
+      "possible": 5,
+      "weak": 4,
+      "reject": 7,
+      "total": 20
+    },
+    "AUTOMATION": {
+      "strong": 4,
+      "possible": 7,
+      "weak": 7,
+      "reject": 10,
+      "total": 28
+    },
+    "CMS": {
+      "strong": 2,
+      "possible": 0,
+      "weak": 1,
+      "reject": 1,
+      "total": 4
+    },
+    "COMMUNICATION": {
+      "strong": 3,
+      "possible": 7,
+      "weak": 0,
+      "reject": 3,
+      "total": 13
+    },
+    "CONTENT": {
+      "strong": 5,
+      "possible": 11,
+      "weak": 7,
+      "reject": 6,
+      "total": 29
+    },
+    "CUSTOMER_SUPPORT": {
+      "strong": 0,
+      "possible": 1,
+      "weak": 0,
+      "reject": 0,
+      "total": 1
+    },
+    "DASHBOARD": {
+      "strong": 1,
+      "possible": 1,
+      "weak": 0,
+      "reject": 0,
+      "total": 2
+    },
+    "DEVELOPER_PRODUCT": {
+      "strong": 5,
+      "possible": 23,
+      "weak": 33,
+      "reject": 109,
+      "total": 170
+    },
+    "ECOMMERCE": {
+      "strong": 1,
+      "possible": 0,
+      "weak": 0,
+      "reject": 1,
+      "total": 2
+    },
+    "ERP": {
+      "strong": 1,
+      "possible": 0,
+      "weak": 0,
+      "reject": 0,
+      "total": 1
+    },
+    "FILE_MANAGEMENT": {
+      "strong": 7,
+      "possible": 5,
+      "weak": 5,
+      "reject": 3,
+      "total": 20
+    },
+    "FINANCE": {
+      "strong": 2,
+      "possible": 1,
+      "weak": 0,
+      "reject": 2,
+      "total": 5
+    },
+    "KNOWLEDGE_BASE": {
+      "strong": 9,
+      "possible": 2,
+      "weak": 1,
+      "reject": 1,
+      "total": 13
+    },
+    "MARKETING": {
+      "strong": 0,
+      "possible": 1,
+      "weak": 0,
+      "reject": 1,
+      "total": 2
+    },
+    "OTHER": {
+      "strong": 2,
+      "possible": 0,
+      "weak": 0,
+      "reject": 2,
+      "total": 4
+    },
+    "PRODUCTIVITY": {
+      "strong": 9,
+      "possible": 8,
+      "weak": 6,
+      "reject": 3,
+      "total": 26
+    },
+    "PROJECT_MANAGEMENT": {
+      "strong": 0,
+      "possible": 0,
+      "weak": 0,
+      "reject": 1,
+      "total": 1
+    },
+    "SECURITY": {
+      "strong": 5,
+      "possible": 7,
+      "weak": 3,
+      "reject": 11,
+      "total": 26
+    },
+    "SOCIAL_MEDIA": {
+      "strong": 0,
+      "possible": 0,
+      "weak": 1,
+      "reject": 0,
+      "total": 1
+    }
+  },
+  "top100": [
+    {
+      "rank": 1,
+      "commercialBundleScore": 92,
+      "shortlistTier": "STRONG",
+      "productCategory": "PRODUCTIVITY",
+      "actualProductName": "Super Productivity",
+      "shortProductDescription": "Local-first task manager combining projects, timeboxing, time tracking, habits, notes, and issue-tracker integrations.",
+      "bundleScoreReasons": [
+        "Mature end-user application available for web, desktop, and mobile platforms.",
+        "Covers coherent business workflows spanning tasks, projects, time tracking, reports, notes, and integrations.",
+        "Extensive user, deployment, packaging, theming, plugin, API, and development documentation is identified.",
+        "Core use requires no account, while synchronization can use self-hosted or third-party options.",
+        "Custom themes and plugins provide explicit adaptation paths."
+      ],
+      "repository": {
+        "githubFullName": "super-productivity/super-productivity",
+        "repositoryUrl": "https://github.com/super-productivity/super-productivity",
+        "githubStars": 21545,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 2,
+      "commercialBundleScore": 92,
+      "shortlistTier": "STRONG",
+      "productCategory": "KNOWLEDGE_BASE",
+      "actualProductName": "Open Notebook",
+      "shortProductDescription": "A self-hosted research and knowledge application for organizing sources, searching content, chatting with research context, taking notes, and generating podcasts.",
+      "bundleScoreReasons": [
+        "Complete modern UI with notebooks, sources, notes, search, contextual chat, podcast generation, model configuration, authentication, and REST API.",
+        "Documented two-container Docker deployment is straightforward and API keys are configured through the UI.",
+        "Supports numerous AI providers plus local models, reducing dependence on any single proprietary vendor.",
+        "Extensive installation, user, API, security, architecture, troubleshooting, and developer documentation supports client adaptation.",
+        "Clear organizational workflows and broad customization make it a strong rebranding and integration candidate."
+      ],
+      "repository": {
+        "githubFullName": "lfnovo/open-notebook",
+        "repositoryUrl": "https://github.com/lfnovo/open-notebook",
+        "githubStars": 37491,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 3,
+      "commercialBundleScore": 91,
+      "shortlistTier": "STRONG",
+      "productCategory": "ERP",
+      "actualProductName": "Aureus ERP",
+      "shortProductDescription": "Modular web ERP covering finance, inventory, manufacturing, sales, HR, projects, support, analytics, and related operations.",
+      "bundleScoreReasons": [
+        "README describes extensive real business workflows across multiple ERP departments.",
+        "Four-step installation, explicit requirements, user and developer documentation, and an administrative web UI support deployment.",
+        "Plugin architecture, custom dashboards, branding changes, forms, permissions, workflows, localization, and APIs provide strong adaptation evidence.",
+        "Production-readiness is asserted rather than independently demonstrated in the supplied evidence, so completeness is scored conservatively."
+      ],
+      "repository": {
+        "githubFullName": "aureuserp/aureuserp",
+        "repositoryUrl": "https://github.com/aureuserp/aureuserp",
+        "githubStars": 11774,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 4,
+      "commercialBundleScore": 91,
+      "shortlistTier": "STRONG",
+      "productCategory": "ECOMMERCE",
+      "actualProductName": "UnoPim",
+      "shortProductDescription": "Full web-based product information and digital asset management platform for enriching and publishing large multi-channel catalogs.",
+      "bundleScoreReasons": [
+        "Substantial business workflows include catalog management, enrichment, permissions, localization, channels, imports, exports, APIs, webhooks, and publication.",
+        "Rich browser UI, live demo, screenshots, documentation, upgrade guidance, and production deployment notes are evidenced.",
+        "Prebuilt Docker Compose installation has working defaults and supports two databases.",
+        "Laravel architecture and broad configuration make client adaptation credible.",
+        "Production operation requires database, queues, secrets, and careful scaled-deployment configuration."
+      ],
+      "repository": {
+        "githubFullName": "unopim/unopim",
+        "repositoryUrl": "https://github.com/unopim/unopim",
+        "githubStars": 10852,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 5,
+      "commercialBundleScore": 91,
+      "shortlistTier": "STRONG",
+      "productCategory": "CMS",
+      "actualProductName": "Umbraco CMS",
+      "shortProductDescription": "Extensible .NET content management system with a browser-based back office for building and managing websites and digital experiences.",
+      "bundleScoreReasons": [
+        "Complete CMS with a substantial back-office UI and genuine editorial workflows.",
+        "Four-command local setup plus comprehensive installation, customization, and production deployment documentation.",
+        "Explicitly extensible and well suited to branded client websites.",
+        "Requires .NET expertise, but no mandatory proprietary service is identified."
+      ],
+      "repository": {
+        "githubFullName": "umbraco/Umbraco-CMS",
+        "repositoryUrl": "https://github.com/umbraco/umbraco-cms",
+        "githubStars": 5229,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 6,
+      "commercialBundleScore": 90,
+      "shortlistTier": "STRONG",
+      "productCategory": "ANALYTICS",
+      "actualProductName": "Umami",
+      "shortProductDescription": "Privacy-first web and product analytics platform covering traffic, campaigns, behavior, conversions, and revenue.",
+      "bundleScoreReasons": [
+        "Clearly presented as a complete analytics platform with broad business workflows.",
+        "Supports source installation and a simple Docker Compose deployment including PostgreSQL.",
+        "Has a meaningful analytics UI and a public demo.",
+        "Self-hosting requires no mandatory paid analytics provider.",
+        "Documentation covers configuration, startup, updates, and optional two-factor authentication."
+      ],
+      "repository": {
+        "githubFullName": "umami-software/umami",
+        "repositoryUrl": "https://github.com/umami-software/umami",
+        "githubStars": 38339,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 7,
+      "commercialBundleScore": 90,
+      "shortlistTier": "STRONG",
+      "productCategory": "AI_ASSISTANT",
+      "actualProductName": "AnythingLLM",
+      "shortProductDescription": "Full-featured local-first AI workspace for document chat, RAG, agents, scheduled tasks, multi-user access and no-code automation.",
+      "bundleScoreReasons": [
+        "Complete polished UI with document ingestion, chat, agents, permissions and administration",
+        "Desktop, Docker, bare-metal and multiple cloud deployment paths are documented",
+        "Local default components reduce mandatory proprietary-service dependence",
+        "Broad provider and vector-database support makes client adaptation practical",
+        "Multi-user workflows, developer API and embeddable chat improve resale potential",
+        "Default telemetry requires explicit opt-out for clients that do not want it"
+      ],
+      "repository": {
+        "githubFullName": "Mintplex-Labs/anything-llm",
+        "repositoryUrl": "https://github.com/mintplex-labs/anything-llm",
+        "githubStars": 65132,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 8,
+      "commercialBundleScore": 90,
+      "shortlistTier": "STRONG",
+      "productCategory": "PRODUCTIVITY",
+      "actualProductName": "Excalidraw",
+      "shortProductDescription": "Local-first virtual whiteboard for hand-drawn diagrams, wireframes, image annotation, export, and encrypted collaboration.",
+      "bundleScoreReasons": [
+        "Repository contains both a complete showcase application and a customizable editor package.",
+        "Rich, broadly useful UI and workflows with offline PWA, local-first storage, export, localization, and collaboration.",
+        "Explicit customization and embeddability make it strong for rebranding and client adaptation.",
+        "Collaboration and share-link deployment may require more setup than the README's package quick start describes."
+      ],
+      "repository": {
+        "githubFullName": "excalidraw/excalidraw",
+        "repositoryUrl": "https://github.com/excalidraw/excalidraw",
+        "githubStars": 130362,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 9,
+      "commercialBundleScore": 89,
+      "shortlistTier": "STRONG",
+      "productCategory": "KNOWLEDGE_BASE",
+      "actualProductName": "Alexandrie",
+      "shortProductDescription": "A self-hosted, offline-first knowledge base and wiki with extended Markdown editing, team workspaces, permissions, search, Kanban boards, SSO, media management, and backup tools.",
+      "bundleScoreReasons": [
+        "The README presents a complete full-stack product with multiple screenshots and clear end-user workflows.",
+        "One-command Docker Compose deployment and an explicit first-run owner-account flow make deployment unusually accessible.",
+        "Multi-tenant teams, granular permissions, OIDC SSO, offline synchronization, search, backups, and S3 support address credible business requirements.",
+        "ZIP import, export, backup, and restore features improve client handoff and operational portability.",
+        "The integrated Markdown editor, media previews, diagrams, snippets, public sharing, and Kanban boards provide strong demonstration and practical value.",
+        "Rebranding and theme customization are not explicitly documented, so customization potential is inferred from the source-based Vue application rather than proven white-label support."
+      ],
+      "repository": {
+        "githubFullName": "Smaug6739/Alexandrie",
+        "repositoryUrl": "https://github.com/smaug6739/alexandrie",
+        "githubStars": 2367,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 10,
+      "commercialBundleScore": 89,
+      "shortlistTier": "STRONG",
+      "productCategory": "KNOWLEDGE_BASE",
+      "actualProductName": "SAG",
+      "shortProductDescription": "Local-first knowledge base application providing document ingestion, traceable retrieval, knowledge graphs, cited chat, APIs, and MCP access.",
+      "bundleScoreReasons": [
+        "README explicitly presents a complete application with desktop, web, API, MCP, ingestion, search, graph exploration, citations, and migration workflows.",
+        "Docker defaults use SQLite and LanceDB without an external database, while desktop packages bundle the runtime.",
+        "Frontend and backend boundaries, development commands, tests, OpenAPI, and production storage options are thoroughly documented.",
+        "Currently described as local-first and single-user; public deployment needs an external access-control layer.",
+        "Core indexing and answer workflows still require configured LLM and embedding endpoints."
+      ],
+      "repository": {
+        "githubFullName": "Zleap-AI/SAG",
+        "repositoryUrl": "https://github.com/zleap-ai/sag",
+        "githubStars": 2410,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 11,
+      "commercialBundleScore": 89,
+      "shortlistTier": "STRONG",
+      "productCategory": "FINANCE",
+      "actualProductName": "Actual Budget",
+      "shortProductDescription": "Local-first personal finance and envelope-budgeting application with desktop clients, optional self-hosted synchronization, and multi-device support.",
+      "bundleScoreReasons": [
+        "It is a complete, established user application with budgeting, accounts, migration guidance, desktop clients, and synchronization.",
+        "Docker self-hosting, downloadable local applications, managed alternatives, and broad user documentation reduce delivery friction.",
+        "The local-first model and lack of a mandatory paid service are strong advantages for client deployments.",
+        "The README gives less direct evidence about white-label controls, so rebranding would likely require source-level work."
+      ],
+      "repository": {
+        "githubFullName": "actualbudget/actual",
+        "repositoryUrl": "https://github.com/actualbudget/actual",
+        "githubStars": 28344,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 12,
+      "commercialBundleScore": 88,
+      "shortlistTier": "STRONG",
+      "productCategory": "ANALYTICS",
+      "actualProductName": "Apache Superset",
+      "shortProductDescription": "An enterprise-ready web application for exploring SQL data, building visualizations, authoring queries, and publishing interactive business dashboards.",
+      "bundleScoreReasons": [
+        "It is a complete multi-user business application with charts, dashboards, SQL tooling, semantic modeling, roles, authentication, APIs, and broad database support.",
+        "Separate user, administrator, and developer documentation supports client delivery and ongoing operation.",
+        "Official Docker images, Docker Compose guidance, a Helm chart, and production architecture documentation provide credible deployment paths.",
+        "Production deployment and database connectivity remain operationally complex, but the breadth of real business workflows and extension points strongly supports commercial adaptation."
+      ],
+      "repository": {
+        "githubFullName": "apache/superset",
+        "repositoryUrl": "https://github.com/apache/superset",
+        "githubStars": 74442,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 13,
+      "commercialBundleScore": 88,
+      "shortlistTier": "STRONG",
+      "productCategory": "KNOWLEDGE_BASE",
+      "actualProductName": "La Suite Docs",
+      "shortProductDescription": "Self-hosted collaborative document editor and knowledge workspace with rich text, live presence, comments, hierarchy, presentations, and import/export.",
+      "bundleScoreReasons": [
+        "Supports complete end-user workflows for writing, collaboration, sharing, access control, hierarchy, presentations, and data interchange.",
+        "Provides self-hosting documentation and supports Docker Compose and Kubernetes.",
+        "Includes a polished UI, live demo, APIs, and integration examples.",
+        "The Django, frontend, collaboration, database, and object-storage stack is more complex than a single-service deployment.",
+        "Optional AI can use self-hosted or external providers rather than being mandatory.",
+        "README warns that some advanced export functionality uses separately licensed packages and documents a build mode that excludes them."
+      ],
+      "repository": {
+        "githubFullName": "suitenumerique/docs",
+        "repositoryUrl": "https://github.com/suitenumerique/docs",
+        "githubStars": 16748,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 14,
+      "commercialBundleScore": 88,
+      "shortlistTier": "STRONG",
+      "productCategory": "AUTOMATION",
+      "actualProductName": "Kestra",
+      "shortProductDescription": "Event-driven orchestration platform for creating, scheduling, executing, and monitoring data, AI, infrastructure, and business workflows.",
+      "bundleScoreReasons": [
+        "Complete product with visual workflow editor, topology view, monitoring, API, plugins, and declarative workflow definitions.",
+        "A one-command Docker quick start and multiple documented production deployment paths support evaluation and delivery.",
+        "Broad automation use cases and plugin extensibility provide strong client adaptability.",
+        "Production-scale orchestration can require databases, storage, containers, and substantial operational expertise."
+      ],
+      "repository": {
+        "githubFullName": "kestra-io/kestra",
+        "repositoryUrl": "https://github.com/kestra-io/kestra",
+        "githubStars": 27901,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 15,
+      "commercialBundleScore": 88,
+      "shortlistTier": "STRONG",
+      "productCategory": "FILE_MANAGEMENT",
+      "actualProductName": "Foxel",
+      "shortProductDescription": "Self-hosted private cloud file-management platform with multiple storage adapters, previews, sharing, RBAC, audit logs, semantic search, and automation.",
+      "bundleScoreReasons": [
+        "Complete browser UI with file workflows, sharing, previews, RBAC, audit logging, protocols, and an online demo.",
+        "Docker Compose deployment and first-run administrator setup are straightforward.",
+        "Plugin architecture and numerous storage adapters provide strong client customization and rebranding potential.",
+        "AI search infrastructure is optional, so the core product remains deployable without the more complex vector stack."
+      ],
+      "repository": {
+        "githubFullName": "DrizzleTime/Foxel",
+        "repositoryUrl": "https://github.com/drizzletime/foxel",
+        "githubStars": 1048,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 16,
+      "commercialBundleScore": 88,
+      "shortlistTier": "STRONG",
+      "productCategory": "CONTENT",
+      "actualProductName": "Presenton",
+      "shortProductDescription": "A self-hosted and desktop AI presentation generator with visual editing, custom templates, multi-user workspaces, API access, and editable PPTX/PDF export.",
+      "bundleScoreReasons": [
+        "This is a complete end-user product with generation, drag editing, templates, accounts, administration, API access, and editable exports.",
+        "Docker and desktop distributions provide clear deployment paths, while local-model support reduces mandatory SaaS dependence.",
+        "Custom HTML/Tailwind templates and PowerPoint-derived designs offer unusually strong branding and adaptation potential.",
+        "The broad model, image, document-processing, memory, and export stack introduces more operational complexity than a conventional CRUD application."
+      ],
+      "repository": {
+        "githubFullName": "presenton/presenton",
+        "repositoryUrl": "https://github.com/presenton/presenton",
+        "githubStars": 9819,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 17,
+      "commercialBundleScore": 88,
+      "shortlistTier": "STRONG",
+      "productCategory": "DASHBOARD",
+      "actualProductName": "Dashy",
+      "shortProductDescription": "Highly customizable self-hosted dashboard and application homepage with pages, widgets, status checks, search, themes, authentication, and a visual configuration editor.",
+      "bundleScoreReasons": [
+        "Complete, responsive UI includes pages, widgets, status monitoring, search, authentication, and workspace views.",
+        "Single-container deployment, Compose support, low resource requirements, and static-hosting options make deployment straightforward.",
+        "Themes, custom CSS, configurable titles, backgrounds, navigation, icons, translations, and UI editing provide strong rebranding potential.",
+        "The core workflow is primarily a portal and monitoring homepage rather than a deep line-of-business system."
+      ],
+      "repository": {
+        "githubFullName": "lissy93/dashy",
+        "repositoryUrl": "https://github.com/lissy93/dashy",
+        "githubStars": 26282,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 18,
+      "commercialBundleScore": 87,
+      "shortlistTier": "STRONG",
+      "productCategory": "KNOWLEDGE_BASE",
+      "actualProductName": "BookStack",
+      "shortProductDescription": "A self-hosted web application for creating, organizing, and sharing documentation and institutional knowledge.",
+      "bundleScoreReasons": [
+        "Clearly presented as a complete, intuitive documentation platform with installation instructions, full documentation, screenshots, and a demo.",
+        "Supports a broad, recognizable business workflow usable by nontechnical users.",
+        "Includes administration, security, accessibility, translations, stable upgrades, and documented customization options.",
+        "Self-hosting and client adaptation are well supported, although the project intentionally discourages repurposing it beyond documentation workflows."
+      ],
+      "repository": {
+        "githubFullName": "BookStackApp/BookStack",
+        "repositoryUrl": "https://github.com/bookstackapp/bookstack",
+        "githubStars": 19002,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 19,
+      "commercialBundleScore": 87,
+      "shortlistTier": "STRONG",
+      "productCategory": "SECURITY",
+      "actualProductName": "CertMate",
+      "shortProductDescription": "Self-hosted TLS certificate lifecycle platform for discovery, inventory, issuance, renewal, deployment, auditing, backup, and API automation.",
+      "bundleScoreReasons": [
+        "The README documents a broad, coherent certificate lifecycle product with dashboard, setup wizard, RBAC, API, audit, backup, monitoring, and deployment workflows.",
+        "Docker Compose provides a practical quick start, while Python, Kubernetes, and system-service options cover varied client environments.",
+        "The product addresses a concrete recurring business need and supports numerous DNS, CA, storage, and notification integrations.",
+        "Real deployments require sensitive infrastructure credentials and careful network and certificate configuration.",
+        "The README states that white-label and some high-scale capabilities belong to a separate source-available edition, so rebranding depth in this repository is not fully demonstrated."
+      ],
+      "repository": {
+        "githubFullName": "fabriziosalmi/certmate",
+        "repositoryUrl": "https://github.com/fabriziosalmi/certmate",
+        "githubStars": 1399,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 20,
+      "commercialBundleScore": 87,
+      "shortlistTier": "STRONG",
+      "productCategory": "SECURITY",
+      "actualProductName": "CyberChef",
+      "shortProductDescription": "Browser-based workbench for composing encoding, encryption, compression, parsing, hashing, and data-analysis operations.",
+      "bundleScoreReasons": [
+        "Complete and substantial browser UI with input, output, operation catalog, and recipe builder.",
+        "Documented one-command prebuilt Docker deployment and production build process.",
+        "Entirely client-side operation supports local and closed-network hosting without backend infrastructure.",
+        "Extensive real analyst workflows, saved recipes, file handling, deep links, tests, and extension guidance are documented.",
+        "Specialized security focus and established product identity may require thoughtful branding changes."
+      ],
+      "repository": {
+        "githubFullName": "gchq/CyberChef",
+        "repositoryUrl": "https://github.com/gchq/cyberchef",
+        "githubStars": 35652,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 21,
+      "commercialBundleScore": 87,
+      "shortlistTier": "STRONG",
+      "productCategory": "DEVELOPER_PRODUCT",
+      "actualProductName": "WhoDB Community",
+      "shortProductDescription": "A lightweight browser, desktop, and terminal database workspace for browsing data, editing records, querying, schema visualization, and optional AI assistance.",
+      "bundleScoreReasons": [
+        "One-command Docker startup, desktop packages, CLI, live demo, screenshots, and extensive documentation demonstrate a complete product.",
+        "Core workflows cover browsing, editing, querying, schema visualization, imports, and exports across many database types.",
+        "AI features are optional and can use local providers, so the core product is not dependent on paid AI services.",
+        "Some organizational capabilities such as SSO, shared projects, audit logs, and fine-grained controls are reserved for the separate commercial platform."
+      ],
+      "repository": {
+        "githubFullName": "clidey/whodb",
+        "repositoryUrl": "https://github.com/clidey/whodb",
+        "githubStars": 5011,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 22,
+      "commercialBundleScore": 87,
+      "shortlistTier": "STRONG",
+      "productCategory": "COMMUNICATION",
+      "actualProductName": "Flarum",
+      "shortProductDescription": "Responsive, extensible web forum platform for running branded online communities and discussion sites.",
+      "bundleScoreReasons": [
+        "Clearly presented as complete forum software with a responsive user interface and established community workflows.",
+        "Explicitly designed for customization, extension, and integration through an extension API.",
+        "Conventional PHP deployment and dedicated installation documentation support self-hosting.",
+        "Strong fit for rebranded client communities across several business sectors.",
+        "This repository is the application skeleton while most core development occurs in another repository, which slightly complicates source-level packaging."
+      ],
+      "repository": {
+        "githubFullName": "flarum/flarum",
+        "repositoryUrl": "https://github.com/flarum/flarum",
+        "githubStars": 16380,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 23,
+      "commercialBundleScore": 86,
+      "shortlistTier": "STRONG",
+      "productCategory": "FILE_MANAGEMENT",
+      "actualProductName": "OxiCloud",
+      "shortProductDescription": "Lightweight self-hosted cloud suite for files, sharing, calendars, contacts, DAV access, and optional office editing.",
+      "bundleScoreReasons": [
+        "Complete web UI and strong everyday business workflows",
+        "Straightforward Docker Compose deployment with environment-driven configuration",
+        "Uses standard WebDAV, CalDAV, and CardDAV protocols with broad client interoperability",
+        "Admin roles, quotas, OIDC, sharing, REST API, and documented integrations strengthen client adaptability",
+        "Desktop sync client, mobile apps, and end-to-end encryption are not yet available",
+        "Some DAV behavior remains explicitly partial"
+      ],
+      "repository": {
+        "githubFullName": "AtalayaLabs/OxiCloud",
+        "repositoryUrl": "https://github.com/diocrafts/oxicloud",
+        "githubStars": 3505,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 24,
+      "commercialBundleScore": 86,
+      "shortlistTier": "STRONG",
+      "productCategory": "DEVELOPER_PRODUCT",
+      "actualProductName": "Webmin",
+      "shortProductDescription": "Web-based administration control panel for Unix-like servers, operating-system settings, and common server applications.",
+      "bundleScoreReasons": [
+        "Complete, broad administration product with a substantial graphical dashboard",
+        "Supports operating-system and application management through 116 standard modules and custom modules",
+        "Strong managed-service and hosting-provider client use cases",
+        "Installation is delegated to external documentation rather than shown in the README",
+        "System-level privileges and broad administrative scope increase deployment and support risk"
+      ],
+      "repository": {
+        "githubFullName": "webmin/webmin",
+        "repositoryUrl": "https://github.com/webmin/webmin",
+        "githubStars": 6025,
+        "githubLicenseSpdx": "BSD-3-Clause"
+      }
+    },
+    {
+      "rank": 25,
+      "commercialBundleScore": 86,
+      "shortlistTier": "STRONG",
+      "productCategory": "FILE_MANAGEMENT",
+      "actualProductName": "NetBox",
+      "shortProductDescription": "Network infrastructure source-of-truth application combining IP address management, data-center infrastructure management, APIs, validation, and automation hooks.",
+      "bundleScoreReasons": [
+        "Extensive real-world network-management workflows and cohesive data model",
+        "Strong UI, granular permissions, change logging, APIs, scripts, webhooks, custom fields, and plugins",
+        "Comprehensive documentation and public demo support deployment and client handoff",
+        "Excellent customization and integration potential",
+        "Deployment and domain modeling are substantially more complex than small single-container applications"
+      ],
+      "repository": {
+        "githubFullName": "netbox-community/netbox",
+        "repositoryUrl": "https://github.com/netbox-community/netbox",
+        "githubStars": 21356,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 26,
+      "commercialBundleScore": 86,
+      "shortlistTier": "STRONG",
+      "productCategory": "DEVELOPER_PRODUCT",
+      "actualProductName": "Gitea",
+      "shortProductDescription": "Self-hosted software development service with Git hosting, code review, issues, Kanban, wiki, packages, and CI/CD.",
+      "bundleScoreReasons": [
+        "It is a complete multi-user product spanning repositories, reviews, issues, projects, wiki, packages, and CI/CD.",
+        "Official containers, binaries, broad platform support, configuration references, and comprehensive documentation support deployment.",
+        "The extensive browser UI provides strong client-facing value.",
+        "Configuration, themes, plugins, and static settings indicate good adaptability, although explicit white-label instructions are not shown.",
+        "Its audience is limited to software organizations, but those workflows are commercially substantial."
+      ],
+      "repository": {
+        "githubFullName": "go-gitea/gitea",
+        "repositoryUrl": "https://github.com/go-gitea/gitea",
+        "githubStars": 57572,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 27,
+      "commercialBundleScore": 86,
+      "shortlistTier": "STRONG",
+      "productCategory": "PRODUCTIVITY",
+      "actualProductName": "Next AI Draw.io",
+      "shortProductDescription": "Web and desktop application for generating and editing draw.io diagrams through natural-language AI commands.",
+      "bundleScoreReasons": [
+        "Complete, visually demonstrable application with web and desktop distributions",
+        "Clear installation, Docker, and multiple deployment paths",
+        "Broad multi-provider support includes custom endpoints and local Ollama",
+        "Admin panel supports shared model configuration, quotas, access controls, and observability",
+        "Dependence on capable LLM inference remains an operational cost and quality constraint"
+      ],
+      "repository": {
+        "githubFullName": "DayuanJiang/next-ai-draw-io",
+        "repositoryUrl": "https://github.com/dayuanjiang/next-ai-draw-io",
+        "githubStars": 35224,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 28,
+      "commercialBundleScore": 86,
+      "shortlistTier": "STRONG",
+      "productCategory": "PRODUCTIVITY",
+      "actualProductName": "Handy",
+      "shortProductDescription": "Cross-platform desktop dictation application that performs speech-to-text locally and inserts transcriptions into other applications.",
+      "bundleScoreReasons": [
+        "Provides a complete cross-platform desktop workflow, settings UI, installers, releases, and clear user instructions.",
+        "Runs locally without mandatory paid cloud APIs or server infrastructure.",
+        "README explicitly describes the project as extensible and forkable, although forks must replace protected branding.",
+        "Known platform-specific crashes and Linux integration issues moderately increase support burden."
+      ],
+      "repository": {
+        "githubFullName": "cjpais/Handy",
+        "repositoryUrl": "https://github.com/cjpais/handy",
+        "githubStars": 30192,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 29,
+      "commercialBundleScore": 86,
+      "shortlistTier": "STRONG",
+      "productCategory": "KNOWLEDGE_BASE",
+      "actualProductName": "NoteDiscovery",
+      "shortProductDescription": "A responsive self-hosted markdown knowledge base with editing, search, backlinks, graph visualization, themes, plugins, exports, drawing tools, and AI-assistant integration.",
+      "bundleScoreReasons": [
+        "Complete and visually demonstrated product with editing, organization, search, graph view, sharing, exports, themes, plugins, localization, drawings, API, and MCP integration.",
+        "One-command prebuilt Docker deployment, persistent plain-file storage, source installation, and extensive documentation support commercial handoff.",
+        "Themes, plugins, configuration mounts, translations, REST API, and plain markdown storage provide strong customization and adaptation potential.",
+        "No required paid service is identified for the core knowledge-base workflow.",
+        "Built-in authentication is disabled by default and described as suitable mainly for single users or small teams; production exposure requires authentication, HTTPS, or a reverse proxy."
+      ],
+      "repository": {
+        "githubFullName": "gamosoft/NoteDiscovery",
+        "repositoryUrl": "https://github.com/gamosoft/notediscovery",
+        "githubStars": 2765,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 30,
+      "commercialBundleScore": 85,
+      "shortlistTier": "STRONG",
+      "productCategory": "AUTOMATION",
+      "actualProductName": "BuildingAI",
+      "shortProductDescription": "Self-hosted visual platform for assembling AI agents, knowledge bases, RAG applications, model integrations, extensions, memberships, and billing.",
+      "bundleScoreReasons": [
+        "Evidence supports a substantial application with visual configuration, agents, RAG, knowledge bases, MCP, extensions, user registration, memberships, billing, and payments.",
+        "Docker Compose and an installation wizard provide a clear deployment path.",
+        "Multi-tenant and monetization-oriented workflows are unusually relevant to client resale and commercial adaptation.",
+        "Modern TypeScript, NestJS, Vue, and Nuxt stack should support customization and rebranding.",
+        "Large feature surface, PostgreSQL, AI-provider configuration, payment setup, and resource requirements make operation more complex than a focused single-purpose app.",
+        "README is concise and delegates alternate deployment details to an external guide, leaving some operational depth unproven."
+      ],
+      "repository": {
+        "githubFullName": "BidingCC/BuildingAI",
+        "repositoryUrl": "https://github.com/bidingcc/buildingai",
+        "githubStars": 1866,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 31,
+      "commercialBundleScore": 85,
+      "shortlistTier": "STRONG",
+      "productCategory": "FILE_MANAGEMENT",
+      "actualProductName": "Readur",
+      "shortProductDescription": "Self-hosted document management and OCR platform with uploads, search, labels, synchronized sources, user roles, analytics, and a responsive web interface.",
+      "bundleScoreReasons": [
+        "Complete multi-user workflow covers ingestion, OCR, organization, search, notifications, and analytics.",
+        "One-command Docker Compose quick start and explicit hardware requirements reduce deployment uncertainty.",
+        "Extensive user, deployment, configuration, API, security, and troubleshooting documentation is linked.",
+        "React UI, Material UI components, API, and configurable integrations support adaptation, though explicit white-label features are not stated."
+      ],
+      "repository": {
+        "githubFullName": "readur/readur",
+        "repositoryUrl": "https://github.com/readur/readur",
+        "githubStars": 788,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 32,
+      "commercialBundleScore": 84,
+      "shortlistTier": "STRONG",
+      "productCategory": "KNOWLEDGE_BASE",
+      "actualProductName": "PipesHub",
+      "shortProductDescription": "A self-hosted workplace AI platform for permission-aware enterprise search, cited answers, knowledge integration, and visual agent workflows.",
+      "bundleScoreReasons": [
+        "Presents complete workplace workflows spanning connectors, governed search, citations, records, agents, and actions.",
+        "Includes a substantial visual frontend and multiple product demonstrations.",
+        "An interactive installer generates secrets, selects deployment profiles, starts the stack, and verifies health.",
+        "The stack is operationally heavy, using graph, vector, document, cache, broker, and worker services.",
+        "Useful deployments may depend on external connector systems and hosted or locally operated AI models.",
+        "Strong enterprise relevance, extensibility, SDKs, and self-hosting make it suitable for customized client work."
+      ],
+      "repository": {
+        "githubFullName": "pipeshub-ai/pipeshub-ai",
+        "repositoryUrl": "https://github.com/pipeshub-ai/pipeshub-ai",
+        "githubStars": 3676,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 33,
+      "commercialBundleScore": 84,
+      "shortlistTier": "STRONG",
+      "productCategory": "COMMUNICATION",
+      "actualProductName": "Colanode",
+      "shortProductDescription": "Local-first team workspace combining chat, collaborative documents, databases, file management, and self-hosting.",
+      "bundleScoreReasons": [
+        "Complete business workflows span chat, pages, databases, calendar and kanban views, and files.",
+        "Polished web and desktop clients provide strong demonstration value.",
+        "Docker Compose, Helm charts, configuration documentation, and configurable storage support client deployment.",
+        "PostgreSQL, pgvector, Redis, storage, server, and clients make infrastructure more involved than a simple app.",
+        "Broad organizational use and local-first operation support strong commercial adaptation potential."
+      ],
+      "repository": {
+        "githubFullName": "colanode/colanode",
+        "repositoryUrl": "https://github.com/colanode/colanode",
+        "githubStars": 5023,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 34,
+      "commercialBundleScore": 84,
+      "shortlistTier": "STRONG",
+      "productCategory": "PRODUCTIVITY",
+      "actualProductName": "OpenWhispr",
+      "shortProductDescription": "Cross-platform desktop voice workspace offering system-wide dictation, meeting transcription, notes, AI assistance, and local or cloud speech processing.",
+      "bundleScoreReasons": [
+        "Complete downloadable desktop product for macOS, Windows, and Linux with broad, coherent end-user workflows.",
+        "Core transcription and AI processing can use local models, reducing mandatory proprietary-service dependence.",
+        "Meaningful interface, public releases, API, MCP support, documentation, and a conventional React/Electron stack support customization.",
+        "Team sharing, cloud sync, SSO, and enterprise controls appear to involve hosted infrastructure whose self-hosting path is not established in the README.",
+        "Development quick start is concise, but packaging and full setup details are delegated to external documentation."
+      ],
+      "repository": {
+        "githubFullName": "OpenWhispr/openwhispr",
+        "repositoryUrl": "https://github.com/openwhispr/openwhispr",
+        "githubStars": 5686,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 35,
+      "commercialBundleScore": 84,
+      "shortlistTier": "STRONG",
+      "productCategory": "CMS",
+      "actualProductName": "EmDash",
+      "shortProductDescription": "Astro-based full-stack CMS with an admin panel, structured content, media management, authentication, themes, and sandboxed plugins.",
+      "bundleScoreReasons": [
+        "Delivers recognizable CMS workflows including admin UI, content modeling, media, revisions, roles, scheduling, search, and migration.",
+        "Includes blog, marketing, and portfolio templates suitable for client adaptation.",
+        "Can run on Node.js with SQLite, although its strongest plugin isolation depends on paid Cloudflare Dynamic Workers.",
+        "Strong theme, plugin, schema, storage, and database extensibility supports rebranding and customization.",
+        "Beta-preview status warrants a completeness and production-readiness penalty."
+      ],
+      "repository": {
+        "githubFullName": "emdash-cms/emdash",
+        "repositoryUrl": "https://github.com/emdash-cms/emdash",
+        "githubStars": 11708,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 36,
+      "commercialBundleScore": 84,
+      "shortlistTier": "STRONG",
+      "productCategory": "KNOWLEDGE_BASE",
+      "actualProductName": "ArchiveBox",
+      "shortProductDescription": "Self-hosted web archiving system that captures URLs and stores durable copies in formats including HTML, PDF, screenshots, WARC, media, JSON, and SQLite.",
+      "bundleScoreReasons": [
+        "The README documents a complete product with public and admin web interfaces, CLI, scheduling, tags, integrations, and numerous durable output formats.",
+        "Docker Compose provides a credible self-hosting route and a setup wizard, while extensive documentation supports client delivery.",
+        "Professional workflows are clearly identified across research, journalism, organizational preservation, and recordkeeping.",
+        "Browser automation, numerous extraction tools, large storage requirements, and some alpha or beta interfaces add operational complexity."
+      ],
+      "repository": {
+        "githubFullName": "ArchiveBox/ArchiveBox",
+        "repositoryUrl": "https://github.com/archivebox/archivebox",
+        "githubStars": 28165,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 37,
+      "commercialBundleScore": 84,
+      "shortlistTier": "STRONG",
+      "productCategory": "FILE_MANAGEMENT",
+      "actualProductName": "FileBrowser Quantum",
+      "shortProductDescription": "Lightweight self-hosted web file manager with multiple file sources, sharing, previews, editing, search, user access controls, and SSO.",
+      "bundleScoreReasons": [
+        "Modern responsive UI supports real file browsing, sharing, permissions, preview, editing, search, and authentication workflows.",
+        "Standalone binary and small Docker deployment make it comparatively easy to operate.",
+        "Themes, share styling, and stated branding support provide strong rebrandability evidence.",
+        "OIDC, LDAP, JWT, 2FA, groups, granular permissions, and API access support client deployments.",
+        "The README contains mixed maturity signals: it claims a stable release while also describing growing pains and an upcoming stable release."
+      ],
+      "repository": {
+        "githubFullName": "gtsteffaniak/filebrowser",
+        "repositoryUrl": "https://github.com/gtsteffaniak/filebrowser",
+        "githubStars": 7881,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 38,
+      "commercialBundleScore": 84,
+      "shortlistTier": "STRONG",
+      "productCategory": "DEVELOPER_PRODUCT",
+      "actualProductName": "Gogs",
+      "shortProductDescription": "Self-hosted Git collaboration service with repository hosting, organizations, issues, pull requests, wikis, webhooks, authentication, and a browser interface.",
+      "bundleScoreReasons": [
+        "Substantial end-to-end product workflows cover users, organizations, repositories, issues, pull requests, wikis, and collaboration.",
+        "Independent binary distribution, multiple database choices, modest hardware requirements, and deployment documentation support practical hosting.",
+        "The README explicitly supports customization of HTML templates, static files, localization, and other settings.",
+        "It is strongly useful for technical clients but less relevant to general non-development businesses."
+      ],
+      "repository": {
+        "githubFullName": "gogs/gogs",
+        "repositoryUrl": "https://github.com/gogs/gogs",
+        "githubStars": 47759,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 39,
+      "commercialBundleScore": 84,
+      "shortlistTier": "STRONG",
+      "productCategory": "PRODUCTIVITY",
+      "actualProductName": "Pascal Editor",
+      "shortProductDescription": "Local-first browser-based 3D architectural editor for creating, storing, extending, and sharing building models.",
+      "bundleScoreReasons": [
+        "Provides a complete standalone editor with persistent local projects and a one-command CLI launch.",
+        "Meaningful 3D editing workflows include walls, zones, items, slabs, selection, undo/redo, and project storage.",
+        "Package separation, plugins, worked extension example, schemas, and reusable viewer components support customization.",
+        "Strong visual demonstration and uncommon architectural workflow add bundle diversity.",
+        "README is more developer-architecture focused than operator focused, and production multi-user deployment is not clearly documented."
+      ],
+      "repository": {
+        "githubFullName": "pascalorg/editor",
+        "repositoryUrl": "https://github.com/pascalorg/editor",
+        "githubStars": 21674,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 40,
+      "commercialBundleScore": 83,
+      "shortlistTier": "STRONG",
+      "productCategory": "CONTENT",
+      "actualProductName": "AutoSubs",
+      "shortProductDescription": "Local-first desktop application for transcribing media, editing subtitles, identifying speakers, and exporting or sending captions to video editors.",
+      "bundleScoreReasons": [
+        "Complete cross-platform desktop product with installers, screenshots, standalone workflow, CLI, exports, and editor integrations.",
+        "Local processing avoids mandatory paid cloud services or subscriptions.",
+        "Detailed user and technical documentation supports deployment and adaptation.",
+        "Large optional models increase storage and hardware requirements.",
+        "Some editor integrations depend on proprietary host applications, and an optional forced-alignment model has separately stated use restrictions."
+      ],
+      "repository": {
+        "githubFullName": "tmoroney/auto-subs",
+        "repositoryUrl": "https://github.com/tmoroney/auto-subs",
+        "githubStars": 4076,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 41,
+      "commercialBundleScore": 83,
+      "shortlistTier": "STRONG",
+      "productCategory": "SECURITY",
+      "actualProductName": "Cryptgeon",
+      "shortProductDescription": "Self-hosted web service for sharing client-side-encrypted, expiring text notes and files.",
+      "bundleScoreReasons": [
+        "Complete server, web interface, and CLI with a live demo and screenshot",
+        "Docker Compose deployment and proxy examples are clearly documented",
+        "Explicit theme image, text, title, favicon, footer, notice, and imprint settings support rebranding",
+        "Useful security workflow across many client types",
+        "Requires Redis and correctly configured HTTPS; in-memory storage and documented multi-instance view-count races limit some deployments"
+      ],
+      "repository": {
+        "githubFullName": "cupcakearmy/cryptgeon",
+        "repositoryUrl": "https://github.com/cupcakearmy/cryptgeon",
+        "githubStars": 1508,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 42,
+      "commercialBundleScore": 83,
+      "shortlistTier": "STRONG",
+      "productCategory": "OTHER",
+      "actualProductName": "Server Survival",
+      "shortProductDescription": "Browser-based 3D tower-defense game that teaches cloud architecture through infrastructure-building simulations.",
+      "bundleScoreReasons": [
+        "Complete game with survival, campaign, sandbox, export, and sharing workflows",
+        "Strong interactive 3D UI and immediate demo value",
+        "Static hosting and zero build step make deployment unusually easy",
+        "MIT metadata and modular JavaScript support adaptation and rebranding",
+        "Business applicability is mainly training and education rather than daily operations"
+      ],
+      "repository": {
+        "githubFullName": "pshenok/server-survival",
+        "repositoryUrl": "https://github.com/pshenok/server-survival",
+        "githubStars": 6367,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 43,
+      "commercialBundleScore": 82,
+      "shortlistTier": "STRONG",
+      "productCategory": "COMMUNICATION",
+      "actualProductName": "Zulip",
+      "shortProductDescription": "Self-hosted team communication platform combining real-time chat with topic-based threading for organized synchronous and asynchronous collaboration.",
+      "bundleScoreReasons": [
+        "Clearly a complete, widely applicable multi-user communication product with a distinctive topic-based workflow.",
+        "Self-hosting, Docker, cloud images, extensive contributor documentation, and a live trial are evidenced.",
+        "Server deployment is materially more involved than single-container applications and Docker resides in a separate repository.",
+        "The supplied README gives limited direct white-label evidence, so customization is scored below product completeness."
+      ],
+      "repository": {
+        "githubFullName": "zulip/zulip",
+        "repositoryUrl": "https://github.com/zulip/zulip",
+        "githubStars": 25765,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 44,
+      "commercialBundleScore": 82,
+      "shortlistTier": "STRONG",
+      "productCategory": "ANALYTICS",
+      "actualProductName": "Pulse",
+      "shortProductDescription": "Self-hosted infrastructure monitoring workspace for Proxmox, Docker, Kubernetes, TrueNAS, machines, and early-access vSphere.",
+      "bundleScoreReasons": [
+        "Mature user-facing monitoring workspace with real operational workflows",
+        "Single-container quick start and extensive production, security, API, and troubleshooting documentation",
+        "Community edition provides meaningful self-hosted monitoring without volume gating",
+        "Strong platform coverage and clear agent security model",
+        "Branding and white-label capabilities are not documented",
+        "Several MSP, reporting, RBAC, audit, remote-access, and governed-fix capabilities belong to separate commercial editions"
+      ],
+      "repository": {
+        "githubFullName": "rcourtman/Pulse",
+        "repositoryUrl": "https://github.com/rcourtman/pulse",
+        "githubStars": 6609,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 45,
+      "commercialBundleScore": 82,
+      "shortlistTier": "STRONG",
+      "productCategory": "AUTOMATION",
+      "actualProductName": "xyOps",
+      "shortProductDescription": "Self-hosted operations platform combining job scheduling, visual workflows, infrastructure monitoring, alerts, incident response, and ticketing.",
+      "bundleScoreReasons": [
+        "README presents a cohesive application with visual workflow editing, monitoring, alerts, ticketing, and documentation.",
+        "It supports self-hosting and states that all application features are available in the free tier.",
+        "Clear business workflows and a substantial UI make it suitable for demonstrations and client adaptation.",
+        "Production fleet monitoring and security configuration are inherently more complex than ordinary application deployment.",
+        "Professional support and enterprise assistance are paid, although the README says application features remain open."
+      ],
+      "repository": {
+        "githubFullName": "pixlcore/xyops",
+        "repositoryUrl": "https://github.com/pixlcore/xyops",
+        "githubStars": 5058,
+        "githubLicenseSpdx": "BSD-3-Clause"
+      }
+    },
+    {
+      "rank": 46,
+      "commercialBundleScore": 82,
+      "shortlistTier": "STRONG",
+      "productCategory": "AI_ASSISTANT",
+      "actualProductName": "Local Deep Research",
+      "shortProductDescription": "Self-hosted research assistant that searches web, academic, and private sources and produces cited reports through a web interface.",
+      "bundleScoreReasons": [
+        "Complete web product with authentication, encrypted per-user data, history, reports, exports, dashboards, API, and document workflows.",
+        "Multiple documented deployment paths include Docker Compose and pip installation.",
+        "Can operate with local models and free search sources, avoiding mandatory proprietary AI services.",
+        "Broad configuration and integrations support client adaptation.",
+        "Deployment remains heavier than a typical web app because useful operation requires LLM and search infrastructure."
+      ],
+      "repository": {
+        "githubFullName": "LearningCircuit/local-deep-research",
+        "repositoryUrl": "https://github.com/learningcircuit/local-deep-research",
+        "githubStars": 8976,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 47,
+      "commercialBundleScore": 82,
+      "shortlistTier": "STRONG",
+      "productCategory": "CONTENT",
+      "actualProductName": "Voicebox",
+      "shortProductDescription": "Local-first desktop AI voice studio for voice cloning, speech generation, dictation, transcription, audio effects, and multi-voice story editing.",
+      "bundleScoreReasons": [
+        "Provides a polished native UI, downloadable desktop installers, Docker option, local storage, REST API, and MCP server.",
+        "Combines multiple substantial workflows: cloning, TTS, STT, dictation, effects, profiles, captures, and timeline editing.",
+        "Extensive documentation covers troubleshooting, model management, builds, integrations, and extension with new engines.",
+        "Large local models, GPU variability, and multi-language toolchains increase deployment and support complexity.",
+        "The product is highly demonstrable and customizable, with clear creative and accessibility use cases."
+      ],
+      "repository": {
+        "githubFullName": "jamiepine/voicebox",
+        "repositoryUrl": "https://github.com/jamiepine/voicebox",
+        "githubStars": 51272,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 48,
+      "commercialBundleScore": 82,
+      "shortlistTier": "STRONG",
+      "productCategory": "FILE_MANAGEMENT",
+      "actualProductName": "copyparty",
+      "shortProductDescription": "Portable all-in-one file server with a browser file manager, resumable uploads, sharing, search, media playback, indexing, and multiple network protocols.",
+      "bundleScoreReasons": [
+        "A complete browser UI supports uploads, file management, shares, search, galleries, media playback, accounts, and permissions.",
+        "Deployment can be as small as one Python file, while Docker and service examples support more durable installations.",
+        "Themes, translations, editable source assets, plugins, hooks, and extensive configuration provide meaningful customization options.",
+        "The unusually broad protocol surface, informal documentation style, and explicit bug and security caveats increase the hardening and support burden for professional clients."
+      ],
+      "repository": {
+        "githubFullName": "9001/copyparty",
+        "repositoryUrl": "https://github.com/9001/copyparty",
+        "githubStars": 46344,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 49,
+      "commercialBundleScore": 82,
+      "shortlistTier": "STRONG",
+      "productCategory": "AI_ASSISTANT",
+      "actualProductName": "Vane",
+      "shortProductDescription": "Self-hosted AI answering and research engine with cited web results, document Q&A, media search, and local or cloud model support.",
+      "bundleScoreReasons": [
+        "Complete browser application with setup UI, persistent data, search history, uploads, citations, and documented API.",
+        "Single Docker command includes SearxNG and substantially lowers deployment friction.",
+        "Supports local models, avoiding mandatory paid AI services, although usable model infrastructure is still required.",
+        "Authentication is explicitly upcoming, limiting suitability for public or multi-user client deployments."
+      ],
+      "repository": {
+        "githubFullName": "ItzCrazyKns/Vane",
+        "repositoryUrl": "https://github.com/itzcrazykns/perplexica",
+        "githubStars": 36423,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 50,
+      "commercialBundleScore": 82,
+      "shortlistTier": "STRONG",
+      "productCategory": "ANALYTICS",
+      "actualProductName": "NginxPulse",
+      "shortProductDescription": "Self-hosted Nginx access-log analytics dashboard with real-time traffic statistics, client parsing, geographic enrichment, and desktop/mobile views.",
+      "bundleScoreReasons": [
+        "Complete web dashboard with screenshots, mobile views, initialization wizard, persistence, retention controls, and documented operational workflows.",
+        "Single Docker image can bundle the frontend, backend, and PostgreSQL, though correct volumes and permissions are mandatory.",
+        "Source builds, configuration, project structure, troubleshooting, timezone handling, and external-database operation are well documented.",
+        "Clear business value for hosting, agency, and DevOps clients, with conventional Go and Vue components suitable for customization.",
+        "Log mounts, PostgreSQL, filesystem permissions, and optional external geolocation calls add moderate deployment complexity."
+      ],
+      "repository": {
+        "githubFullName": "likaia/nginxpulse",
+        "repositoryUrl": "https://github.com/likaia/nginxpulse",
+        "githubStars": 2635,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 51,
+      "commercialBundleScore": 82,
+      "shortlistTier": "STRONG",
+      "productCategory": "SECURITY",
+      "actualProductName": "PasteGuard",
+      "shortProductDescription": "Local-first privacy proxy and dashboard that detects and masks personal data and secrets before requests reach cloud AI providers.",
+      "bundleScoreReasons": [
+        "Clear business problem with browser, API, and coding-agent workflows",
+        "Single Docker command launches a dashboard and usable proxy",
+        "Local-first deployment and provider-compatible endpoints aid client adoption",
+        "Dashboard, logging, masking modes, and documentation make the product demonstrable",
+        "Core value still depends on external AI providers in typical deployments, while the browser extension is described as experimental"
+      ],
+      "repository": {
+        "githubFullName": "sgasser/pasteguard",
+        "repositoryUrl": "https://github.com/sgasser/pasteguard",
+        "githubStars": 738,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 52,
+      "commercialBundleScore": 82,
+      "shortlistTier": "STRONG",
+      "productCategory": "AI_AGENT",
+      "actualProductName": "Paperclip",
+      "shortProductDescription": "Web control plane for organizing teams of AI agents with tasks, goals, org charts, budgets, approvals, schedules and audit trails.",
+      "bundleScoreReasons": [
+        "Substantial React UI and server implement coherent business workflows rather than a framework alone",
+        "Installer, embedded PostgreSQL and local onboarding reduce initial setup effort",
+        "Governance, budgets, schedules, multi-company isolation and audit features support commercial use",
+        "Requires customers to supply and operate compatible agents and model services",
+        "Advanced production usage can introduce significant runtime, security and integration complexity"
+      ],
+      "repository": {
+        "githubFullName": "paperclipai/paperclip",
+        "repositoryUrl": "https://github.com/paperclipai/paperclip",
+        "githubStars": 79275,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 53,
+      "commercialBundleScore": 82,
+      "shortlistTier": "STRONG",
+      "productCategory": "DEVELOPER_PRODUCT",
+      "actualProductName": "MCSManager Panel",
+      "shortProductDescription": "Distributed, multi-user web panel for deploying and operating Minecraft, Steam, and other game servers.",
+      "bundleScoreReasons": [
+        "Complete multi-user product with permissions, marketplace, terminal, distributed nodes, and modern web UI",
+        "README explicitly documents hosting-provider and commercial instance-service workflows",
+        "Multiple installation paths, extensive documentation, internationalization, and no required database improve adaptability",
+        "Customizable dashboard provides useful product-level configuration",
+        "Two-service architecture, game-server operations, privileged Docker socket access, and manual node connection can complicate secure deployment"
+      ],
+      "repository": {
+        "githubFullName": "MCSManager/MCSManager",
+        "repositoryUrl": "https://github.com/mcsmanager/mcsmanager",
+        "githubStars": 4929,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 54,
+      "commercialBundleScore": 82,
+      "shortlistTier": "STRONG",
+      "productCategory": "PRODUCTIVITY",
+      "actualProductName": "Textream",
+      "shortProductDescription": "Native Apple-platform teleprompter with speech-following, automatic scrolling, overlays, external-display support, recording, remote viewing, and browser-based director control.",
+      "bundleScoreReasons": [
+        "Complete, visually demonstrable product with Mac, iPhone, iPad, remote-browser, director, recording, file-import, and external-display workflows.",
+        "Ready-made releases and Homebrew installation make user deployment simple; no account or developer-operated cloud is required.",
+        "README provides unusually detailed build instructions, project structure, URL integration, and a documented director protocol, supporting adaptation.",
+        "Apple-only platform requirements limit client reach and distribution of rebranded builds requires platform-specific expertise.",
+        "Speech recognition may depend on Apple processing depending on system availability, but non-microphone operation is supported."
+      ],
+      "repository": {
+        "githubFullName": "f/textream",
+        "repositoryUrl": "https://github.com/f/textream",
+        "githubStars": 3664,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 55,
+      "commercialBundleScore": 81,
+      "shortlistTier": "STRONG",
+      "productCategory": "AUTOMATION",
+      "actualProductName": "Astron Agent",
+      "shortProductDescription": "Enterprise visual platform for designing, deploying, integrating, and collaborating on agentic AI workflows and RPA automation.",
+      "bundleScoreReasons": [
+        "README describes a full frontend platform with workflow orchestration, team collaboration, model management, tools, RPA, and published API integration.",
+        "Documented Docker Compose deployment includes authentication and service addresses.",
+        "Broad enterprise workflows and extension support make client adaptation plausible.",
+        "High-availability claims are present, but the Helm route is still under development.",
+        "Multi-service architecture and dependence on model infrastructure or external tool ecosystems raise deployment effort."
+      ],
+      "repository": {
+        "githubFullName": "iflytek/astron-agent",
+        "repositoryUrl": "https://github.com/iflytek/astron-agent",
+        "githubStars": 8947,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 56,
+      "commercialBundleScore": 81,
+      "shortlistTier": "STRONG",
+      "productCategory": "FINANCE",
+      "actualProductName": "TaxHacker",
+      "shortProductDescription": "Self-hosted AI accounting application for extracting, organizing, converting, filtering, and exporting receipt and invoice data.",
+      "bundleScoreReasons": [
+        "Demonstrates a substantial browser UI and cohesive accounting workflow.",
+        "Docker Compose includes the application, PostgreSQL, migrations, and persistent storage.",
+        "Categories, projects, fields, prompts, currencies, filtering, and exports are customizable.",
+        "Supports local models as well as several external AI providers.",
+        "Explicit early-development warning reduces confidence for production client deployment."
+      ],
+      "repository": {
+        "githubFullName": "vas3k/TaxHacker",
+        "repositoryUrl": "https://github.com/vas3k/taxhacker",
+        "githubStars": 6652,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 57,
+      "commercialBundleScore": 81,
+      "shortlistTier": "STRONG",
+      "productCategory": "KNOWLEDGE_BASE",
+      "actualProductName": "Project NOMAD",
+      "shortProductDescription": "Offline-first browser-accessible knowledge and education server managing Wikipedia, courses, maps, notes, local AI and additional containerized tools.",
+      "bundleScoreReasons": [
+        "Complete management UI, setup wizard, updates and broad end-user workflows",
+        "One-command installer and Docker Compose option are documented",
+        "Offline operation and optional local AI provide distinctive client value",
+        "Many orchestrated containers and potentially demanding storage or GPU requirements increase support burden",
+        "Lack of authentication limits safe multi-user and internet-facing deployments"
+      ],
+      "repository": {
+        "githubFullName": "Crosstalk-Solutions/project-nomad",
+        "repositoryUrl": "https://github.com/crosstalk-solutions/project-nomad",
+        "githubStars": 36259,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 58,
+      "commercialBundleScore": 81,
+      "shortlistTier": "STRONG",
+      "productCategory": "PRODUCTIVITY",
+      "actualProductName": "Dayflow",
+      "shortProductDescription": "Local-first macOS work journal that turns screen activity into timelines, standups, reviews, and searchable AI summaries.",
+      "bundleScoreReasons": [
+        "Clear end-user workflows spanning capture, timeline, standups, reviews, chat, and export",
+        "Strong native UI demonstrated with multiple screenshots and animations",
+        "Packaged DMG and Homebrew installation reduce adoption friction",
+        "Local AI option avoids mandatory proprietary-service dependence",
+        "macOS-only support and sensitive screen permissions narrow the addressable client base"
+      ],
+      "repository": {
+        "githubFullName": "JerryZLiu/Dayflow",
+        "repositoryUrl": "https://github.com/jerryzliu/dayflow",
+        "githubStars": 6941,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 59,
+      "commercialBundleScore": 81,
+      "shortlistTier": "STRONG",
+      "productCategory": "FILE_MANAGEMENT",
+      "actualProductName": "CloudFlare ImgBed",
+      "shortProductDescription": "A self-hosted image and file management hub with uploads, galleries, authentication, directories, APIs, WebDAV, and multiple storage backends.",
+      "bundleScoreReasons": [
+        "Complete user-facing workflows include upload, login, file and user management, status, and public gallery pages.",
+        "Offers a live demo, screenshots, releases, Docker packaging, and extensive deployment and usage documentation.",
+        "Supports several storage backends and both serverless and Docker deployment.",
+        "External storage-provider configuration creates some setup dependency but does not prevent self-hosting."
+      ],
+      "repository": {
+        "githubFullName": "MarSeventh/CloudFlare-ImgBed",
+        "repositoryUrl": "https://github.com/marseventh/cloudflare-imgbed",
+        "githubStars": 6274,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 60,
+      "commercialBundleScore": 81,
+      "shortlistTier": "STRONG",
+      "productCategory": "OTHER",
+      "actualProductName": "Workout.cool",
+      "shortProductDescription": "A fitness coaching web application for creating workout plans, browsing exercises, and tracking training progress.",
+      "bundleScoreReasons": [
+        "Implements recognizable end-user workflows around plans, exercises, authentication, and progress.",
+        "Includes Docker, Compose, manual deployment, migrations, seeding, and a dedicated self-hosting guide.",
+        "Feature-sliced architecture and conventional Next.js stack support client customization.",
+        "Exercise content is only sampled and requires importing or creating a substantial catalog.",
+        "The README describes prior difficulties around reliable and affordable exercise-video content, which may affect a polished client deployment."
+      ],
+      "repository": {
+        "githubFullName": "Snouzy/workout-cool",
+        "repositoryUrl": "https://github.com/snouzy/workout-cool",
+        "githubStars": 8411,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 61,
+      "commercialBundleScore": 81,
+      "shortlistTier": "STRONG",
+      "productCategory": "CONTENT",
+      "actualProductName": "ChronoFrame",
+      "shortProductDescription": "Self-hosted personal photo gallery with web-based photo administration, albums, EXIF metadata, Live Photos, location maps, and flexible storage.",
+      "bundleScoreReasons": [
+        "It provides complete gallery, dashboard, upload, metadata, map, and Live Photo workflows with screenshots and a live demo.",
+        "A prebuilt container, single-service Compose example, persistent volume, and minimal environment configuration make deployment approachable.",
+        "Site title, slogan, author, avatar, storage, and CDN settings provide direct rebranding and customization points.",
+        "The README contains inconsistent storage statements: configuration says local storage is supported, while the FAQ says only S3-compatible storage currently works.",
+        "Existing-library import is not yet supported, which may complicate client migrations."
+      ],
+      "repository": {
+        "githubFullName": "HoshinoSuzumi/chronoframe",
+        "repositoryUrl": "https://github.com/hoshinosuzumi/chronoframe",
+        "githubStars": 1909,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 62,
+      "commercialBundleScore": 80,
+      "shortlistTier": "STRONG",
+      "productCategory": "PRODUCTIVITY",
+      "actualProductName": "Meetily Community Edition",
+      "shortProductDescription": "Cross-platform desktop meeting assistant providing local recording, live transcription, and AI-generated summaries.",
+      "bundleScoreReasons": [
+        "Complete desktop workflow with capture, transcription, summaries, import, editing, and settings",
+        "Packaged Windows and macOS releases provide straightforward deployment",
+        "Local models and Ollama enable operation without mandatory cloud services",
+        "Tauri architecture and source-build documentation support customization",
+        "Advanced exports, team deployment, diarization, and other commercially attractive features are reserved for the separate PRO codebase"
+      ],
+      "repository": {
+        "githubFullName": "Zackriya-Solutions/meetily",
+        "repositoryUrl": "https://github.com/zackriya-solutions/meeting-minutes",
+        "githubStars": 29806,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 63,
+      "commercialBundleScore": 80,
+      "shortlistTier": "STRONG",
+      "productCategory": "CONTENT",
+      "actualProductName": "OpenPencil",
+      "shortProductDescription": "A browser and desktop design editor with Figma file support, components, collaboration, design-to-code export, automation, and optional AI assistance.",
+      "bundleScoreReasons": [
+        "A substantial editor UI, web demo, desktop releases, PWA, CLI, SDK, collaboration, and export workflows are documented.",
+        "The headless Vue SDK explicitly supports custom workflow-specific editors.",
+        "AI is optional and supports multiple providers, reducing dependence on one proprietary service.",
+        "The README explicitly reports active development and rough edges, so it is not yet a fully mature Figma replacement."
+      ],
+      "repository": {
+        "githubFullName": "open-pencil/open-pencil",
+        "repositoryUrl": "https://github.com/open-pencil/open-pencil",
+        "githubStars": 7960,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 64,
+      "commercialBundleScore": 80,
+      "shortlistTier": "STRONG",
+      "productCategory": "SECURITY",
+      "actualProductName": "MyIP",
+      "shortProductDescription": "Self-hosted web toolbox for IP information, leak detection, connectivity diagnostics, latency, speed, Whois, and browser fingerprint checks.",
+      "bundleScoreReasons": [
+        "Complete multilingual PWA with broad, coherent diagnostic workflows and a public demo.",
+        "Documented Node and one-container Docker deployments make evaluation straightforward.",
+        "A real deployment requires free MaxMind credentials and domain allowlist configuration; some functions rely on outside data sources.",
+        "README does not explicitly document white-label controls, so rebranding would likely require source-level changes."
+      ],
+      "repository": {
+        "githubFullName": "jason5ng32/MyIP",
+        "repositoryUrl": "https://github.com/jason5ng32/myip",
+        "githubStars": 11736,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 65,
+      "commercialBundleScore": 79,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "DEVELOPER_PRODUCT",
+      "actualProductName": "Geti",
+      "shortProductDescription": "End-to-end computer-vision application for annotation, training, optimization, inference pipelines, and model export.",
+      "bundleScoreReasons": [
+        "Complete visual lifecycle covering annotation, training, optimization, inference, pipelines, and export",
+        "Single-container and native Windows deployment options are documented",
+        "Strong real-world industrial and edge-AI workflows with extensive documentation",
+        "Hardware, disk, memory, datasets, and ML expertise make deployment materially heavier than typical applications",
+        "Repository combines an application and training library, while some optional model choices introduce additional licensing or dependency considerations"
+      ],
+      "repository": {
+        "githubFullName": "open-edge-platform/geti",
+        "repositoryUrl": "https://github.com/open-edge-platform/geti",
+        "githubStars": 1317,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 66,
+      "commercialBundleScore": 79,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "CONTENT",
+      "actualProductName": "Black Candy",
+      "shortProductDescription": "Self-hosted web music server for organizing and streaming a personal media collection, with companion mobile apps.",
+      "bundleScoreReasons": [
+        "Complete browser-based product with administrator workflow, demo, screenshot, and mobile clients",
+        "Very simple Docker startup with documented persistence, media mounts, ports, database, and secrets",
+        "Works without a paid service for its core locally hosted media workflow",
+        "README does not document explicit white-label or theme controls",
+        "Use is centered on customers who already possess and maintain a music collection"
+      ],
+      "repository": {
+        "githubFullName": "blackcandy-org/blackcandy",
+        "repositoryUrl": "https://github.com/blackcandy-org/blackcandy",
+        "githubStars": 4403,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 67,
+      "commercialBundleScore": 78,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "MARKETING",
+      "actualProductName": "AiToEarn",
+      "shortProductDescription": "AI-assisted content marketing platform for creating, scheduling, publishing, engaging, and monetizing content across social networks.",
+      "bundleScoreReasons": [
+        "Broad, coherent business workflow across creation, publishing, engagement, and monetization",
+        "Docker Compose provides a documented self-hosting path and visible web interface",
+        "Multiple supported networks make it commercially useful to agencies and creators",
+        "Meaningful functionality depends on third-party social platforms, OAuth credentials, AI services, or the official relay",
+        "MongoDB, Redis, multiple backend services, and platform policy changes increase deployment and maintenance burden"
+      ],
+      "repository": {
+        "githubFullName": "yikart/AiToEarn",
+        "repositoryUrl": "https://github.com/yikart/aitoearn",
+        "githubStars": 25202,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 68,
+      "commercialBundleScore": 78,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "SECURITY",
+      "actualProductName": "Authelia",
+      "shortProductDescription": "Self-hosted identity portal and authorization server providing SSO, OpenID Connect, MFA, passkeys, password recovery, and proxy-integrated access control.",
+      "bundleScoreReasons": [
+        "Complete security product with user portal, SSO, MFA, passkeys, recovery, and fine-grained policies",
+        "Multiple installation formats, curated examples, and extensive documentation support deployment",
+        "Strong cross-application business value and useful bundle-level integration role",
+        "Requires careful reverse-proxy, identity, TLS, storage, and security configuration",
+        "README notes breaking changes and beta status for some deployment or protocol elements, increasing maintenance burden"
+      ],
+      "repository": {
+        "githubFullName": "authelia/authelia",
+        "repositoryUrl": "https://github.com/authelia/authelia",
+        "githubStars": 28670,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 69,
+      "commercialBundleScore": 78,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "CONTENT",
+      "actualProductName": "ebook2audiobook",
+      "shortProductDescription": "A local web and command-line application that converts ebooks and documents into multilingual audiobooks using selectable TTS engines.",
+      "bundleScoreReasons": [
+        "Complete conversion workflow with a demonstrated web UI, headless automation, batch processing, chapters, metadata, OCR, translation, and many output formats.",
+        "Cross-platform launchers, container images, Compose support, releases, extensive parameters, and troubleshooting materially improve deployability.",
+        "Can operate locally without a mandatory paid API and supports multiple engines and hardware classes.",
+        "Model downloads, native dependencies, GPU variations, conversion speed, and complex container options increase operational burden.",
+        "README documents configuration-level customization, though substantial rebranding of the Gradio application would require development."
+      ],
+      "repository": {
+        "githubFullName": "DrewThomasson/ebook2audiobook",
+        "repositoryUrl": "https://github.com/drewthomasson/ebook2audiobook",
+        "githubStars": 20022,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 70,
+      "commercialBundleScore": 78,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "AUTOMATION",
+      "actualProductName": "UpSnap",
+      "shortProductDescription": "Self-hosted web dashboard for discovering, waking, monitoring, scheduling, and remotely shutting down LAN devices.",
+      "bundleScoreReasons": [
+        "Complete web application with dashboard, authentication, permissions, automation, themes, and localization",
+        "Binary and Docker deployment are unusually simple",
+        "Screenshots and operational documentation support demonstrations and handoff",
+        "Useful but narrow Wake-on-LAN workflow limits the addressable client base",
+        "README warns against public exposure because shutdown commands can create severe shell-access risk"
+      ],
+      "repository": {
+        "githubFullName": "seriousm4x/UpSnap",
+        "repositoryUrl": "https://github.com/seriousm4x/upsnap",
+        "githubStars": 6211,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 71,
+      "commercialBundleScore": 77,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "DEVELOPER_PRODUCT",
+      "actualProductName": "Servy",
+      "shortProductDescription": "Windows service wrapper and management suite with desktop, Manager, Console, CLI, and PowerShell interfaces for operating arbitrary applications as monitored services.",
+      "bundleScoreReasons": [
+        "Complete suite includes multiple GUIs, CLI, PowerShell automation, monitoring, graphs, logs, configuration import/export, recovery, and alerts.",
+        "Signed releases and several package-manager options support straightforward enterprise distribution.",
+        "Documentation, examples, installation guides, recipes, changelog, and roadmap are clearly linked.",
+        "Windows-only operation narrows the market, and it remains an infrastructure utility rather than an end-customer workflow application.",
+        "Source-level rebranding guidance is not shown, but the product has credible adaptation value for Windows service-management projects."
+      ],
+      "repository": {
+        "githubFullName": "aelassas/servy",
+        "repositoryUrl": "https://github.com/aelassas/servy",
+        "githubStars": 1982,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 72,
+      "commercialBundleScore": 77,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "FILE_MANAGEMENT",
+      "actualProductName": "MicroBin",
+      "shortProductDescription": "Lightweight self-hosted paste, file-sharing, secret-sharing, and URL-shortening web application distributed as a single Rust executable or Docker container.",
+      "bundleScoreReasons": [
+        "The product has a complete web workflow, a screenshot, clear use cases, documentation, a demo, and simple Docker or single-binary deployment.",
+        "Local operation avoids mandatory proprietary services and keeps infrastructure requirements modest.",
+        "Custom styling and configuration support make client adaptation practical.",
+        "Its paste, file-share, and URL-shortening scope is useful but relatively narrow and overlaps with other file-sharing products."
+      ],
+      "repository": {
+        "githubFullName": "szabodanika/microbin",
+        "repositoryUrl": "https://github.com/szabodanika/microbin",
+        "githubStars": 4528,
+        "githubLicenseSpdx": "BSD-3-Clause"
+      }
+    },
+    {
+      "rank": 73,
+      "commercialBundleScore": 77,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "CONTENT",
+      "actualProductName": "Isso",
+      "shortProductDescription": "A lightweight self-hosted commenting server with an embeddable JavaScript client, moderation, Markdown comments, and migration from Disqus or WordPress.",
+      "bundleScoreReasons": [
+        "It implements a clear end-user workflow including posting, editing, deletion, moderation, and migration.",
+        "Deployment is comparatively simple, with PyPI installation, a supplied Docker image, SQLite, quickstart documentation, and troubleshooting guidance.",
+        "The embeddable client makes it practical to adapt for many client websites.",
+        "Its scope is intentionally narrow and the UI is an embedded comment surface rather than a large standalone application."
+      ],
+      "repository": {
+        "githubFullName": "isso-comments/isso",
+        "repositoryUrl": "https://github.com/isso-comments/isso",
+        "githubStars": 5304,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 74,
+      "commercialBundleScore": 76,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "PRODUCTIVITY",
+      "actualProductName": "draw.io Desktop",
+      "shortProductDescription": "Cross-platform Electron desktop application for creating and editing diagrams offline.",
+      "bundleScoreReasons": [
+        "Complete, polished desktop diagramming product with ready-made installers and portable builds.",
+        "Offline design and lack of required service infrastructure make it immediately usable.",
+        "Broad diagramming workflows have strong cross-industry business value.",
+        "README says the project is closed to contributions and warns that its complexity makes changes difficult.",
+        "Forking and unsigned personal builds are documented, but rebranding, maintaining changes, packaging, and code signing would require substantial effort."
+      ],
+      "repository": {
+        "githubFullName": "jgraph/drawio-desktop",
+        "repositoryUrl": "https://github.com/jgraph/drawio-desktop",
+        "githubStars": 62771,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 75,
+      "commercialBundleScore": 76,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "SECURITY",
+      "actualProductName": "CloudRec",
+      "shortProductDescription": "Multi-cloud security posture management platform for asset discovery, policy-based risk detection, remediation workflows, and multi-tenant operations.",
+      "bundleScoreReasons": [
+        "Evidences a full web UI, multi-user workflows, asset collection, policy management, and risk operations.",
+        "Docker Compose quick start, documentation, demo, and a single-binary Lite edition support evaluation and deployment.",
+        "Full deployment and real cloud scanning require credentials, collectors, and security-domain expertise."
+      ],
+      "repository": {
+        "githubFullName": "antgroup/CloudRec",
+        "repositoryUrl": "https://github.com/antgroup/cloudrec",
+        "githubStars": 190,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 76,
+      "commercialBundleScore": 76,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "DEVELOPER_PRODUCT",
+      "actualProductName": "Meshery",
+      "shortProductDescription": "Visual self-service platform for designing, deploying, governing, and measuring Kubernetes-based infrastructure across clusters and clouds.",
+      "bundleScoreReasons": [
+        "The README documents a substantial visual product covering infrastructure design, multi-cluster management, collaboration, policies, performance testing, and extensibility.",
+        "Docker, Kubernetes, Helm, desktop-related integrations, CLI installation, and thorough platform documentation establish real deployability.",
+        "Its Kubernetes-centered market is commercially useful but narrow, and a credible client deployment requires considerable cloud-native expertise and connected infrastructure.",
+        "Broad extension points make adaptation plausible, though the large repository and ecosystem complexity increase customization and ongoing support costs."
+      ],
+      "repository": {
+        "githubFullName": "meshery/meshery",
+        "repositoryUrl": "https://github.com/meshery/meshery",
+        "githubStars": 11561,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 77,
+      "commercialBundleScore": 76,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "AI_ASSISTANT",
+      "actualProductName": "Eclaire",
+      "shortProductDescription": "Local-first personal AI workspace for tasks, notes, documents, photos, bookmarks, search, OCR, chat, and automation.",
+      "bundleScoreReasons": [
+        "Delivers substantial end-user workflows, a modern frontend, setup wizard, API, CLI, screenshots, and documented deployment.",
+        "Unified container and SQLite modes reduce infrastructure burden, although local models and content processing remain demanding.",
+        "Pre-release status, breaking-change warning, and lack of public-internet hardening require conservative deployment and client documentation."
+      ],
+      "repository": {
+        "githubFullName": "eclaire-labs/eclaire",
+        "repositoryUrl": "https://github.com/eclaire-labs/eclaire",
+        "githubStars": 899,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 78,
+      "commercialBundleScore": 76,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "AI_ASSISTANT",
+      "actualProductName": "Osmantic Deployment System (ODS)",
+      "shortProductDescription": "Self-hosted private AI server appliance combining local inference, browser chat, model and service management, voice, agents, workflows, RAG, search, image generation, and observability.",
+      "bundleScoreReasons": [
+        "Provides coherent user-facing chat and control dashboards plus models, voice, RAG, agents, workflows, image generation, and operations.",
+        "One-command installers, hardware detection, model selection, rollback, release channels, and extensive operator documentation strengthen deployability.",
+        "Explicit extension manifests, forkability guidance, custom editions, configurable ports, and service swapping support adaptation.",
+        "The product assembles many independent services and may require demanding GPU, memory, storage, Docker, model-download, and lifecycle support.",
+        "Its breadth increases demo value and uniqueness but also creates more integration and maintenance risk than a focused single-service application."
+      ],
+      "repository": {
+        "githubFullName": "Osmantic/ODS",
+        "repositoryUrl": "https://github.com/light-heart-labs/dreamserver",
+        "githubStars": 4660,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 79,
+      "commercialBundleScore": 76,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "COMMUNICATION",
+      "actualProductName": "Neko",
+      "shortProductDescription": "Self-hosted WebRTC virtual browser and desktop for collaborative browsing, presentations, support, and watch parties.",
+      "bundleScoreReasons": [
+        "Substantial end-user product with real-time multi-user control, audio, chat-oriented use cases, and a demonstrated UI",
+        "Broad client workflows include support, presentations, secure browsing, and embedded sessions",
+        "Full documentation and many ready-made browser/application images are referenced",
+        "WebRTC, media streaming, networking, capacity planning, and multi-room management make production deployment comparatively complex",
+        "README establishes extensibility but provides limited direct evidence of easy visual white-labeling"
+      ],
+      "repository": {
+        "githubFullName": "m1k1o/neko",
+        "repositoryUrl": "https://github.com/m1k1o/neko",
+        "githubStars": 22181,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 80,
+      "commercialBundleScore": 75,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "DEVELOPER_PRODUCT",
+      "actualProductName": "Dockpeek",
+      "shortProductDescription": "Self-hosted Docker dashboard for opening container interfaces, viewing logs, managing multiple hosts, and applying image updates.",
+      "bundleScoreReasons": [
+        "Complete authenticated web dashboard with clear operational workflows and screenshots.",
+        "Single-compose deployment is simple, with a documented safer socket-proxy option.",
+        "Supports multi-host operation, Swarm, logs, update checks, labels, registries, and UI configuration.",
+        "Good client-project potential for organizations already using Docker.",
+        "Docker socket privileges and remote API exposure require security-conscious deployment; branding customization is not explicitly documented."
+      ],
+      "repository": {
+        "githubFullName": "dockpeek/dockpeek",
+        "repositoryUrl": "https://github.com/dockpeek/dockpeek",
+        "githubStars": 2088,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 81,
+      "commercialBundleScore": 75,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "CONTENT",
+      "actualProductName": "MarkText",
+      "shortProductDescription": "Cross-platform WYSIWYG Markdown editor with themes, focused writing modes, math support, and HTML and PDF export.",
+      "bundleScoreReasons": [
+        "Complete desktop editor with installers for major operating systems, screenshots, user documentation, and developer documentation.",
+        "Provides coherent authoring and export workflows useful to individuals and documentation teams.",
+        "Themes and open Electron/Vue code provide customization and branding opportunities.",
+        "Single-user desktop scope limits its value for collaborative or operational client workflows."
+      ],
+      "repository": {
+        "githubFullName": "marktext/marktext",
+        "repositoryUrl": "https://github.com/marktext/marktext",
+        "githubStars": 60501,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 82,
+      "commercialBundleScore": 75,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "FILE_MANAGEMENT",
+      "actualProductName": "Motrix Next",
+      "shortProductDescription": "A cross-platform desktop download manager supporting HTTP, FTP, BitTorrent, Magnet, ED2K, scheduling, browser integration, history, diagnostics, and extensive personalization.",
+      "bundleScoreReasons": [
+        "It is a feature-rich end-user product with released installers, a polished UI, broad protocol support, localization, diagnostics, and clear workflows.",
+        "Source setup, architecture, production build commands, and platform installation paths are thoroughly documented.",
+        "The modern Vue, Tauri, CSS-variable, and locale structure appears adaptable for branding and client-specific packaging.",
+        "Releasing a branded fork requires cross-platform sidecars, installers, update infrastructure, and code signing; the supplied macOS and Windows builds are explicitly unsigned."
+      ],
+      "repository": {
+        "githubFullName": "AnInsomniacy/motrix-next",
+        "repositoryUrl": "https://github.com/aninsomniacy/motrix-next",
+        "githubStars": 9713,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 83,
+      "commercialBundleScore": 74,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "DEVELOPER_PRODUCT",
+      "actualProductName": "Harness Open Source",
+      "shortProductDescription": "Self-hosted software-development platform combining source-code hosting, CI/CD pipelines, hosted development environments, and artifact registries.",
+      "bundleScoreReasons": [
+        "Complete browser application spanning several valuable developer workflows",
+        "Single-container trial deployment is straightforward and documentation is linked",
+        "Source control, pipelines, workspaces, registry, UI, API, and CLI form a cohesive product",
+        "Production operation is security-sensitive and requires Docker socket access and durable storage",
+        "Broad and complex platform is harder to customize, rebrand, support, and safely hand off than a focused business app"
+      ],
+      "repository": {
+        "githubFullName": "harness/harness",
+        "repositoryUrl": "https://github.com/harness/harness",
+        "githubStars": 38104,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 84,
+      "commercialBundleScore": 74,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "COMMUNICATION",
+      "actualProductName": "Buzz",
+      "shortProductDescription": "A self-hosted team workspace where people and AI agents collaborate through channels, threads, direct messages, workflows, Git events, media, search, and auditable signed events.",
+      "bundleScoreReasons": [
+        "The README documents a functioning desktop UI, relay, channels, threads, DMs, search, media, workflows, Git hosting, audit logs, and packaged releases.",
+        "A production Compose deployment is supplied, but PostgreSQL, Redis, object storage, relay configuration, and desktop clients make the system operationally complex.",
+        "The product supports substantial engineering workflows and offers unusually deep human-agent collaboration capabilities.",
+        "Several advertised areas remain unfinished, including mobile clients, approval-gate integration, huddle lifecycle support, and push notifications.",
+        "Rebranding appears technically possible from the source, but the README provides no explicit white-labeling, theming, or branding workflow.",
+        "Agent-provider configuration and the developer-focused product scope reduce suitability for general-purpose client deployments."
+      ],
+      "repository": {
+        "githubFullName": "block/buzz",
+        "repositoryUrl": "https://github.com/block/buzz",
+        "githubStars": 30319,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 85,
+      "commercialBundleScore": 74,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "FINANCE",
+      "actualProductName": "SubsTracker",
+      "shortProductDescription": "A lightweight Cloudflare Workers application for tracking subscription expirations, renewal payments, spending, and multichannel reminders.",
+      "bundleScoreReasons": [
+        "Offers a complete web workflow covering CRUD, filters, renewal modes, reminders, payment history, spending statistics, backups, and diagnostics.",
+        "Strong operational documentation includes automated deployment, configuration, upgrades, tests, troubleshooting, and security warnings.",
+        "Ten notification integrations and a third-party notification API make it adaptable to varied client workflows.",
+        "Cloudflare Workers and KV are mandatory proprietary hosting dependencies, so it is not infrastructure-neutral self-hosting.",
+        "README explicitly says it is unsuitable for multi-user collaboration or complex enterprise approvals, limiting client scale."
+      ],
+      "repository": {
+        "githubFullName": "wangwangit/SubsTracker",
+        "repositoryUrl": "https://github.com/wangwangit/substracker",
+        "githubStars": 3185,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 86,
+      "commercialBundleScore": 73,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "ANALYTICS",
+      "actualProductName": "Coze Loop",
+      "shortProductDescription": "A self-hostable platform for prompt development, AI-agent evaluation, experiment management, tracing, and operational observability.",
+      "bundleScoreReasons": [
+        "README describes coherent browser-based workflows for prompts, evaluation, datasets, experiments, and traces.",
+        "Docker Compose, Helm deployment, architecture documentation, troubleshooting, testing, and secondary-development guidance support commercial adaptation.",
+        "The platform requires model-provider configuration and potentially substantial container or Kubernetes infrastructure.",
+        "README warns of registration, SSRF, listening-address, and API privilege risks for public deployments, increasing hardening effort.",
+        "The open-source edition contains core modules but is derived from a broader commercial product, so feature parity is not established."
+      ],
+      "repository": {
+        "githubFullName": "coze-dev/coze-loop",
+        "repositoryUrl": "https://github.com/coze-dev/coze-loop",
+        "githubStars": 5703,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 87,
+      "commercialBundleScore": 73,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "AUTOMATION",
+      "actualProductName": "Home Assistant",
+      "shortProductDescription": "Local-first home automation platform that connects devices, presents their state, and supports configurable automations through a modular integration architecture.",
+      "bundleScoreReasons": [
+        "README identifies a complete local-server product with a demonstrated UI, installation material, tutorials, documentation, and support resources.",
+        "Modular architecture and custom components provide substantial functional adaptability.",
+        "Real deployments can be complex because value depends on physical devices, networking, integrations, and ongoing configuration.",
+        "The supplied evidence supports extensibility more clearly than white-labeling, so rebranding potential is limited."
+      ],
+      "repository": {
+        "githubFullName": "home-assistant/core",
+        "repositoryUrl": "https://github.com/home-assistant/core",
+        "githubStars": 90081,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 88,
+      "commercialBundleScore": 73,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "AI_ASSISTANT",
+      "actualProductName": "ChatJS",
+      "shortProductDescription": "A production-oriented, multi-provider AI chat foundation with authentication, streaming, attachments, conversation branching, sharing, tools, and desktop packaging.",
+      "bundleScoreReasons": [
+        "README identifies a working chat application, live demo, documentation, CLI scaffold, and extensive end-user workflows.",
+        "Source-oriented foundation and Apache-2.0 metadata support customization and rebranding.",
+        "Deployment depends on a substantial stack and external AI, gateway, storage, and authentication services.",
+        "Ongoing model usage and several listed integrations may introduce operational cost and configuration burden."
+      ],
+      "repository": {
+        "githubFullName": "FranciscoMoretti/chat-js",
+        "repositoryUrl": "https://github.com/franciscomoretti/sparka",
+        "githubStars": 1190,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 89,
+      "commercialBundleScore": 73,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "FILE_MANAGEMENT",
+      "actualProductName": "AB Download Manager",
+      "shortProductDescription": "Cross-platform desktop download manager with queues, scheduling, browser integration, themes, and organized download workflows.",
+      "bundleScoreReasons": [
+        "Complete modern desktop application with screenshots, release packages, scheduling, queues, themes, and browser integration.",
+        "Broad platform support and several installation channels reduce end-user deployment friction.",
+        "Source build and publication workflow are documented.",
+        "Rebranding requires native desktop packaging and coordination with a separately maintained browser extension.",
+        "README provides less detail about administrator controls or organization-specific workflows."
+      ],
+      "repository": {
+        "githubFullName": "amir1376/ab-download-manager",
+        "repositoryUrl": "https://github.com/amir1376/ab-download-manager",
+        "githubStars": 17431,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 90,
+      "commercialBundleScore": 72,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "CONTENT",
+      "actualProductName": "WhisperLiveKit",
+      "shortProductDescription": "Self-hosted real-time speech-to-text server with a bundled web interface, streaming APIs, translation, diarization, and subtitle generation.",
+      "bundleScoreReasons": [
+        "Provides a functioning server, bundled browser UI, CLI, APIs, authentication option, Docker profiles, and production deployment guidance.",
+        "Supports concrete client workflows including meetings, subtitles, accessibility, translation, and support calls.",
+        "GPU recommendations, large model downloads, conflicting dependency profiles, and optional gated external models make deployment materially complex.",
+        "The included UI is an implementation example rather than evidence of a complete multi-user business application."
+      ],
+      "repository": {
+        "githubFullName": "QuentinFuxa/WhisperLiveKit",
+        "repositoryUrl": "https://github.com/quentinfuxa/whisperlivekit",
+        "githubStars": 10907,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 91,
+      "commercialBundleScore": 72,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "DEVELOPER_PRODUCT",
+      "actualProductName": "Tugtainer",
+      "shortProductDescription": "Self-hosted web application for monitoring and automating Docker container updates across multiple hosts.",
+      "bundleScoreReasons": [
+        "Complete authenticated web UI with substantial container-management workflows.",
+        "Straightforward container deployment and extensive configuration documentation.",
+        "Supports multiple hosts, private registries, notifications, scheduling, hooks, and rollback behavior.",
+        "README explicitly says it is not recommended for production, materially limiting commercial confidence.",
+        "Docker socket access and remote-agent security require careful client deployment."
+      ],
+      "repository": {
+        "githubFullName": "Quenary/tugtainer",
+        "repositoryUrl": "https://github.com/quenary/tugtainer",
+        "githubStars": 1507,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 92,
+      "commercialBundleScore": 72,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "COMMUNICATION",
+      "actualProductName": "RustPBX",
+      "shortProductDescription": "Programmable SIP PBX with media relay, queues, recording, WebRTC phone, administration console, and integration APIs.",
+      "bundleScoreReasons": [
+        "Community edition includes a web console, WebRTC phone, PBX workflows, APIs, Docker quick start, and extensive documentation.",
+        "Telephony deployment is inherently complex due to SIP, RTP, NAT, certificates, trunks, and operational requirements.",
+        "Several desirable enterprise and visual-management capabilities are confined to the separately identified commercial edition."
+      ],
+      "repository": {
+        "githubFullName": "restsend/rustpbx",
+        "repositoryUrl": "https://github.com/restsend/rustpbx",
+        "githubStars": 754,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 93,
+      "commercialBundleScore": 72,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "CONTENT",
+      "actualProductName": "AI Media2Doc",
+      "shortProductDescription": "A locally deployable web application that converts video or audio into styled articles, notes, mind maps, summaries, screenshots, and subtitle files using AI services.",
+      "bundleScoreReasons": [
+        "Provides a coherent end-user web workflow, multiple output formats, local task history, screenshots, subtitle export, custom prompts, and AI follow-up chat.",
+        "Docker Compose deployment and separate frontend/backend development guides are documented.",
+        "The interface has strong visual demonstration value and the content-repurposing workflow is commercially relevant.",
+        "Although locally deployed, core transcription and generation appear to require configured external cloud AI services; fully local speech recognition is only a future plan.",
+        "No user accounts are provided; only an optional shared access password is described, limiting multi-user client deployments."
+      ],
+      "repository": {
+        "githubFullName": "hanshuaikang/AI-Media2Doc",
+        "repositoryUrl": "https://github.com/hanshuaikang/ai-media2doc",
+        "githubStars": 3992,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 94,
+      "commercialBundleScore": 72,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "DEVELOPER_PRODUCT",
+      "actualProductName": "Escrcpy",
+      "shortProductDescription": "Cross-platform desktop GUI for mirroring, controlling, recording, and automating one or more Android devices through scrcpy and ADB.",
+      "bundleScoreReasons": [
+        "Complete graphical desktop product with released packages and substantial workflows.",
+        "Clear installation, user documentation, screenshots, and developer documentation are referenced.",
+        "Runs locally without server infrastructure.",
+        "Some advanced features are confined to a paid private extension, reducing completeness of the open-source edition."
+      ],
+      "repository": {
+        "githubFullName": "viarotel-org/escrcpy",
+        "repositoryUrl": "https://github.com/viarotel-org/escrcpy",
+        "githubStars": 10817,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 95,
+      "commercialBundleScore": 72,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "PRODUCTIVITY",
+      "actualProductName": "PureMac",
+      "shortProductDescription": "A native macOS disk cleaner and application uninstaller with orphan detection, scheduled cleaning, and developer-cache cleanup.",
+      "bundleScoreReasons": [
+        "Signed releases, Homebrew installation, polished SwiftUI screens, onboarding, and multiple complete maintenance workflows are documented.",
+        "Native architecture and MIT metadata make branding and source adaptation plausible.",
+        "Its macOS-only audience substantially narrows commercial reach.",
+        "Rebranded distribution would require platform-specific building, signing, notarization, permissions, and careful validation of destructive operations."
+      ],
+      "repository": {
+        "githubFullName": "momenbasel/PureMac",
+        "repositoryUrl": "https://github.com/momenbasel/puremac",
+        "githubStars": 6048,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 96,
+      "commercialBundleScore": 72,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "PRODUCTIVITY",
+      "actualProductName": "Ueli",
+      "shortProductDescription": "Cross-platform desktop keystroke launcher with search, favorites, settings, and a broad collection of productivity extensions.",
+      "bundleScoreReasons": [
+        "Complete desktop product with visible search, settings, favorites, debugging, and extension workflows.",
+        "Simple user installation and documented development, testing, building, and packaging commands.",
+        "Numerous built-in extensions provide useful daily workflows and customization opportunities.",
+        "Unsigned macOS and manually distributed Windows binaries create adoption friction, and the settings documentation is marked under construction."
+      ],
+      "repository": {
+        "githubFullName": "oliverschwendener/ueli",
+        "repositoryUrl": "https://github.com/oliverschwendener/ueli",
+        "githubStars": 4582,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 97,
+      "commercialBundleScore": 72,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "DEVELOPER_PRODUCT",
+      "actualProductName": "Wave Terminal",
+      "shortProductDescription": "A cross-platform graphical terminal with AI assistance, durable SSH sessions, file editing, previews, and customizable workspaces.",
+      "bundleScoreReasons": [
+        "It is a complete cross-platform desktop product with a substantial graphical interface.",
+        "It covers coherent terminal, SSH, file-management, editor, preview, and AI workflows.",
+        "Users may supply local models, so paid AI services are optional.",
+        "Installation, system requirements, documentation, and source-build guidance are identified.",
+        "Its technical audience and desktop distribution model limit broader client applicability."
+      ],
+      "repository": {
+        "githubFullName": "wavetermdev/waveterm",
+        "repositoryUrl": "https://github.com/wavetermdev/waveterm",
+        "githubStars": 22095,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    },
+    {
+      "rank": 98,
+      "commercialBundleScore": 72,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "CONTENT",
+      "actualProductName": "Carbon",
+      "shortProductDescription": "Web application for turning source-code snippets into customized PNG or SVG images for sharing and presentations.",
+      "bundleScoreReasons": [
+        "The README establishes a complete visual workflow covering import, customization, export, sharing, embedding, and saved snippets.",
+        "A strong UI and highly visual output make it easy to demonstrate and adapt for developer-facing clients.",
+        "Its narrow focus limits general business value, and the supplied README does not document self-host deployment in detail.",
+        "Saved accounts and sharing may require more backend configuration than the simple PWA workflow suggests."
+      ],
+      "repository": {
+        "githubFullName": "carbon-app/carbon",
+        "repositoryUrl": "https://github.com/carbon-app/carbon",
+        "githubStars": 36090,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 99,
+      "commercialBundleScore": 72,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "AUTOMATION",
+      "actualProductName": "Prism Desktop",
+      "shortProductDescription": "Native Windows and Linux dashboard for controlling Home Assistant entities, automations, cameras, and notifications.",
+      "bundleScoreReasons": [
+        "Complete desktop application with screenshots, installers, portable builds, AppImage, and source instructions",
+        "Substantial UI customization through drag-and-drop widgets, sizing, colors, and effects",
+        "Useful client-project potential for smart homes and managed properties",
+        "Narrowly dependent on an existing Home Assistant deployment",
+        "Some Linux desktop features vary by display environment"
+      ],
+      "repository": {
+        "githubFullName": "lasselian/prism-desktop",
+        "repositoryUrl": "https://github.com/lasselian/prism-desktop",
+        "githubStars": 526,
+        "githubLicenseSpdx": "MIT"
+      }
+    },
+    {
+      "rank": 100,
+      "commercialBundleScore": 70,
+      "shortlistTier": "POSSIBLE",
+      "productCategory": "DEVELOPER_PRODUCT",
+      "actualProductName": "Harbor",
+      "shortProductDescription": "Self-hosted cloud-native artifact registry with access control, replication, vulnerability scanning, auditing, and a management portal.",
+      "bundleScoreReasons": [
+        "Mature, complete workflows include registry management, scanning, replication, RBAC, and auditing.",
+        "Graphical portal, APIs, stable releases, installers, Helm deployment, and extensive documentation are evidenced.",
+        "Infrastructure and operational requirements are substantial compared with ordinary business applications.",
+        "The product is specialized for cloud-native engineering teams rather than general clients.",
+        "README provides little evidence of white-label branding or easy product-level rebranding."
+      ],
+      "repository": {
+        "githubFullName": "goharbor/harbor",
+        "repositoryUrl": "https://github.com/goharbor/harbor",
+        "githubStars": 29217,
+        "githubLicenseSpdx": "Apache-2.0"
+      }
+    }
+  ],
+  "top30Interesting": [
+    {
+      "rank": 1,
+      "repository": "super-productivity/super-productivity",
+      "score": 92,
+      "category": "PRODUCTIVITY",
+      "userGets": "Local-first task manager combining projects, timeboxing, time tracking, habits, notes, and issue-tracker integrations.",
+      "positioning": [
+        "Mature end-user application available for web, desktop, and mobile platforms.",
+        "Covers coherent business workflows spanning tasks, projects, time tracking, reports, notes, and integrations.",
+        "Extensive user, deployment, packaging, theming, plugin, API, and development documentation is identified.",
+        "Core use requires no account, while synchronization can use self-hosted or third-party options.",
+        "Custom themes and plugins provide explicit adaptation paths."
+      ]
+    },
+    {
+      "rank": 2,
+      "repository": "lfnovo/open-notebook",
+      "score": 92,
+      "category": "KNOWLEDGE_BASE",
+      "userGets": "A self-hosted research and knowledge application for organizing sources, searching content, chatting with research context, taking notes, and generating podcasts.",
+      "positioning": [
+        "Complete modern UI with notebooks, sources, notes, search, contextual chat, podcast generation, model configuration, authentication, and REST API.",
+        "Documented two-container Docker deployment is straightforward and API keys are configured through the UI.",
+        "Supports numerous AI providers plus local models, reducing dependence on any single proprietary vendor.",
+        "Extensive installation, user, API, security, architecture, troubleshooting, and developer documentation supports client adaptation.",
+        "Clear organizational workflows and broad customization make it a strong rebranding and integration candidate."
+      ]
+    },
+    {
+      "rank": 3,
+      "repository": "aureuserp/aureuserp",
+      "score": 91,
+      "category": "ERP",
+      "userGets": "Modular web ERP covering finance, inventory, manufacturing, sales, HR, projects, support, analytics, and related operations.",
+      "positioning": [
+        "README describes extensive real business workflows across multiple ERP departments.",
+        "Four-step installation, explicit requirements, user and developer documentation, and an administrative web UI support deployment.",
+        "Plugin architecture, custom dashboards, branding changes, forms, permissions, workflows, localization, and APIs provide strong adaptation evidence.",
+        "Production-readiness is asserted rather than independently demonstrated in the supplied evidence, so completeness is scored conservatively."
+      ]
+    },
+    {
+      "rank": 4,
+      "repository": "unopim/unopim",
+      "score": 91,
+      "category": "ECOMMERCE",
+      "userGets": "Full web-based product information and digital asset management platform for enriching and publishing large multi-channel catalogs.",
+      "positioning": [
+        "Substantial business workflows include catalog management, enrichment, permissions, localization, channels, imports, exports, APIs, webhooks, and publication.",
+        "Rich browser UI, live demo, screenshots, documentation, upgrade guidance, and production deployment notes are evidenced.",
+        "Prebuilt Docker Compose installation has working defaults and supports two databases.",
+        "Laravel architecture and broad configuration make client adaptation credible.",
+        "Production operation requires database, queues, secrets, and careful scaled-deployment configuration."
+      ]
+    },
+    {
+      "rank": 5,
+      "repository": "umbraco/Umbraco-CMS",
+      "score": 91,
+      "category": "CMS",
+      "userGets": "Extensible .NET content management system with a browser-based back office for building and managing websites and digital experiences.",
+      "positioning": [
+        "Complete CMS with a substantial back-office UI and genuine editorial workflows.",
+        "Four-command local setup plus comprehensive installation, customization, and production deployment documentation.",
+        "Explicitly extensible and well suited to branded client websites.",
+        "Requires .NET expertise, but no mandatory proprietary service is identified."
+      ]
+    },
+    {
+      "rank": 6,
+      "repository": "umami-software/umami",
+      "score": 90,
+      "category": "ANALYTICS",
+      "userGets": "Privacy-first web and product analytics platform covering traffic, campaigns, behavior, conversions, and revenue.",
+      "positioning": [
+        "Clearly presented as a complete analytics platform with broad business workflows.",
+        "Supports source installation and a simple Docker Compose deployment including PostgreSQL.",
+        "Has a meaningful analytics UI and a public demo.",
+        "Self-hosting requires no mandatory paid analytics provider.",
+        "Documentation covers configuration, startup, updates, and optional two-factor authentication."
+      ]
+    },
+    {
+      "rank": 7,
+      "repository": "Mintplex-Labs/anything-llm",
+      "score": 90,
+      "category": "AI_ASSISTANT",
+      "userGets": "Full-featured local-first AI workspace for document chat, RAG, agents, scheduled tasks, multi-user access and no-code automation.",
+      "positioning": [
+        "Complete polished UI with document ingestion, chat, agents, permissions and administration",
+        "Desktop, Docker, bare-metal and multiple cloud deployment paths are documented",
+        "Local default components reduce mandatory proprietary-service dependence",
+        "Broad provider and vector-database support makes client adaptation practical",
+        "Multi-user workflows, developer API and embeddable chat improve resale potential",
+        "Default telemetry requires explicit opt-out for clients that do not want it"
+      ]
+    },
+    {
+      "rank": 8,
+      "repository": "excalidraw/excalidraw",
+      "score": 90,
+      "category": "PRODUCTIVITY",
+      "userGets": "Local-first virtual whiteboard for hand-drawn diagrams, wireframes, image annotation, export, and encrypted collaboration.",
+      "positioning": [
+        "Repository contains both a complete showcase application and a customizable editor package.",
+        "Rich, broadly useful UI and workflows with offline PWA, local-first storage, export, localization, and collaboration.",
+        "Explicit customization and embeddability make it strong for rebranding and client adaptation.",
+        "Collaboration and share-link deployment may require more setup than the README's package quick start describes."
+      ]
+    },
+    {
+      "rank": 9,
+      "repository": "Smaug6739/Alexandrie",
+      "score": 89,
+      "category": "KNOWLEDGE_BASE",
+      "userGets": "A self-hosted, offline-first knowledge base and wiki with extended Markdown editing, team workspaces, permissions, search, Kanban boards, SSO, media management, and backup tools.",
+      "positioning": [
+        "The README presents a complete full-stack product with multiple screenshots and clear end-user workflows.",
+        "One-command Docker Compose deployment and an explicit first-run owner-account flow make deployment unusually accessible.",
+        "Multi-tenant teams, granular permissions, OIDC SSO, offline synchronization, search, backups, and S3 support address credible business requirements.",
+        "ZIP import, export, backup, and restore features improve client handoff and operational portability.",
+        "The integrated Markdown editor, media previews, diagrams, snippets, public sharing, and Kanban boards provide strong demonstration and practical value.",
+        "Rebranding and theme customization are not explicitly documented, so customization potential is inferred from the source-based Vue application rather than proven white-label support."
+      ]
+    },
+    {
+      "rank": 10,
+      "repository": "Zleap-AI/SAG",
+      "score": 89,
+      "category": "KNOWLEDGE_BASE",
+      "userGets": "Local-first knowledge base application providing document ingestion, traceable retrieval, knowledge graphs, cited chat, APIs, and MCP access.",
+      "positioning": [
+        "README explicitly presents a complete application with desktop, web, API, MCP, ingestion, search, graph exploration, citations, and migration workflows.",
+        "Docker defaults use SQLite and LanceDB without an external database, while desktop packages bundle the runtime.",
+        "Frontend and backend boundaries, development commands, tests, OpenAPI, and production storage options are thoroughly documented.",
+        "Currently described as local-first and single-user; public deployment needs an external access-control layer.",
+        "Core indexing and answer workflows still require configured LLM and embedding endpoints."
+      ]
+    },
+    {
+      "rank": 11,
+      "repository": "actualbudget/actual",
+      "score": 89,
+      "category": "FINANCE",
+      "userGets": "Local-first personal finance and envelope-budgeting application with desktop clients, optional self-hosted synchronization, and multi-device support.",
+      "positioning": [
+        "It is a complete, established user application with budgeting, accounts, migration guidance, desktop clients, and synchronization.",
+        "Docker self-hosting, downloadable local applications, managed alternatives, and broad user documentation reduce delivery friction.",
+        "The local-first model and lack of a mandatory paid service are strong advantages for client deployments.",
+        "The README gives less direct evidence about white-label controls, so rebranding would likely require source-level work."
+      ]
+    },
+    {
+      "rank": 12,
+      "repository": "apache/superset",
+      "score": 88,
+      "category": "ANALYTICS",
+      "userGets": "An enterprise-ready web application for exploring SQL data, building visualizations, authoring queries, and publishing interactive business dashboards.",
+      "positioning": [
+        "It is a complete multi-user business application with charts, dashboards, SQL tooling, semantic modeling, roles, authentication, APIs, and broad database support.",
+        "Separate user, administrator, and developer documentation supports client delivery and ongoing operation.",
+        "Official Docker images, Docker Compose guidance, a Helm chart, and production architecture documentation provide credible deployment paths.",
+        "Production deployment and database connectivity remain operationally complex, but the breadth of real business workflows and extension points strongly supports commercial adaptation."
+      ]
+    },
+    {
+      "rank": 13,
+      "repository": "suitenumerique/docs",
+      "score": 88,
+      "category": "KNOWLEDGE_BASE",
+      "userGets": "Self-hosted collaborative document editor and knowledge workspace with rich text, live presence, comments, hierarchy, presentations, and import/export.",
+      "positioning": [
+        "Supports complete end-user workflows for writing, collaboration, sharing, access control, hierarchy, presentations, and data interchange.",
+        "Provides self-hosting documentation and supports Docker Compose and Kubernetes.",
+        "Includes a polished UI, live demo, APIs, and integration examples.",
+        "The Django, frontend, collaboration, database, and object-storage stack is more complex than a single-service deployment.",
+        "Optional AI can use self-hosted or external providers rather than being mandatory.",
+        "README warns that some advanced export functionality uses separately licensed packages and documents a build mode that excludes them."
+      ]
+    },
+    {
+      "rank": 14,
+      "repository": "kestra-io/kestra",
+      "score": 88,
+      "category": "AUTOMATION",
+      "userGets": "Event-driven orchestration platform for creating, scheduling, executing, and monitoring data, AI, infrastructure, and business workflows.",
+      "positioning": [
+        "Complete product with visual workflow editor, topology view, monitoring, API, plugins, and declarative workflow definitions.",
+        "A one-command Docker quick start and multiple documented production deployment paths support evaluation and delivery.",
+        "Broad automation use cases and plugin extensibility provide strong client adaptability.",
+        "Production-scale orchestration can require databases, storage, containers, and substantial operational expertise."
+      ]
+    },
+    {
+      "rank": 15,
+      "repository": "DrizzleTime/Foxel",
+      "score": 88,
+      "category": "FILE_MANAGEMENT",
+      "userGets": "Self-hosted private cloud file-management platform with multiple storage adapters, previews, sharing, RBAC, audit logs, semantic search, and automation.",
+      "positioning": [
+        "Complete browser UI with file workflows, sharing, previews, RBAC, audit logging, protocols, and an online demo.",
+        "Docker Compose deployment and first-run administrator setup are straightforward.",
+        "Plugin architecture and numerous storage adapters provide strong client customization and rebranding potential.",
+        "AI search infrastructure is optional, so the core product remains deployable without the more complex vector stack."
+      ]
+    },
+    {
+      "rank": 16,
+      "repository": "presenton/presenton",
+      "score": 88,
+      "category": "CONTENT",
+      "userGets": "A self-hosted and desktop AI presentation generator with visual editing, custom templates, multi-user workspaces, API access, and editable PPTX/PDF export.",
+      "positioning": [
+        "This is a complete end-user product with generation, drag editing, templates, accounts, administration, API access, and editable exports.",
+        "Docker and desktop distributions provide clear deployment paths, while local-model support reduces mandatory SaaS dependence.",
+        "Custom HTML/Tailwind templates and PowerPoint-derived designs offer unusually strong branding and adaptation potential.",
+        "The broad model, image, document-processing, memory, and export stack introduces more operational complexity than a conventional CRUD application."
+      ]
+    },
+    {
+      "rank": 17,
+      "repository": "lissy93/dashy",
+      "score": 88,
+      "category": "DASHBOARD",
+      "userGets": "Highly customizable self-hosted dashboard and application homepage with pages, widgets, status checks, search, themes, authentication, and a visual configuration editor.",
+      "positioning": [
+        "Complete, responsive UI includes pages, widgets, status monitoring, search, authentication, and workspace views.",
+        "Single-container deployment, Compose support, low resource requirements, and static-hosting options make deployment straightforward.",
+        "Themes, custom CSS, configurable titles, backgrounds, navigation, icons, translations, and UI editing provide strong rebranding potential.",
+        "The core workflow is primarily a portal and monitoring homepage rather than a deep line-of-business system."
+      ]
+    },
+    {
+      "rank": 18,
+      "repository": "BookStackApp/BookStack",
+      "score": 87,
+      "category": "KNOWLEDGE_BASE",
+      "userGets": "A self-hosted web application for creating, organizing, and sharing documentation and institutional knowledge.",
+      "positioning": [
+        "Clearly presented as a complete, intuitive documentation platform with installation instructions, full documentation, screenshots, and a demo.",
+        "Supports a broad, recognizable business workflow usable by nontechnical users.",
+        "Includes administration, security, accessibility, translations, stable upgrades, and documented customization options.",
+        "Self-hosting and client adaptation are well supported, although the project intentionally discourages repurposing it beyond documentation workflows."
+      ]
+    },
+    {
+      "rank": 19,
+      "repository": "fabriziosalmi/certmate",
+      "score": 87,
+      "category": "SECURITY",
+      "userGets": "Self-hosted TLS certificate lifecycle platform for discovery, inventory, issuance, renewal, deployment, auditing, backup, and API automation.",
+      "positioning": [
+        "The README documents a broad, coherent certificate lifecycle product with dashboard, setup wizard, RBAC, API, audit, backup, monitoring, and deployment workflows.",
+        "Docker Compose provides a practical quick start, while Python, Kubernetes, and system-service options cover varied client environments.",
+        "The product addresses a concrete recurring business need and supports numerous DNS, CA, storage, and notification integrations.",
+        "Real deployments require sensitive infrastructure credentials and careful network and certificate configuration.",
+        "The README states that white-label and some high-scale capabilities belong to a separate source-available edition, so rebranding depth in this repository is not fully demonstrated."
+      ]
+    },
+    {
+      "rank": 20,
+      "repository": "gchq/CyberChef",
+      "score": 87,
+      "category": "SECURITY",
+      "userGets": "Browser-based workbench for composing encoding, encryption, compression, parsing, hashing, and data-analysis operations.",
+      "positioning": [
+        "Complete and substantial browser UI with input, output, operation catalog, and recipe builder.",
+        "Documented one-command prebuilt Docker deployment and production build process.",
+        "Entirely client-side operation supports local and closed-network hosting without backend infrastructure.",
+        "Extensive real analyst workflows, saved recipes, file handling, deep links, tests, and extension guidance are documented.",
+        "Specialized security focus and established product identity may require thoughtful branding changes."
+      ]
+    },
+    {
+      "rank": 21,
+      "repository": "clidey/whodb",
+      "score": 87,
+      "category": "DEVELOPER_PRODUCT",
+      "userGets": "A lightweight browser, desktop, and terminal database workspace for browsing data, editing records, querying, schema visualization, and optional AI assistance.",
+      "positioning": [
+        "One-command Docker startup, desktop packages, CLI, live demo, screenshots, and extensive documentation demonstrate a complete product.",
+        "Core workflows cover browsing, editing, querying, schema visualization, imports, and exports across many database types.",
+        "AI features are optional and can use local providers, so the core product is not dependent on paid AI services.",
+        "Some organizational capabilities such as SSO, shared projects, audit logs, and fine-grained controls are reserved for the separate commercial platform."
+      ]
+    },
+    {
+      "rank": 22,
+      "repository": "flarum/flarum",
+      "score": 87,
+      "category": "COMMUNICATION",
+      "userGets": "Responsive, extensible web forum platform for running branded online communities and discussion sites.",
+      "positioning": [
+        "Clearly presented as complete forum software with a responsive user interface and established community workflows.",
+        "Explicitly designed for customization, extension, and integration through an extension API.",
+        "Conventional PHP deployment and dedicated installation documentation support self-hosting.",
+        "Strong fit for rebranded client communities across several business sectors.",
+        "This repository is the application skeleton while most core development occurs in another repository, which slightly complicates source-level packaging."
+      ]
+    },
+    {
+      "rank": 23,
+      "repository": "AtalayaLabs/OxiCloud",
+      "score": 86,
+      "category": "FILE_MANAGEMENT",
+      "userGets": "Lightweight self-hosted cloud suite for files, sharing, calendars, contacts, DAV access, and optional office editing.",
+      "positioning": [
+        "Complete web UI and strong everyday business workflows",
+        "Straightforward Docker Compose deployment with environment-driven configuration",
+        "Uses standard WebDAV, CalDAV, and CardDAV protocols with broad client interoperability",
+        "Admin roles, quotas, OIDC, sharing, REST API, and documented integrations strengthen client adaptability",
+        "Desktop sync client, mobile apps, and end-to-end encryption are not yet available",
+        "Some DAV behavior remains explicitly partial"
+      ]
+    },
+    {
+      "rank": 24,
+      "repository": "webmin/webmin",
+      "score": 86,
+      "category": "DEVELOPER_PRODUCT",
+      "userGets": "Web-based administration control panel for Unix-like servers, operating-system settings, and common server applications.",
+      "positioning": [
+        "Complete, broad administration product with a substantial graphical dashboard",
+        "Supports operating-system and application management through 116 standard modules and custom modules",
+        "Strong managed-service and hosting-provider client use cases",
+        "Installation is delegated to external documentation rather than shown in the README",
+        "System-level privileges and broad administrative scope increase deployment and support risk"
+      ]
+    },
+    {
+      "rank": 25,
+      "repository": "netbox-community/netbox",
+      "score": 86,
+      "category": "FILE_MANAGEMENT",
+      "userGets": "Network infrastructure source-of-truth application combining IP address management, data-center infrastructure management, APIs, validation, and automation hooks.",
+      "positioning": [
+        "Extensive real-world network-management workflows and cohesive data model",
+        "Strong UI, granular permissions, change logging, APIs, scripts, webhooks, custom fields, and plugins",
+        "Comprehensive documentation and public demo support deployment and client handoff",
+        "Excellent customization and integration potential",
+        "Deployment and domain modeling are substantially more complex than small single-container applications"
+      ]
+    },
+    {
+      "rank": 26,
+      "repository": "go-gitea/gitea",
+      "score": 86,
+      "category": "DEVELOPER_PRODUCT",
+      "userGets": "Self-hosted software development service with Git hosting, code review, issues, Kanban, wiki, packages, and CI/CD.",
+      "positioning": [
+        "It is a complete multi-user product spanning repositories, reviews, issues, projects, wiki, packages, and CI/CD.",
+        "Official containers, binaries, broad platform support, configuration references, and comprehensive documentation support deployment.",
+        "The extensive browser UI provides strong client-facing value.",
+        "Configuration, themes, plugins, and static settings indicate good adaptability, although explicit white-label instructions are not shown.",
+        "Its audience is limited to software organizations, but those workflows are commercially substantial."
+      ]
+    },
+    {
+      "rank": 27,
+      "repository": "DayuanJiang/next-ai-draw-io",
+      "score": 86,
+      "category": "PRODUCTIVITY",
+      "userGets": "Web and desktop application for generating and editing draw.io diagrams through natural-language AI commands.",
+      "positioning": [
+        "Complete, visually demonstrable application with web and desktop distributions",
+        "Clear installation, Docker, and multiple deployment paths",
+        "Broad multi-provider support includes custom endpoints and local Ollama",
+        "Admin panel supports shared model configuration, quotas, access controls, and observability",
+        "Dependence on capable LLM inference remains an operational cost and quality constraint"
+      ]
+    },
+    {
+      "rank": 28,
+      "repository": "cjpais/Handy",
+      "score": 86,
+      "category": "PRODUCTIVITY",
+      "userGets": "Cross-platform desktop dictation application that performs speech-to-text locally and inserts transcriptions into other applications.",
+      "positioning": [
+        "Provides a complete cross-platform desktop workflow, settings UI, installers, releases, and clear user instructions.",
+        "Runs locally without mandatory paid cloud APIs or server infrastructure.",
+        "README explicitly describes the project as extensible and forkable, although forks must replace protected branding.",
+        "Known platform-specific crashes and Linux integration issues moderately increase support burden."
+      ]
+    },
+    {
+      "rank": 29,
+      "repository": "gamosoft/NoteDiscovery",
+      "score": 86,
+      "category": "KNOWLEDGE_BASE",
+      "userGets": "A responsive self-hosted markdown knowledge base with editing, search, backlinks, graph visualization, themes, plugins, exports, drawing tools, and AI-assistant integration.",
+      "positioning": [
+        "Complete and visually demonstrated product with editing, organization, search, graph view, sharing, exports, themes, plugins, localization, drawings, API, and MCP integration.",
+        "One-command prebuilt Docker deployment, persistent plain-file storage, source installation, and extensive documentation support commercial handoff.",
+        "Themes, plugins, configuration mounts, translations, REST API, and plain markdown storage provide strong customization and adaptation potential.",
+        "No required paid service is identified for the core knowledge-base workflow.",
+        "Built-in authentication is disabled by default and described as suitable mainly for single users or small teams; production exposure requires authentication, HTTPS, or a reverse proxy."
+      ]
+    },
+    {
+      "rank": 30,
+      "repository": "BidingCC/BuildingAI",
+      "score": 85,
+      "category": "AUTOMATION",
+      "userGets": "Self-hosted visual platform for assembling AI agents, knowledge bases, RAG applications, model integrations, extensions, memberships, and billing.",
+      "positioning": [
+        "Evidence supports a substantial application with visual configuration, agents, RAG, knowledge bases, MCP, extensions, user registration, memberships, billing, and payments.",
+        "Docker Compose and an installation wizard provide a clear deployment path.",
+        "Multi-tenant and monetization-oriented workflows are unusually relevant to client resale and commercial adaptation.",
+        "Modern TypeScript, NestJS, Vue, and Nuxt stack should support customization and rebranding.",
+        "Large feature surface, PostgreSQL, AI-provider configuration, payment setup, and resource requirements make operation more complex than a focused single-purpose app.",
+        "README is concise and delegates alternate deployment details to an external guide, leaving some operational depth unproven."
+      ]
+    }
+  ],
+  "popularRejectedDespiteStars": [
+    {
+      "commercialBundleScore": 48,
+      "aiRepositoryKind": "DEV_TOOL",
+      "bundleScoreReasons": [
+        "Mature installable runtime with CLI, REST API, Docker image, model management, and extensive documentation.",
+        "It lacks a meaningful customer-facing UI; the README directs users to separate community interfaces for finished workflows.",
+        "Hardware and model requirements can be substantial and vary by chosen model.",
+        "It is valuable infrastructure but has weak rebranding and direct client-project potential under the stated bundle criteria."
+      ],
+      "repository": {
+        "githubFullName": "ollama/ollama",
+        "repositoryUrl": "https://github.com/ollama/ollama",
+        "githubStars": 179306,
+        "githubDescription": "Get up and running with Kimi-K2.6, GLM-5.2, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+      }
+    },
+    {
+      "commercialBundleScore": 15,
+      "aiRepositoryKind": "FRAMEWORK",
+      "bundleScoreReasons": [
+        "README explicitly defines Tauri as a framework and directs users to create a new project.",
+        "It provides packaging, updater, tray, notification, and cross-platform capabilities for applications built with it.",
+        "There is no end-user application, business workflow, or UI to deploy and rebrand.",
+        "Customization potential belongs to applications created on the framework, not this repository as a bundled product."
+      ],
+      "repository": {
+        "githubFullName": "tauri-apps/tauri",
+        "repositoryUrl": "https://github.com/tauri-apps/tauri",
+        "githubStars": 110516,
+        "githubDescription": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend."
+      }
+    },
+    {
+      "commercialBundleScore": 13,
+      "aiRepositoryKind": "LIBRARY",
+      "bundleScoreReasons": [
+        "Explicitly a JavaScript library rather than a complete product.",
+        "No end-user interface, packaged business workflow, branding surface, or independent application deployment.",
+        "Good API documentation and simple installation help developers but do not satisfy the bundle criterion."
+      ],
+      "repository": {
+        "githubFullName": "puppeteer/puppeteer",
+        "repositoryUrl": "https://github.com/puppeteer/puppeteer",
+        "githubStars": 95490,
+        "githubDescription": "JavaScript API for Chrome and Firefox"
+      }
+    },
+    {
+      "commercialBundleScore": 8,
+      "aiRepositoryKind": "DEV_TOOL",
+      "bundleScoreReasons": [
+        "It is a narrowly scoped command-line development utility with extensive installation and troubleshooting documentation.",
+        "It has no UI, end-user workflow, business records, or hosted deployment.",
+        "Its established identity and shell integration make rebranding commercially unhelpful.",
+        "Popularity does not change its unsuitability as one of 100 deployable client applications."
+      ],
+      "repository": {
+        "githubFullName": "nvm-sh/nvm",
+        "repositoryUrl": "https://github.com/nvm-sh/nvm",
+        "githubStars": 94701,
+        "githubDescription": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions. $nvm: 3ArcxqLtXMmBnWbbtfwQgVL3MNnDsggzgGDtXMnjpump"
+      }
+    },
+    {
+      "commercialBundleScore": 27,
+      "aiRepositoryKind": "DEV_TOOL",
+      "bundleScoreReasons": [
+        "It is explicitly a frontend workshop and development tool, not an end-user business application.",
+        "Its UI displays and tests components supplied by another project rather than delivering an independent business workflow.",
+        "It can publish documentation but requires an existing frontend codebase and framework integration.",
+        "Extensive addons and framework support make it customizable for developers, not readily rebrandable for client resale.",
+        "Popularity and ecosystem maturity do not compensate for its mismatch with a deployable-application bundle."
+      ],
+      "repository": {
+        "githubFullName": "storybookjs/storybook",
+        "repositoryUrl": "https://github.com/storybookjs/storybook",
+        "githubStars": 90911,
+        "githubDescription": "Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation"
+      }
+    },
+    {
+      "commercialBundleScore": 38,
+      "aiRepositoryKind": "APPLICATION",
+      "bundleScoreReasons": [
+        "The product category and eventual cross-platform editor could have strong commercial value.",
+        "README explicitly states this repository is a ground-up rewrite and directs current users to the classic repository.",
+        "Major capabilities are presented as forthcoming, and outside contributions are not yet supported.",
+        "Development requires multiple web, API, and desktop processes, with no production deployment instructions shown."
+      ],
+      "repository": {
+        "githubFullName": "OpenCut-app/OpenCut",
+        "repositoryUrl": "https://github.com/opencut-app/opencut",
+        "githubStars": 85619,
+        "githubDescription": "The open-source CapCut alternative"
+      }
+    },
+    {
+      "commercialBundleScore": 29,
+      "aiRepositoryKind": "DEV_TOOL",
+      "bundleScoreReasons": [
+        "It is primarily a globally installed CLI and repository workflow rather than an end-user application.",
+        "The dashboard preview does not establish a deployable multi-user product or meaningful customer-facing UI.",
+        "Strong documentation and customization help developer adoption but do not provide a rebrandable client solution.",
+        "Core value also depends on separate AI coding assistants."
+      ],
+      "repository": {
+        "githubFullName": "Fission-AI/OpenSpec",
+        "repositoryUrl": "https://github.com/fission-ai/openspec",
+        "githubStars": 66045,
+        "githubDescription": "Spec-driven development (SDD) for AI coding assistants."
+      }
+    },
+    {
+      "commercialBundleScore": 44,
+      "aiRepositoryKind": "LIBRARY",
+      "bundleScoreReasons": [
+        "Extensive format support, local processing, API service, CLI, integrations, and strong documentation provide substantial backend value.",
+        "Repository is primarily a Python toolkit rather than a complete end-user application.",
+        "No meaningful product UI, authentication workflow, client management, or operational dashboard is evidenced.",
+        "Advanced OCR, ASR, video, and VLM features introduce model and compute complexity."
+      ],
+      "repository": {
+        "githubFullName": "docling-project/docling",
+        "repositoryUrl": "https://github.com/docling-project/docling",
+        "githubStars": 65462,
+        "githubDescription": "Get your documents ready for gen AI"
+      }
+    },
+    {
+      "commercialBundleScore": 14,
+      "aiRepositoryKind": "RESOURCE_COLLECTION",
+      "bundleScoreReasons": [
+        "README primarily presents guides, tables, links, reports, and example Claude configuration.",
+        "No independently deployable product or coherent end-user UI is evidenced.",
+        "Implemented examples depend on Claude Code and assorted external projects.",
+        "Popularity and breadth of content do not make it suitable as one commercial application."
+      ],
+      "repository": {
+        "githubFullName": "shanraisshan/claude-code-best-practice",
+        "repositoryUrl": "https://github.com/shanraisshan/claude-code-best-practice",
+        "githubStars": 64925,
+        "githubDescription": "from vibe coding to agentic engineering - practice makes claude perfect"
+      }
+    },
+    {
+      "commercialBundleScore": 17,
+      "aiRepositoryKind": "DEV_TOOL",
+      "bundleScoreReasons": [
+        "Repository supplies MCP, CLI, SDK, and extension packages rather than a standalone end-user application.",
+        "README explicitly states that the API backend, parsing engine, and crawling engine are private and absent.",
+        "Core value therefore depends on the hosted Context7 service and cannot be independently self-hosted from this repository.",
+        "It lacks a meaningful standalone UI and has weak rebranding or client-project potential."
+      ],
+      "repository": {
+        "githubFullName": "upstash/context7",
+        "repositoryUrl": "https://github.com/upstash/context7",
+        "githubStars": 61135,
+        "githubDescription": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors"
+      }
+    },
+    {
+      "commercialBundleScore": 43,
+      "aiRepositoryKind": "DEV_TOOL",
+      "bundleScoreReasons": [
+        "Provides mature CLI, Docker, MCP, storage, retrieval, and documentation paths.",
+        "Core operation is local and does not require a paid API.",
+        "No meaningful standalone UI or ordinary end-user workflow is shown.",
+        "Primarily functions as infrastructure integrated into other AI tools.",
+        "Pluggable backends improve adaptability but also target developers rather than turnkey clients."
+      ],
+      "repository": {
+        "githubFullName": "MemPalace/mempalace",
+        "repositoryUrl": "https://github.com/milla-jovovich/mempalace",
+        "githubStars": 58588,
+        "githubDescription": "The best-benchmarked open-source AI memory system. And it's free."
+      }
+    },
+    {
+      "commercialBundleScore": 43,
+      "aiRepositoryKind": "FRAMEWORK",
+      "bundleScoreReasons": [
+        "Runnable agent with documented setup, configuration, browser tools, and extensibility.",
+        "Primary interaction is terminal input; no polished product UI or focused business workflow is established.",
+        "Core operation depends on separately configured LLM APIs, commonly introducing proprietary-service cost and availability dependencies.",
+        "README calls it a simple implementation and labels the multi-agent version unstable.",
+        "Can serve as a foundation for client work, but substantial productization is still required."
+      ],
+      "repository": {
+        "githubFullName": "FoundationAgents/OpenManus",
+        "repositoryUrl": "https://github.com/foundationagents/openmanus",
+        "githubStars": 58055,
+        "githubDescription": "No fortress, purely open ground.  OpenManus is Coming."
+      }
+    },
+    {
+      "commercialBundleScore": 17,
+      "aiRepositoryKind": "FRAMEWORK",
+      "bundleScoreReasons": [
+        "README calls it an experimental, minimal, hackable training harness.",
+        "The only user interaction documented is a simple CLI.",
+        "Producing the highlighted model requires costly multi-GPU infrastructure; lower-resource paths give weak results.",
+        "It lacks a polished web UI and ordinary business workflows."
+      ],
+      "repository": {
+        "githubFullName": "karpathy/nanochat",
+        "repositoryUrl": "https://github.com/karpathy/nanochat",
+        "githubStars": 57469,
+        "githubDescription": "The best ChatGPT that $100 can buy."
+      }
+    },
+    {
+      "commercialBundleScore": 49,
+      "aiRepositoryKind": "CLI_TOOL",
+      "bundleScoreReasons": [
+        "The compiler is complete, documented, fast to install, and useful for producing professional documents.",
+        "Templates, scripting, fonts, and styling enable substantial output customization.",
+        "This repository contains the compiler and CLI, not the graphical collaborative editor promoted in the README.",
+        "It lacks an application UI, accounts, document management, and other client-ready workflows."
+      ],
+      "repository": {
+        "githubFullName": "typst/typst",
+        "repositoryUrl": "https://github.com/typst/typst",
+        "githubStars": 55624,
+        "githubDescription": "A markup-based typesetting system that is powerful and easy to learn."
+      }
+    },
+    {
+      "commercialBundleScore": 46,
+      "aiRepositoryKind": "CLI_TOOL",
+      "bundleScoreReasons": [
+        "Mature, complete, cross-platform tool with extensive installation and learning documentation.",
+        "Highly useful for automation but primarily serves technical users through a terminal.",
+        "Not structured for rebranding, white-labeling, or delivery as a client-specific application.",
+        "Its value is foundational tooling rather than a distinct business workflow product for the bundle."
+      ],
+      "repository": {
+        "githubFullName": "PowerShell/PowerShell",
+        "repositoryUrl": "https://github.com/powershell/powershell",
+        "githubStars": 55086,
+        "githubDescription": "PowerShell for every system!"
+      }
+    },
+    {
+      "commercialBundleScore": 22,
+      "aiRepositoryKind": "ALGORITHM_COLLECTION",
+      "bundleScoreReasons": [
+        "README explicitly describes a model family and research framework rather than a complete user application.",
+        "No self-contained production UI or client workflow is provided; playgrounds and Colab are demonstrations.",
+        "Model downloads and ML inference introduce heavier deployment requirements.",
+        "README explicitly discourages commercial or real-world use without further testing and development, and notes that prior TTS code was removed."
+      ],
+      "repository": {
+        "githubFullName": "microsoft/VibeVoice",
+        "repositoryUrl": "https://github.com/microsoft/vibevoice",
+        "githubStars": 53156,
+        "githubDescription": "Open-Source Frontier Voice AI"
+      }
+    },
+    {
+      "commercialBundleScore": 39,
+      "aiRepositoryKind": "LIBRARY",
+      "bundleScoreReasons": [
+        "Provides working CLI, server, Docker images, broad platform support, and extensive setup documentation.",
+        "Core deliverable is an inference implementation and collection of examples rather than a complete business application.",
+        "No cohesive end-user UI, user management, workflow layer, or client administration experience.",
+        "Requires downloading model files, with optional hardware integrations adding setup complexity."
+      ],
+      "repository": {
+        "githubFullName": "ggml-org/whisper.cpp",
+        "repositoryUrl": "https://github.com/ggml-org/whisper.cpp",
+        "githubStars": 53128,
+        "githubDescription": "Port of OpenAI's Whisper model in C/C++"
+      }
+    },
+    {
+      "commercialBundleScore": 43,
+      "aiRepositoryKind": "DEV_TOOL",
+      "bundleScoreReasons": [
+        "Operational proxy features and documentation indicate a usable backend service.",
+        "The repository has no meaningful built-in UI; graphical management and statistics require separate projects.",
+        "Its workflow is developer-focused and heavily dependent on third-party AI accounts or services.",
+        "Rebranding the API service is possible, but it offers little standalone client-facing product value."
+      ],
+      "repository": {
+        "githubFullName": "router-for-me/CLIProxyAPI",
+        "repositoryUrl": "https://github.com/router-for-me/cliproxyapi",
+        "githubStars": 48521,
+        "githubDescription": "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 3.1 Pro, GPT 5.6 Series, Grok 4.5, Claude model through API"
+      }
+    },
+    {
+      "commercialBundleScore": 47,
+      "aiRepositoryKind": "STARTER",
+      "bundleScoreReasons": [
+        "Strong reusable architecture, authentication, testing, deployment, and documentation foundations",
+        "Designed explicitly as a template and therefore highly customizable",
+        "Dashboard demonstrates plumbing and generic item CRUD rather than a complete business workflow",
+        "Requires substantial product definition, implementation, copy, and branding before client delivery",
+        "Must score below complete applications despite excellent engineering foundations"
+      ],
+      "repository": {
+        "githubFullName": "fastapi/full-stack-fastapi-template",
+        "repositoryUrl": "https://github.com/fastapi/full-stack-fastapi-template",
+        "githubStars": 45057,
+        "githubDescription": "Full-stack web application template with FastAPI, React, SQLModel, PostgreSQL, Vite, Tailwind CSS, shadcn/ui, FastAPI Cloud, and Docker Compose."
+      }
+    },
+    {
+      "commercialBundleScore": 12,
+      "aiRepositoryKind": "DEV_TOOL",
+      "bundleScoreReasons": [
+        "Clearly a command-line, single-purpose development utility rather than a business application.",
+        "No UI, deployable service, client workflow, or meaningful rebranding surface.",
+        "Documentation is extensive and installation is generally manageable, but those strengths do not make it bundle-ready.",
+        "Primarily useful as an underlying development dependency."
+      ],
+      "repository": {
+        "githubFullName": "pyenv/pyenv",
+        "repositoryUrl": "https://github.com/pyenv/pyenv",
+        "githubStars": 45043,
+        "githubDescription": "Simple Python version management"
+      }
+    },
+    {
+      "commercialBundleScore": 31,
+      "aiRepositoryKind": "CLI_TOOL",
+      "bundleScoreReasons": [
+        "Usable, documented MVP with simple cross-platform installation.",
+        "It is a shell rather than a deployable business application.",
+        "Configuration and plugins provide extensibility, but little evidence supports practical rebranding or client-specific resale.",
+        "No graphical UI or multi-user business workflow is described."
+      ],
+      "repository": {
+        "githubFullName": "nushell/nushell",
+        "repositoryUrl": "https://github.com/nushell/nushell",
+        "githubStars": 40321,
+        "githubDescription": "A new type of shell"
+      }
+    },
+    {
+      "commercialBundleScore": 39,
+      "aiRepositoryKind": "DEV_TOOL",
+      "bundleScoreReasons": [
+        "Extensive setup, workflow, migration, and CLI documentation.",
+        "Usable plugin and CLI workflows, but no standalone end-user application UI.",
+        "Strong dependence on Claude Code, model services, and optional external provider CLIs.",
+        "Developer-only positioning and limited suitability for rebranded client delivery."
+      ],
+      "repository": {
+        "githubFullName": "Yeachan-Heo/oh-my-claudecode",
+        "repositoryUrl": "https://github.com/yeachan-heo/oh-my-claudecode",
+        "githubStars": 38767,
+        "githubDescription": "Teams-first Multi-agent orchestration for Claude Code"
+      }
+    },
+    {
+      "commercialBundleScore": 22,
+      "aiRepositoryKind": "LIBRARY",
+      "bundleScoreReasons": [
+        "Explicitly presented as a JavaScript library with API examples rather than a complete application.",
+        "Useful OCR capability and straightforward npm or CDN integration.",
+        "Demo exists, but the repository does not supply a finished user workflow or product UI.",
+        "PDF support and recognition-model improvements are explicitly outside its scope."
+      ],
+      "repository": {
+        "githubFullName": "naptha/tesseract.js",
+        "repositoryUrl": "https://github.com/naptha/tesseract.js",
+        "githubStars": 38662,
+        "githubDescription": "Pure Javascript OCR for more than 100 Languages 📖🎉🖥"
+      }
+    },
+    {
+      "commercialBundleScore": 43,
+      "aiRepositoryKind": "CLI_TOOL",
+      "bundleScoreReasons": [
+        "Provides complete, well-defined security workflows and straightforward binary or container installation.",
+        "Broad scanning coverage creates real operational value.",
+        "The repository primarily supplies a CLI scanner without a standalone management UI.",
+        "Limited evidence of branding, client-facing customization, or application-style resale."
+      ],
+      "repository": {
+        "githubFullName": "aquasecurity/trivy",
+        "repositoryUrl": "https://github.com/aquasecurity/trivy",
+        "githubStars": 37582,
+        "githubDescription": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more"
+      }
+    },
+    {
+      "commercialBundleScore": 19,
+      "aiRepositoryKind": "CONFIG",
+      "bundleScoreReasons": [
+        "Repository is an operator-focused Compose configuration and runbook rather than a user application.",
+        "No product UI is evidenced beyond infrastructure monitoring through Grafana.",
+        "Requires substantial storage, memory, bandwidth, and upstream Ethereum endpoints.",
+        "README warns that the shipped execution client is deprecated and that the replacement Compose path is not implemented.",
+        "Narrow blockchain-node use and weak rebrandability make it unsuitable for a general commercial app bundle."
+      ],
+      "repository": {
+        "githubFullName": "inkonchain/node",
+        "repositoryUrl": "https://github.com/inkonchain/node",
+        "githubStars": 36473,
+        "githubDescription": "How to run an Ink Node"
+      }
+    },
+    {
+      "commercialBundleScore": 36,
+      "aiRepositoryKind": "LIBRARY",
+      "bundleScoreReasons": [
+        "README primarily documents an SDK and agent integration surface rather than a deployable end-user application.",
+        "Local indexing, retrieval, and storage are clearly documented and avoid a vector database.",
+        "No repository-hosted user interface, user management, administration, or branded workflow is demonstrated.",
+        "Core operation requires an external LLM provider; OCR, image understanding, MCP, and corpus-scale features are cloud-only."
+      ],
+      "repository": {
+        "githubFullName": "VectifyAI/PageIndex",
+        "repositoryUrl": "https://github.com/vectifyai/pageindex",
+        "githubStars": 35305,
+        "githubDescription": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG"
+      }
+    },
+    {
+      "commercialBundleScore": 46,
+      "aiRepositoryKind": "RESOURCE_COLLECTION",
+      "bundleScoreReasons": [
+        "Rich, concrete financial workflows and extensive instructions for adapting prompts, skills, and connectors.",
+        "Repository explicitly consists of reference agents, plugins, and cookbooks rather than one complete application.",
+        "Core operation depends on proprietary Claude products or APIs and may require paid financial-data services.",
+        "No standalone product UI, authentication layer, data store, or client-ready deployment is evidenced."
+      ],
+      "repository": {
+        "githubFullName": "anthropics/financial-services",
+        "repositoryUrl": "https://github.com/anthropics/financial-services-plugins",
+        "githubStars": 34483,
+        "githubDescription": null
+      }
+    },
+    {
+      "commercialBundleScore": 33,
+      "aiRepositoryKind": "BOILERPLATE",
+      "bundleScoreReasons": [
+        "The repository explicitly identifies itself as a template and requires an AI agent to generate the actual website.",
+        "It supplies a development foundation and workflow rather than a finished product with its own user workflow or meaningful application UI.",
+        "Dependence on external AI coding agents makes results and operating cost variable.",
+        "Good documentation, Docker support, and a modern stack increase usefulness as a developer bonus but do not overcome the absence of a complete application."
+      ],
+      "repository": {
+        "githubFullName": "JCodesMore/ai-website-cloner-template",
+        "repositoryUrl": "https://github.com/jcodesmore/ai-website-cloner-template",
+        "githubStars": 32968,
+        "githubDescription": "Clone any website with one command using AI coding agents"
+      }
+    },
+    {
+      "commercialBundleScore": 42,
+      "aiRepositoryKind": "CLI_TOOL",
+      "bundleScoreReasons": [
+        "It provides a complete technical PaaS workflow with stable installation, upgrade, troubleshooting, and operations documentation.",
+        "It requires a dedicated VM, privileged installation, SSH, domains, and ongoing infrastructure administration.",
+        "No meaningful end-user graphical interface or business workflow is evidenced.",
+        "Customization is operational and plugin-oriented rather than product branding or client-facing adaptation."
+      ],
+      "repository": {
+        "githubFullName": "dokku/dokku",
+        "repositoryUrl": "https://github.com/dokku/dokku",
+        "githubStars": 32111,
+        "githubDescription": "A docker-powered PaaS that helps you build and manage the lifecycle of applications"
+      }
+    },
+    {
+      "commercialBundleScore": 40,
+      "aiRepositoryKind": "CLI_TOOL",
+      "bundleScoreReasons": [
+        "It is a complete end-user tool with a full-screen terminal search interface and optional self-hosting.",
+        "The workflow is narrow and aimed almost entirely at technical shell users.",
+        "The README documents installation and sync but provides no evidence of branding or client-specific product customization.",
+        "Its UI is terminal-based rather than a conventional demonstrable business web application."
+      ],
+      "repository": {
+        "githubFullName": "atuinsh/atuin",
+        "repositoryUrl": "https://github.com/atuinsh/atuin",
+        "githubStars": 31392,
+        "githubDescription": "✨ Making your shell magical"
+      }
+    }
+  ]
+}

@@ -1,0 +1,718 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum CrawlStatus {
+  DISCOVERED
+  PARSED
+  FAILED
+}
+
+enum CrawlJobStatus {
+  RUNNING
+  COMPLETED
+  FAILED
+}
+
+enum GitHubEnrichmentStatus {
+  PENDING      @map("pending")
+  PROCESSING   @map("processing")
+  ENRICHED     @map("enriched")
+  UNAVAILABLE  @map("unavailable")
+  RATE_LIMITED @map("rate_limited")
+  FAILED       @map("failed")
+}
+
+enum LicenseCategory {
+  PERMISSIVE @map("permissive")
+  COPYLEFT   @map("copyleft")
+  NO_LICENSE @map("no_license")
+  UNKNOWN    @map("unknown")
+  RESTRICTED @map("restricted")
+}
+
+enum CandidateStatus {
+  CANDIDATE @map("candidate")
+  REVIEW    @map("review")
+  EXCLUDED  @map("excluded")
+}
+
+enum ReadmeStatus {
+  PENDING @map("pending")
+  FETCHED @map("fetched")
+  MISSING @map("missing")
+  FAILED  @map("failed")
+}
+
+enum RepositoryKind {
+  APPLICATION          @map("application")
+  LIBRARY              @map("library")
+  FRAMEWORK            @map("framework")
+  CLI_TOOL             @map("cli_tool")
+  DEV_TOOL             @map("dev_tool")
+  AWESOME_LIST         @map("awesome_list")
+  BOOK                 @map("book")
+  COURSE               @map("course")
+  TUTORIAL             @map("tutorial")
+  ALGORITHM_COLLECTION @map("algorithm_collection")
+  RESOURCE_COLLECTION  @map("resource_collection")
+  CONFIG               @map("config")
+  STARTER              @map("starter")
+  BOILERPLATE          @map("boilerplate")
+  UNKNOWN              @map("unknown")
+}
+
+enum AiAnalysisStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+enum AiPoolSource {
+  CANDIDATE
+  REVIEW
+  GAP_FILL
+  FALSE_NEGATIVE
+}
+
+enum AiShortlistTier {
+  STRONG
+  POSSIBLE
+  WEAK
+  REJECT
+}
+
+enum GitHubSearchQueryStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+  RATE_LIMITED
+}
+
+enum BusinessAnalysisSource {
+  NEW_AI
+  REUSED_EXISTING
+}
+
+enum ComplexityLevel {
+  LOW
+  MEDIUM
+  HIGH
+  UNKNOWN
+}
+
+enum DeepStaticStatus {
+  PENDING
+  PROCESSING
+  INSPECTED
+  CLONE_FAILED
+  FAILED
+}
+
+enum DeepStaticClassification {
+  READY_FOR_SANDBOX
+  REVIEW
+  DROP
+}
+
+enum BusinessProductCategory {
+  CRM
+  SALES
+  BOOKING
+  HR
+  ATS
+  INVOICING
+  ACCOUNTING
+  FINANCE
+  ERP
+  POS
+  INVENTORY
+  ECOMMERCE
+  CUSTOMER_SUPPORT
+  PROJECT_MANAGEMENT
+  PROPERTY_MANAGEMENT
+  REAL_ESTATE
+  RESTAURANT
+  HOTEL
+  LMS
+  CLIENT_PORTAL
+  FORMS
+  SURVEYS
+  MARKETING
+  EMAIL_MARKETING
+  SOCIAL_MEDIA
+  TIME_TRACKING
+  PAYROLL
+  DOCUMENT_MANAGEMENT
+  CMS
+  ANALYTICS
+  DASHBOARD
+  AUTOMATION
+  PRODUCTIVITY
+  OTHER
+}
+
+enum AiProductCategory {
+  CRM
+  SALES
+  LEAD_MANAGEMENT
+  ERP
+  PROJECT_MANAGEMENT
+  BOOKING
+  APPOINTMENTS
+  CALENDAR_BUSINESS
+  ECOMMERCE
+  INVENTORY
+  POS
+  CMS
+  ANALYTICS
+  DASHBOARD
+  CUSTOMER_SUPPORT
+  HELPDESK
+  LIVE_CHAT
+  KNOWLEDGE_BASE
+  HR
+  HRM
+  ATS
+  FINANCE
+  INVOICING
+  ACCOUNTING
+  EXPENSES
+  PAYROLL
+  MARKETING
+  EMAIL_MARKETING
+  AUTOMATION
+  AI_ASSISTANT
+  AI_AGENT
+  CONTENT
+  SOCIAL_MEDIA
+  PROPERTY_MANAGEMENT
+  REAL_ESTATE
+  RESTAURANT
+  HOTEL
+  LMS
+  COURSE_PLATFORM
+  FORM_BUILDER
+  SURVEY
+  TIME_TRACKING
+  DOCUMENT_MANAGEMENT
+  CLIENT_PORTAL
+  SUBSCRIPTION_MANAGEMENT
+  COMMUNICATION
+  PRODUCTIVITY
+  FILE_MANAGEMENT
+  SECURITY
+  DEVELOPER_PRODUCT
+  OTHER
+}
+
+model TelegramMessage {
+  id                BigInt      @id @default(autoincrement())
+  channelUsername   String      @map("channel_username")
+  telegramMessageId BigInt      @map("telegram_message_id")
+  publishedAt       DateTime?   @map("published_at") @db.Timestamptz(3)
+  editedAt          DateTime?   @map("edited_at") @db.Timestamptz(3)
+  text              String?     @db.Text
+  html              String?     @db.Text
+  externalLinks     Json        @map("external_links") @db.JsonB
+  githubLinks       Json        @map("github_links") @db.JsonB
+  views             BigInt?
+  rawSource         String      @map("raw_source") @db.Text
+  crawlStatus       CrawlStatus @default(PARSED) @map("crawl_status")
+  crawledAt         DateTime    @default(now()) @map("crawled_at") @db.Timestamptz(3)
+
+  @@unique([channelUsername, telegramMessageId])
+  @@index([channelUsername, publishedAt])
+  @@map("telegram_messages")
+}
+
+model Repository {
+  id                        BigInt                         @id @default(autoincrement())
+  repositoryUrl             String                         @unique @map("repository_url")
+  githubOwner               String                         @map("github_owner")
+  githubRepo                String                         @map("github_repo")
+  occurrencesCount          Int                            @default(0) @map("occurrences_count")
+  githubId                  BigInt?                        @map("github_id")
+  githubNodeId              String?                        @map("github_node_id")
+  githubOwnerLogin          String?                        @map("github_owner_login")
+  githubOwnerAvatar         String?                        @map("github_owner_avatar") @db.Text
+  githubName                String?                        @map("github_name")
+  githubFullName            String?                        @map("github_full_name")
+  githubCanonicalUrl        String?                        @map("github_canonical_url") @db.Text
+  githubHtmlUrl             String?                        @map("github_html_url") @db.Text
+  githubDescription         String?                        @map("github_description") @db.Text
+  githubHomepage            String?                        @map("github_homepage") @db.Text
+  githubStars               Int?                           @map("github_stars")
+  githubForks               Int?                           @map("github_forks")
+  githubWatchers            Int?                           @map("github_watchers")
+  githubOpenIssues          Int?                           @map("github_open_issues")
+  githubSubscribers         Int?                           @map("github_subscribers")
+  githubPrimaryLanguage     String?                        @map("github_primary_language")
+  githubTopics              Json?                          @map("github_topics") @db.JsonB
+  githubSize                Int?                           @map("github_size")
+  githubDefaultBranch       String?                        @map("github_default_branch")
+  githubCreatedAt           DateTime?                      @map("github_created_at") @db.Timestamptz(3)
+  githubUpdatedAt           DateTime?                      @map("github_updated_at") @db.Timestamptz(3)
+  githubPushedAt            DateTime?                      @map("github_pushed_at") @db.Timestamptz(3)
+  githubArchived            Boolean?                       @map("github_archived")
+  githubDisabled            Boolean?                       @map("github_disabled")
+  githubFork                Boolean?                       @map("github_fork")
+  githubVisibility          String?                        @map("github_visibility")
+  githubLicenseSpdx         String?                        @map("github_license_spdx")
+  githubLicenseName         String?                        @map("github_license_name")
+  githubLicenseUrl          String?                        @map("github_license_url") @db.Text
+  daysSinceLastPush         Int?                           @map("days_since_last_push")
+  repositoryAgeDays         Int?                           @map("repository_age_days")
+  githubEnrichmentStatus    GitHubEnrichmentStatus         @default(PENDING) @map("github_enrichment_status")
+  githubMetadataUpdatedAt   DateTime?                      @map("github_metadata_updated_at") @db.Timestamptz(3)
+  githubErrorCode           String?                        @map("github_error_code")
+  githubErrorMessage        String?                        @map("github_error_message") @db.Text
+  licenseCategory           LicenseCategory                @default(UNKNOWN) @map("license_category")
+  licenseReviewRequired     Boolean                        @default(true) @map("license_review_required")
+  commercialBundleCandidate Boolean                        @default(false) @map("commercial_bundle_candidate")
+  candidateStatus           CandidateStatus                @default(REVIEW) @map("candidate_status")
+  readmeRaw                 String?                        @map("readme_raw") @db.Text
+  readmeText                String?                        @map("readme_text") @db.Text
+  readmeSha                 String?                        @map("readme_sha")
+  readmeUpdatedAt           DateTime?                      @map("readme_updated_at") @db.Timestamptz(3)
+  readmeStatus              ReadmeStatus                   @default(PENDING) @map("readme_status")
+  productLikenessScore      Int?                           @map("product_likeness_score")
+  repositoryKind            RepositoryKind                 @default(UNKNOWN) @map("repository_kind")
+  productLikenessReasons    Json?                          @map("product_likeness_reasons") @db.JsonB
+  templatePotentialScore    Int?                           @map("template_potential_score")
+  createdAt                 DateTime                       @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt                 DateTime                       @updatedAt @map("updated_at") @db.Timestamptz(3)
+  discoveries               RepositoryDiscovery[]
+  githubSearchDiscoveries   GitHubSearchDiscovery[]
+  aiAnalyses                RepositoryAiAnalysis[]
+  businessGapDiscoveries    BusinessGapDiscovery[]
+  commercialCandidatePoolV2 CommercialCandidatePoolV2?
+  businessAiAnalyses        RepositoryBusinessAiAnalysis[]
+  commercialCandidatePoolV3 CommercialCandidatePoolV3?
+  deepTestShortlistV1       DeepTestShortlistV1?
+  deepStaticInspections     RepositoryDeepStaticInspection[]
+
+  @@unique([githubOwner, githubRepo])
+  @@index([occurrencesCount])
+  @@index([githubEnrichmentStatus, githubMetadataUpdatedAt])
+  @@index([githubId])
+  @@index([licenseCategory, candidateStatus])
+  @@index([readmeStatus, readmeUpdatedAt])
+  @@index([repositoryKind, templatePotentialScore])
+  @@map("repositories")
+}
+
+model AiAnalysisRun {
+  id              BigInt                 @id @default(autoincrement())
+  analysisVersion String                 @unique @map("analysis_version")
+  promptVersion   String                 @map("prompt_version")
+  model           String
+  status          AiAnalysisStatus       @default(PENDING)
+  poolSize        Int                    @default(0) @map("pool_size")
+  completedCount  Int                    @default(0) @map("completed_count")
+  errorCount      Int                    @default(0) @map("error_count")
+  apiRequests     Int                    @default(0) @map("api_requests")
+  inputTokens     Int                    @default(0) @map("input_tokens")
+  outputTokens    Int                    @default(0) @map("output_tokens")
+  startedAt       DateTime?              @map("started_at") @db.Timestamptz(3)
+  completedAt     DateTime?              @map("completed_at") @db.Timestamptz(3)
+  createdAt       DateTime               @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt       DateTime               @updatedAt @map("updated_at") @db.Timestamptz(3)
+  analyses        RepositoryAiAnalysis[]
+
+  @@map("ai_analysis_runs")
+}
+
+model BusinessAiSelectionRun {
+  id               BigInt                         @id @default(autoincrement())
+  selectionVersion String                         @unique @map("selection_version")
+  promptVersion    String                         @map("prompt_version")
+  model            String
+  status           AiAnalysisStatus               @default(PENDING)
+  eligibleCount    Int                            @default(0) @map("eligible_count")
+  reusedCount      Int                            @default(0) @map("reused_count")
+  analyzedCount    Int                            @default(0) @map("analyzed_count")
+  errorCount       Int                            @default(0) @map("error_count")
+  apiRequests      Int                            @default(0) @map("api_requests")
+  inputTokens      Int                            @default(0) @map("input_tokens")
+  outputTokens     Int                            @default(0) @map("output_tokens")
+  startedAt        DateTime?                      @map("started_at") @db.Timestamptz(3)
+  completedAt      DateTime?                      @map("completed_at") @db.Timestamptz(3)
+  createdAt        DateTime                       @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt        DateTime                       @updatedAt @map("updated_at") @db.Timestamptz(3)
+  analyses         RepositoryBusinessAiAnalysis[]
+
+  @@map("business_ai_selection_runs")
+}
+
+model RepositoryBusinessAiAnalysis {
+  id                            BigInt                     @id @default(autoincrement())
+  repositoryId                  BigInt                     @map("repository_id")
+  runId                         BigInt                     @map("run_id")
+  selectionVersion              String                     @map("selection_version")
+  promptVersion                 String                     @map("prompt_version")
+  model                         String
+  source                        BusinessAnalysisSource
+  reusedFromAiAnalysisId        BigInt?                    @map("reused_from_ai_analysis_id")
+  status                        AiAnalysisStatus           @default(PENDING)
+  inputFingerprint              String                     @map("input_fingerprint")
+  targetBusinessCategories      Json                       @map("target_business_categories") @db.JsonB
+  searchQueries                 Json                       @map("search_queries") @db.JsonB
+  actualProductName             String?                    @map("actual_product_name")
+  productCategory               BusinessProductCategory?   @map("product_category")
+  secondaryCategories           Json?                      @map("secondary_categories") @db.JsonB
+  shortProductDescription       String?                    @map("short_product_description") @db.Text
+  whatUserGets                  String?                    @map("what_user_gets") @db.Text
+  targetUsers                   Json?                      @map("target_users") @db.JsonB
+  businessUseCases              Json?                      @map("business_use_cases") @db.JsonB
+  isCompleteApplication         Boolean?                   @map("is_complete_application")
+  isSelfHostable                Boolean?                   @map("is_self_hostable")
+  hasMeaningfulUi               Boolean?                   @map("has_meaningful_ui")
+  hasDemoOrScreenshots          Boolean?                   @map("has_demo_or_screenshots")
+  canBeRebranded                Boolean?                   @map("can_be_rebranded")
+  canBeUsedForClientProjects    Boolean?                   @map("can_be_used_for_client_projects")
+  requiresComplexInfrastructure Boolean?                   @map("requires_complex_infrastructure")
+  majorDependencies             Json?                      @map("major_dependencies") @db.JsonB
+  likelySetupComplexity         ComplexityLevel?           @map("likely_setup_complexity")
+  likelyCustomizationComplexity ComplexityLevel?           @map("likely_customization_complexity")
+  commercialRisks               Json?                      @map("commercial_risks") @db.JsonB
+  analysisConfidence            Int?                       @map("analysis_confidence")
+  productCompletenessScore      Int?                       @map("product_completeness_score")
+  businessUsefulnessScore       Int?                       @map("business_usefulness_score")
+  easeOfDeploymentScore         Int?                       @map("ease_of_deployment_score")
+  easeOfCustomizationScore      Int?                       @map("ease_of_customization_score")
+  visualValueScore              Int?                       @map("visual_value_score")
+  clientProjectPotentialScore   Int?                       @map("client_project_potential_score")
+  endUserClarityScore           Int?                       @map("end_user_clarity_score")
+  bundleUniquenessScore         Int?                       @map("bundle_uniqueness_score")
+  commercialBundleScore         Int?                       @map("commercial_bundle_score")
+  shortlistTier                 AiShortlistTier?           @map("shortlist_tier")
+  commercialBundleReasons       Json?                      @map("commercial_bundle_reasons") @db.JsonB
+  buyerValueProposition         String?                    @map("buyer_value_proposition") @db.Text
+  clientProjectExamples         Json?                      @map("client_project_examples") @db.JsonB
+  qualityAuditStatus            String?                    @map("quality_audit_status")
+  qualityAuditNotes             String?                    @map("quality_audit_notes") @db.Text
+  qualityAuditedAt              DateTime?                  @map("quality_audited_at") @db.Timestamptz(3)
+  rawResponse                   Json?                      @map("raw_response") @db.JsonB
+  analyzedAt                    DateTime?                  @map("analyzed_at") @db.Timestamptz(3)
+  errorCode                     String?                    @map("error_code")
+  errorMessage                  String?                    @map("error_message") @db.Text
+  createdAt                     DateTime                   @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt                     DateTime                   @updatedAt @map("updated_at") @db.Timestamptz(3)
+  repository                    Repository                 @relation(fields: [repositoryId], references: [id], onDelete: Cascade)
+  run                           BusinessAiSelectionRun     @relation(fields: [runId], references: [id], onDelete: Cascade)
+  commercialCandidatePoolV3     CommercialCandidatePoolV3?
+
+  @@unique([repositoryId, selectionVersion])
+  @@index([selectionVersion, status])
+  @@index([selectionVersion, shortlistTier, commercialBundleScore])
+  @@index([selectionVersion, productCategory])
+  @@map("repository_business_ai_analyses")
+}
+
+model RepositoryAiAnalysis {
+  id                            BigInt                     @id @default(autoincrement())
+  repositoryId                  BigInt                     @map("repository_id")
+  runId                         BigInt                     @map("run_id")
+  analysisVersion               String                     @map("analysis_version")
+  promptVersion                 String                     @map("prompt_version")
+  model                         String
+  poolRank                      Int                        @map("pool_rank")
+  poolSource                    AiPoolSource               @map("pool_source")
+  status                        AiAnalysisStatus           @default(PENDING)
+  inputFingerprint              String                     @map("input_fingerprint")
+  aiRepositoryKind              RepositoryKind?            @map("ai_repository_kind")
+  actualProductName             String?                    @map("actual_product_name")
+  productCategory               AiProductCategory?         @map("product_category")
+  shortProductDescription       String?                    @map("short_product_description") @db.Text
+  isCompleteApplication         Boolean?                   @map("is_complete_application")
+  canBeSelfHosted               Boolean?                   @map("can_be_self_hosted")
+  hasMeaningfulUi               Boolean?                   @map("has_meaningful_ui")
+  requiresComplexInfrastructure Boolean?                   @map("requires_complex_infrastructure")
+  canBeRebranded                Boolean?                   @map("can_be_rebranded")
+  canBeUsedAsClientProject      Boolean?                   @map("can_be_used_as_client_project")
+  targetUsers                   Json?                      @map("target_users") @db.JsonB
+  businessUseCases              Json?                      @map("business_use_cases") @db.JsonB
+  majorSetupDependencies        Json?                      @map("major_setup_dependencies") @db.JsonB
+  potentialBundlePositioning    String?                    @map("potential_bundle_positioning") @db.Text
+  analysisConfidence            Int?                       @map("analysis_confidence")
+  productCompletenessScore      Int?                       @map("product_completeness_score")
+  businessUsefulnessScore       Int?                       @map("business_usefulness_score")
+  easeOfDeploymentScore         Int?                       @map("ease_of_deployment_score")
+  easeOfCustomizationScore      Int?                       @map("ease_of_customization_score")
+  visualDemoValueScore          Int?                       @map("visual_demo_value_score")
+  clientResalePotentialScore    Int?                       @map("client_resale_potential_score")
+  bundleUniquenessScore         Int?                       @map("bundle_uniqueness_score")
+  commercialBundleScore         Int?                       @map("commercial_bundle_score")
+  shortlistTier                 AiShortlistTier?           @map("shortlist_tier")
+  bundleScoreReasons            Json?                      @map("bundle_score_reasons") @db.JsonB
+  previousStageStatus           AiShortlistTier?           @map("previous_stage_status")
+  previousScore                 Int?                       @map("previous_score")
+  reevaluationReason            String?                    @map("reevaluation_reason") @db.Text
+  discoveryReason               String?                    @map("discovery_reason") @db.Text
+  scoreChanged                  Boolean?                   @map("score_changed")
+  scoreDelta                    Int?                       @map("score_delta")
+  buyerValueProposition         String?                    @map("buyer_value_proposition") @db.Text
+  clientProjectExamples         Json?                      @map("client_project_examples") @db.JsonB
+  qualityAuditStatus            String?                    @map("quality_audit_status")
+  qualityAuditNotes             String?                    @map("quality_audit_notes") @db.Text
+  qualityAuditedAt              DateTime?                  @map("quality_audited_at") @db.Timestamptz(3)
+  rawResponse                   Json?                      @map("raw_response") @db.JsonB
+  analyzedAt                    DateTime?                  @map("analyzed_at") @db.Timestamptz(3)
+  errorCode                     String?                    @map("error_code")
+  errorMessage                  String?                    @map("error_message") @db.Text
+  createdAt                     DateTime                   @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt                     DateTime                   @updatedAt @map("updated_at") @db.Timestamptz(3)
+  repository                    Repository                 @relation(fields: [repositoryId], references: [id], onDelete: Cascade)
+  run                           AiAnalysisRun              @relation(fields: [runId], references: [id], onDelete: Cascade)
+  commercialCandidatePoolV2     CommercialCandidatePoolV2?
+
+  @@unique([repositoryId, analysisVersion])
+  @@index([analysisVersion, status])
+  @@index([analysisVersion, shortlistTier, commercialBundleScore])
+  @@index([analysisVersion, productCategory])
+  @@map("repository_ai_analyses")
+}
+
+model BusinessGapDiscovery {
+  id                BigInt            @id @default(autoincrement())
+  repositoryId      BigInt            @map("repository_id")
+  discoveryVersion  String            @map("discovery_version")
+  primaryCategory   AiProductCategory @map("primary_category")
+  matchedCategories Json              @map("matched_categories") @db.JsonB
+  discoveryReasons  Json              @map("discovery_reasons") @db.JsonB
+  discoveryScore    Int               @map("discovery_score")
+  standaloneScore   Int               @map("standalone_score")
+  selected          Boolean           @default(false)
+  createdAt         DateTime          @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt         DateTime          @updatedAt @map("updated_at") @db.Timestamptz(3)
+  repository        Repository        @relation(fields: [repositoryId], references: [id], onDelete: Cascade)
+
+  @@unique([repositoryId, discoveryVersion])
+  @@index([discoveryVersion, selected, primaryCategory])
+  @@map("business_gap_discoveries")
+}
+
+model CommercialCandidatePoolV2 {
+  id              BigInt               @id @default(autoincrement())
+  repositoryId    BigInt               @unique @map("repository_id")
+  analysisId      BigInt               @unique @map("analysis_id")
+  origin          String
+  shortlistTier   AiShortlistTier      @map("shortlist_tier")
+  bundleScore     Int                  @map("bundle_score")
+  productCategory AiProductCategory    @map("product_category")
+  rescued         Boolean              @default(false)
+  newGapFill      Boolean              @default(false) @map("new_gap_fill")
+  createdAt       DateTime             @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt       DateTime             @updatedAt @map("updated_at") @db.Timestamptz(3)
+  repository      Repository           @relation(fields: [repositoryId], references: [id], onDelete: Cascade)
+  analysis        RepositoryAiAnalysis @relation(fields: [analysisId], references: [id], onDelete: Cascade)
+
+  @@index([shortlistTier, bundleScore])
+  @@index([productCategory])
+  @@map("commercial_candidate_pool_v2")
+}
+
+model CommercialCandidatePoolV3 {
+  id                     BigInt                        @id @default(autoincrement())
+  repositoryId           BigInt                        @unique @map("repository_id")
+  repositoryAiAnalysisId BigInt?                       @map("repository_ai_analysis_id")
+  businessAiAnalysisId   BigInt?                       @unique @map("business_ai_analysis_id")
+  origin                 String
+  shortlistTier          AiShortlistTier               @map("shortlist_tier")
+  bundleScore            Int                           @map("bundle_score")
+  category               String
+  buyerValueProposition  String?                       @map("buyer_value_proposition") @db.Text
+  createdAt              DateTime                      @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt              DateTime                      @updatedAt @map("updated_at") @db.Timestamptz(3)
+  repository             Repository                    @relation(fields: [repositoryId], references: [id], onDelete: Cascade)
+  businessAiAnalysis     RepositoryBusinessAiAnalysis? @relation(fields: [businessAiAnalysisId], references: [id], onDelete: Cascade)
+  deepTestShortlistV1    DeepTestShortlistV1?
+
+  @@index([shortlistTier, bundleScore])
+  @@index([category])
+  @@map("commercial_candidate_pool_v3")
+}
+
+model DeepTestShortlistV1 {
+  id              BigInt                    @id @default(autoincrement())
+  repositoryId    BigInt                    @unique @map("repository_id")
+  candidatePoolId BigInt                    @unique @map("candidate_pool_id")
+  rank            Int                       @unique
+  category        String
+  bundleScore     Int                       @map("bundle_score")
+  selectionScore  Int                       @map("selection_score")
+  reasonSelected  String                    @map("reason_selected") @db.Text
+  createdAt       DateTime                  @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt       DateTime                  @updatedAt @map("updated_at") @db.Timestamptz(3)
+  repository      Repository                @relation(fields: [repositoryId], references: [id], onDelete: Cascade)
+  candidatePool   CommercialCandidatePoolV3 @relation(fields: [candidatePoolId], references: [id], onDelete: Cascade)
+
+  @@index([category, rank])
+  @@map("deep_test_shortlist_v1")
+}
+
+model DeepStaticInspectionRun {
+  id                BigInt      @id @default(autoincrement())
+  inspectionVersion String      @unique @map("inspection_version")
+  status            DeepStaticStatus @default(PENDING)
+  targetCount       Int         @default(0) @map("target_count")
+  inspectedCount    Int         @default(0) @map("inspected_count")
+  cloneFailureCount Int         @default(0) @map("clone_failure_count")
+  errorCount        Int         @default(0) @map("error_count")
+  startedAt         DateTime?   @map("started_at") @db.Timestamptz(3)
+  completedAt       DateTime?   @map("completed_at") @db.Timestamptz(3)
+  createdAt         DateTime    @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt         DateTime    @updatedAt @map("updated_at") @db.Timestamptz(3)
+  inspections       RepositoryDeepStaticInspection[]
+
+  @@map("deep_static_inspection_runs")
+}
+
+model RepositoryDeepStaticInspection {
+  id                       BigInt                   @id @default(autoincrement())
+  repositoryId             BigInt                   @map("repository_id")
+  runId                    BigInt                   @map("run_id")
+  inspectionVersion        String                   @map("inspection_version")
+  status                   DeepStaticStatus         @default(PENDING)
+  clonePath                String?                  @map("clone_path") @db.Text
+  cloneCommit              String?                  @map("clone_commit")
+  cloneError               String?                  @map("clone_error") @db.Text
+  stack                    Json?                    @db.JsonB
+  frontend                 Json?                    @db.JsonB
+  backend                  Json?                    @db.JsonB
+  packageManager           String?                  @map("package_manager")
+  isMonorepo               Boolean                  @default(false) @map("is_monorepo")
+  installCommands          Json?                    @map("install_commands") @db.JsonB
+  runtimeCommands          Json?                    @map("runtime_commands") @db.JsonB
+  hasTests                 Boolean                  @default(false) @map("has_tests")
+  docker                   Json?                    @db.JsonB
+  environment              Json?                    @db.JsonB
+  database                 Json?                    @db.JsonB
+  migrations               Json?                    @db.JsonB
+  seedDemo                 Json?                    @map("seed_demo") @db.JsonB
+  externalServices         Json?                    @map("external_services") @db.JsonB
+  paidDependencies         Json?                    @map("paid_dependencies") @db.JsonB
+  deploymentConfigs        Json?                    @map("deployment_configs") @db.JsonB
+  repositorySizeBytes      BigInt?                  @map("repository_size_bytes")
+  licenseFile              String?                  @map("license_file")
+  licenseDetected          String?                  @map("license_detected")
+  licenseMatchesMetadata   Boolean?                 @map("license_matches_metadata")
+  suspiciousScripts        Json?                    @map("suspicious_scripts") @db.JsonB
+  deprecatedDependencies   Json?                    @map("deprecated_dependencies") @db.JsonB
+  appearsStandalone        Boolean?                 @map("appears_standalone")
+  setupComplexity          ComplexityLevel          @default(UNKNOWN) @map("setup_complexity")
+  deepStaticScore          Int?                     @map("deep_static_score")
+  classification           DeepStaticClassification?
+  classificationReasons    Json?                    @map("classification_reasons") @db.JsonB
+  rawEvidence              Json?                    @map("raw_evidence") @db.JsonB
+  inspectedAt              DateTime?                @map("inspected_at") @db.Timestamptz(3)
+  createdAt                DateTime                 @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt                DateTime                 @updatedAt @map("updated_at") @db.Timestamptz(3)
+  repository               Repository               @relation(fields: [repositoryId], references: [id], onDelete: Cascade)
+  run                      DeepStaticInspectionRun  @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@unique([repositoryId, inspectionVersion])
+  @@index([inspectionVersion, status])
+  @@index([inspectionVersion, classification, deepStaticScore])
+  @@map("repository_deep_static_inspections")
+}
+
+model RepositoryDiscovery {
+  id                BigInt     @id @default(autoincrement())
+  repositoryId      BigInt     @map("repository_id")
+  repositoryUrl     String     @map("repository_url")
+  githubOwner       String     @map("github_owner")
+  githubRepo        String     @map("github_repo")
+  telegramMessageId BigInt     @map("telegram_message_id")
+  source            String
+  firstSeenAt       DateTime   @map("first_seen_at") @db.Timestamptz(3)
+  lastSeenAt        DateTime   @map("last_seen_at") @db.Timestamptz(3)
+  repository        Repository @relation(fields: [repositoryId], references: [id], onDelete: Cascade)
+
+  @@unique([repositoryUrl, telegramMessageId, source])
+  @@index([repositoryId])
+  @@index([telegramMessageId])
+  @@map("repository_discoveries")
+}
+
+model GitHubSearchDiscovery {
+  id                     BigInt            @id @default(autoincrement())
+  repositoryId           BigInt            @map("repository_id")
+  githubId               BigInt            @map("github_id")
+  targetBusinessCategory AiProductCategory @map("target_business_category")
+  searchQuery            String            @map("search_query") @db.Text
+  source                 String            @default("github_search")
+  rawResult              Json              @map("raw_result") @db.JsonB
+  firstSeenAt            DateTime          @map("first_seen_at") @db.Timestamptz(3)
+  lastSeenAt             DateTime          @map("last_seen_at") @db.Timestamptz(3)
+  createdAt              DateTime          @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt              DateTime          @updatedAt @map("updated_at") @db.Timestamptz(3)
+  repository             Repository        @relation(fields: [repositoryId], references: [id], onDelete: Cascade)
+
+  @@unique([githubId, targetBusinessCategory, searchQuery])
+  @@index([repositoryId])
+  @@index([targetBusinessCategory, lastSeenAt])
+  @@map("github_search_discoveries")
+}
+
+model GitHubSearchQuery {
+  id                     BigInt                  @id @default(autoincrement())
+  targetBusinessCategory AiProductCategory       @map("target_business_category")
+  searchQuery            String                  @unique @map("search_query") @db.Text
+  status                 GitHubSearchQueryStatus @default(PENDING)
+  totalCount             Int?                    @map("total_count")
+  rawResults             Int                     @default(0) @map("raw_results")
+  pagesProcessed         Int                     @default(0) @map("pages_processed")
+  incompleteResults      Boolean                 @default(false) @map("incomplete_results")
+  errorCode              String?                 @map("error_code")
+  errorMessage           String?                 @map("error_message") @db.Text
+  startedAt              DateTime?               @map("started_at") @db.Timestamptz(3)
+  completedAt            DateTime?               @map("completed_at") @db.Timestamptz(3)
+  createdAt              DateTime                @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt              DateTime                @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  @@index([targetBusinessCategory, status])
+  @@map("github_search_queries")
+}
+
+model CrawlJob {
+  id                BigInt         @id @default(autoincrement())
+  channelUsername   String         @map("channel_username")
+  status            CrawlJobStatus @default(RUNNING)
+  nextPageUrl       String?        @map("next_page_url") @db.Text
+  pagesProcessed    Int            @default(0) @map("pages_processed")
+  messagesFound     Int            @default(0) @map("messages_found")
+  githubLinksFound  Int            @default(0) @map("github_links_found")
+  duplicatesSkipped Int            @default(0) @map("duplicates_skipped")
+  errors            Int            @default(0)
+  startedAt         DateTime       @default(now()) @map("started_at") @db.Timestamptz(3)
+  updatedAt         DateTime       @updatedAt @map("updated_at") @db.Timestamptz(3)
+  completedAt       DateTime?      @map("completed_at") @db.Timestamptz(3)
+  lastError         String?        @map("last_error") @db.Text
+
+  failures CrawlFailure[]
+
+  @@index([channelUsername, status])
+  @@map("crawl_jobs")
+}
+
+model CrawlFailure {
+  id         BigInt   @id @default(autoincrement())
+  crawlJobId BigInt   @map("crawl_job_id")
+  pageUrl    String   @map("page_url") @db.Text
+  attempt    Int
+  error      String   @db.Text
+  createdAt  DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+  crawlJob   CrawlJob @relation(fields: [crawlJobId], references: [id], onDelete: Cascade)
+
+  @@index([crawlJobId, createdAt])
+  @@map("crawl_failures")
+}

@@ -1,0 +1,2916 @@
+{
+  "generatedAt": "2026-08-24T16:39:28.691Z",
+  "inspectionVersion": "deep-static-v1",
+  "run": {
+    "target": 150,
+    "inspected": 150,
+    "cloneFailures": 0,
+    "errors": 0
+  },
+  "clonedSuccessfully": 4,
+  "apiFallbackInspected": 146,
+  "cloneFailures": [],
+  "classifications": {
+    "READY_FOR_SANDBOX": 111,
+    "REVIEW": 39,
+    "DROP": 0
+  },
+  "dropReasons": [],
+  "categoryDistribution": {
+    "AI_AGENT": {
+      "READY_FOR_SANDBOX": 2,
+      "REVIEW": 0,
+      "DROP": 0
+    },
+    "AI_ASSISTANT": {
+      "READY_FOR_SANDBOX": 5,
+      "REVIEW": 2,
+      "DROP": 0
+    },
+    "ANALYTICS": {
+      "READY_FOR_SANDBOX": 5,
+      "REVIEW": 2,
+      "DROP": 0
+    },
+    "ATS": {
+      "READY_FOR_SANDBOX": 0,
+      "REVIEW": 2,
+      "DROP": 0
+    },
+    "AUTOMATION": {
+      "READY_FOR_SANDBOX": 8,
+      "REVIEW": 0,
+      "DROP": 0
+    },
+    "BOOKING": {
+      "READY_FOR_SANDBOX": 0,
+      "REVIEW": 4,
+      "DROP": 0
+    },
+    "CLIENT_PORTAL": {
+      "READY_FOR_SANDBOX": 1,
+      "REVIEW": 0,
+      "DROP": 0
+    },
+    "CMS": {
+      "READY_FOR_SANDBOX": 4,
+      "REVIEW": 1,
+      "DROP": 0
+    },
+    "COMMUNICATION": {
+      "READY_FOR_SANDBOX": 1,
+      "REVIEW": 2,
+      "DROP": 0
+    },
+    "CONTENT": {
+      "READY_FOR_SANDBOX": 6,
+      "REVIEW": 1,
+      "DROP": 0
+    },
+    "CRM": {
+      "READY_FOR_SANDBOX": 7,
+      "REVIEW": 1,
+      "DROP": 0
+    },
+    "CUSTOMER_SUPPORT": {
+      "READY_FOR_SANDBOX": 3,
+      "REVIEW": 0,
+      "DROP": 0
+    },
+    "DASHBOARD": {
+      "READY_FOR_SANDBOX": 0,
+      "REVIEW": 1,
+      "DROP": 0
+    },
+    "DEVELOPER_PRODUCT": {
+      "READY_FOR_SANDBOX": 9,
+      "REVIEW": 2,
+      "DROP": 0
+    },
+    "ECOMMERCE": {
+      "READY_FOR_SANDBOX": 5,
+      "REVIEW": 0,
+      "DROP": 0
+    },
+    "EMAIL_MARKETING": {
+      "READY_FOR_SANDBOX": 1,
+      "REVIEW": 0,
+      "DROP": 0
+    },
+    "ERP": {
+      "READY_FOR_SANDBOX": 2,
+      "REVIEW": 1,
+      "DROP": 0
+    },
+    "FILE_MANAGEMENT": {
+      "READY_FOR_SANDBOX": 3,
+      "REVIEW": 2,
+      "DROP": 0
+    },
+    "FINANCE": {
+      "READY_FOR_SANDBOX": 5,
+      "REVIEW": 1,
+      "DROP": 0
+    },
+    "HOTEL": {
+      "READY_FOR_SANDBOX": 2,
+      "REVIEW": 1,
+      "DROP": 0
+    },
+    "HR": {
+      "READY_FOR_SANDBOX": 0,
+      "REVIEW": 1,
+      "DROP": 0
+    },
+    "INVENTORY": {
+      "READY_FOR_SANDBOX": 3,
+      "REVIEW": 0,
+      "DROP": 0
+    },
+    "INVOICING": {
+      "READY_FOR_SANDBOX": 2,
+      "REVIEW": 1,
+      "DROP": 0
+    },
+    "KNOWLEDGE_BASE": {
+      "READY_FOR_SANDBOX": 8,
+      "REVIEW": 1,
+      "DROP": 0
+    },
+    "LMS": {
+      "READY_FOR_SANDBOX": 3,
+      "REVIEW": 0,
+      "DROP": 0
+    },
+    "MARKETING": {
+      "READY_FOR_SANDBOX": 2,
+      "REVIEW": 0,
+      "DROP": 0
+    },
+    "OTHER": {
+      "READY_FOR_SANDBOX": 5,
+      "REVIEW": 2,
+      "DROP": 0
+    },
+    "POS": {
+      "READY_FOR_SANDBOX": 3,
+      "REVIEW": 1,
+      "DROP": 0
+    },
+    "PRODUCTIVITY": {
+      "READY_FOR_SANDBOX": 3,
+      "REVIEW": 4,
+      "DROP": 0
+    },
+    "PROJECT_MANAGEMENT": {
+      "READY_FOR_SANDBOX": 0,
+      "REVIEW": 3,
+      "DROP": 0
+    },
+    "PROPERTY_MANAGEMENT": {
+      "READY_FOR_SANDBOX": 2,
+      "REVIEW": 1,
+      "DROP": 0
+    },
+    "REAL_ESTATE": {
+      "READY_FOR_SANDBOX": 1,
+      "REVIEW": 0,
+      "DROP": 0
+    },
+    "RESTAURANT": {
+      "READY_FOR_SANDBOX": 2,
+      "REVIEW": 0,
+      "DROP": 0
+    },
+    "SECURITY": {
+      "READY_FOR_SANDBOX": 8,
+      "REVIEW": 1,
+      "DROP": 0
+    },
+    "SUBSCRIPTION_MANAGEMENT": {
+      "READY_FOR_SANDBOX": 0,
+      "REVIEW": 1,
+      "DROP": 0
+    }
+  },
+  "infrastructure": {
+    "requiresDocker": 107,
+    "postgresql": 43,
+    "mysql": 33,
+    "sqlite": 36,
+    "potentiallyPaidSaasOrApi": 87,
+    "fullyLocalLooking": 61,
+    "demoOrSeedData": 72,
+    "envExample": 86
+  },
+  "top120": [
+    {
+      "rank": 1,
+      "repository": "aureuserp/aureuserp",
+      "category": "ERP",
+      "score": 100,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Laravel",
+        "PHP/Composer"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB"
+      ],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 2,
+      "repository": "open-edge-platform/geti",
+      "category": "DEVELOPER_PRODUCT",
+      "score": 100,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Python",
+        "React",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 3,
+      "repository": "openfun/richie",
+      "category": "CMS",
+      "score": 100,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Django",
+        "Python",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 4,
+      "repository": "plasmicapp/plasmic",
+      "category": "CMS",
+      "score": 97,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "Rails",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 5,
+      "repository": "iflytek/astron-agent",
+      "category": "AUTOMATION",
+      "score": 96,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go",
+        "Next.js",
+        "Python",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 6,
+      "repository": "Mintplex-Labs/anything-llm",
+      "category": "AI_ASSISTANT",
+      "score": 96,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Next.js",
+        "React",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 7,
+      "repository": "Osmantic/ODS",
+      "category": "AI_ASSISTANT",
+      "score": 96,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "Python",
+        "React",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 8,
+      "repository": "rcourtman/Pulse",
+      "category": "ANALYTICS",
+      "score": 96,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 9,
+      "repository": "readur/readur",
+      "category": "OTHER",
+      "score": 96,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "Python",
+        "Rails",
+        "React",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 10,
+      "repository": "Simon-Initiative/oli-torus",
+      "category": "LMS",
+      "score": 96,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "Phoenix",
+        "Python",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 11,
+      "repository": "AtalayaLabs/OxiCloud",
+      "category": "FILE_MANAGEMENT",
+      "score": 95,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "Rust",
+        "Svelte"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL"
+      ],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 12,
+      "repository": "ChurchCRM/CRM",
+      "category": "CRM",
+      "score": 95,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "PHP/Composer"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB"
+      ],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 13,
+      "repository": "ModelEngine-Group/app-platform",
+      "category": "AI_AGENT",
+      "score": 95,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "Python",
+        "React",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL"
+      ],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 14,
+      "repository": "microrealestate/microrealestate",
+      "category": "PROPERTY_MANAGEMENT",
+      "score": 94,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Next.js"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MongoDB",
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 15,
+      "repository": "apache/superset",
+      "category": "ANALYTICS",
+      "score": 93,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Next.js",
+        "Python",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MongoDB",
+        "MySQL/MariaDB",
+        "PostgreSQL",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 16,
+      "repository": "BidingCC/BuildingAI",
+      "category": "AUTOMATION",
+      "score": 93,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "NestJS",
+        "React",
+        "Rust",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 17,
+      "repository": "chattermate/chattermate.chat",
+      "category": "CUSTOMER_SUPPORT",
+      "score": 93,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Python",
+        "Rails",
+        "Rust",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 18,
+      "repository": "hightower-systems/sentry-wms",
+      "category": "INVENTORY",
+      "score": 93,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Flask",
+        "Next.js",
+        "Python",
+        "React",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL",
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 19,
+      "repository": "jkdevcode/trackmyexpenses",
+      "category": "FINANCE",
+      "score": 93,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "NestJS",
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB",
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 20,
+      "repository": "kestra-io/kestra",
+      "category": "AUTOMATION",
+      "score": 93,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Next.js",
+        "React",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 21,
+      "repository": "pipeshub-ai/pipeshub-ai",
+      "category": "KNOWLEDGE_BASE",
+      "score": 93,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "FastAPI",
+        "Next.js",
+        "Python",
+        "React",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MongoDB",
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 22,
+      "repository": "suitenumerique/docs",
+      "category": "KNOWLEDGE_BASE",
+      "score": 93,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Django",
+        "Next.js",
+        "Python",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 23,
+      "repository": "super-productivity/super-productivity",
+      "category": "PRODUCTIVITY",
+      "score": 93,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Angular",
+        "Next.js",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 24,
+      "repository": "ArnasDon/wacrm",
+      "category": "CRM",
+      "score": 92,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "React",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 25,
+      "repository": "guchengwuyue/yshop-crm",
+      "category": "CRM",
+      "score": 92,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Spring Boot",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB",
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 26,
+      "repository": "lfnovo/open-notebook",
+      "category": "KNOWLEDGE_BASE",
+      "score": 92,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "FastAPI",
+        "Next.js",
+        "Python",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 27,
+      "repository": "marmelab/atomic-crm",
+      "category": "CRM",
+      "score": 92,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 28,
+      "repository": "marsk7/Eatnow",
+      "category": "RESTAURANT",
+      "score": 92,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "PHP/Composer"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 29,
+      "repository": "Snouzy/workout-cool",
+      "category": "OTHER",
+      "score": 92,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "React",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 30,
+      "repository": "udai7/Hospiq",
+      "category": "HOTEL",
+      "score": 92,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL",
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 31,
+      "repository": "vas3k/TaxHacker",
+      "category": "FINANCE",
+      "score": 92,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 32,
+      "repository": "ArchiveBox/ArchiveBox",
+      "category": "KNOWLEDGE_BASE",
+      "score": 91,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Django",
+        "Next.js",
+        "Python",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 33,
+      "repository": "ChurchApps/B1Admin",
+      "category": "CRM",
+      "score": 91,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 34,
+      "repository": "coze-dev/coze-loop",
+      "category": "ANALYTICS",
+      "score": 91,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Go",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 35,
+      "repository": "fabriziosalmi/certmate",
+      "category": "SECURITY",
+      "score": 91,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Flask",
+        "Next.js",
+        "Python",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 36,
+      "repository": "harness/harness",
+      "category": "DEVELOPER_PRODUCT",
+      "score": 91,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Go",
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 37,
+      "repository": "inventree/InvenTree",
+      "category": "INVENTORY",
+      "score": 91,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Django",
+        "Python",
+        "React"
+      ],
+      "packageManager": null,
+      "database": [
+        "MySQL/MariaDB",
+        "PostgreSQL",
+        "Redis",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 38,
+      "repository": "presenton/presenton",
+      "category": "CONTENT",
+      "score": 91,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "FastAPI",
+        "Next.js",
+        "Python",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 39,
+      "repository": "antgroup/CloudRec",
+      "category": "SECURITY",
+      "score": 90,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 40,
+      "repository": "asiifdev/business-leads-ai-automation",
+      "category": "MARKETING",
+      "score": 90,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "NestJS",
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL",
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 41,
+      "repository": "block/buzz",
+      "category": "OTHER",
+      "score": 90,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Python",
+        "React",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL",
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 42,
+      "repository": "colanode/colanode",
+      "category": "COMMUNICATION",
+      "score": 90,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL",
+        "Redis",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 43,
+      "repository": "huabeitech/agent-desk",
+      "category": "CUSTOMER_SUPPORT",
+      "score": 90,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go",
+        "Next.js",
+        "React",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 44,
+      "repository": "pdovhomilja/nextcrm-app",
+      "category": "CRM",
+      "score": 90,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MongoDB",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 45,
+      "repository": "trycompai/crm",
+      "category": "CRM",
+      "score": 90,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "NestJS",
+        "Next.js",
+        "React",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL",
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 46,
+      "repository": "yikart/AiToEarn",
+      "category": "MARKETING",
+      "score": 90,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "NestJS",
+        "Next.js",
+        "React",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MongoDB",
+        "Redis",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 47,
+      "repository": "paperclipai/paperclip",
+      "category": "OTHER",
+      "score": 89,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Rails",
+        "React",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 48,
+      "repository": "umami-software/umami",
+      "category": "ANALYTICS",
+      "score": 89,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "pnpm",
+      "database": [
+        "PostgreSQL",
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 49,
+      "repository": "actualbudget/actual",
+      "category": "FINANCE",
+      "score": 88,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 50,
+      "repository": "cupcakearmy/cryptgeon",
+      "category": "SECURITY",
+      "score": 88,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Rust",
+        "Svelte"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 51,
+      "repository": "jamiepine/voicebox",
+      "category": "CONTENT",
+      "score": 88,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "FastAPI",
+        "Next.js",
+        "Python",
+        "React",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 52,
+      "repository": "pascalorg/editor",
+      "category": "PRODUCTIVITY",
+      "score": 88,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 53,
+      "repository": "gtsteffaniak/filebrowser",
+      "category": "FILE_MANAGEMENT",
+      "score": 87,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go",
+        "Next.js",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 54,
+      "repository": "HoshinoSuzumi/chronoframe",
+      "category": "CONTENT",
+      "score": 87,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 55,
+      "repository": "mwakidenis/Mpesa-Based_Wi-Fi-Hotspot_Billing_System",
+      "category": "INVOICING",
+      "score": 87,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 56,
+      "repository": "seriousm4x/UpSnap",
+      "category": "AUTOMATION",
+      "score": 87,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go",
+        "Rust",
+        "Svelte"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 57,
+      "repository": "authelia/authelia",
+      "category": "SECURITY",
+      "score": 86,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go",
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "Redis",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 58,
+      "repository": "Billmora/billmora",
+      "category": "INVOICING",
+      "score": 86,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Laravel",
+        "PHP/Composer",
+        "Rails"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 59,
+      "repository": "eclaire-labs/eclaire",
+      "category": "AI_ASSISTANT",
+      "score": 86,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL",
+        "Redis",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 60,
+      "repository": "emdash-cms/emdash",
+      "category": "CMS",
+      "score": 86,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL",
+        "Redis",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 61,
+      "repository": "Smaug6739/Alexandrie",
+      "category": "KNOWLEDGE_BASE",
+      "score": 86,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go",
+        "Rust",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 62,
+      "repository": "Zakarialabib/myStockMaster",
+      "category": "INVENTORY",
+      "score": 86,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Laravel",
+        "PHP/Composer",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB"
+      ],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 63,
+      "repository": "zaproxy/zaproxy",
+      "category": "SECURITY",
+      "score": 86,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Python"
+      ],
+      "packageManager": null,
+      "database": [],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 64,
+      "repository": "Crosstalk-Solutions/project-nomad",
+      "category": "KNOWLEDGE_BASE",
+      "score": 85,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB",
+        "Redis",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 65,
+      "repository": "whyour/qinglong",
+      "category": "AUTOMATION",
+      "score": 85,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 66,
+      "repository": "aelassas/movinin",
+      "category": "PROPERTY_MANAGEMENT",
+      "score": 84,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MongoDB"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 67,
+      "repository": "aelassas/wexcommerce",
+      "category": "ECOMMERCE",
+      "score": 84,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MongoDB"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 68,
+      "repository": "clidey/whodb",
+      "category": "DEVELOPER_PRODUCT",
+      "score": 84,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go",
+        "Python",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MongoDB",
+        "MySQL/MariaDB",
+        "PostgreSQL",
+        "Redis",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 69,
+      "repository": "jason5ng32/MyIP",
+      "category": "SECURITY",
+      "score": 84,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 70,
+      "repository": "labring/aiproxy",
+      "category": "AUTOMATION",
+      "score": 84,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go",
+        "Next.js",
+        "Rails",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL",
+        "Redis",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 71,
+      "repository": "open-pencil/open-pencil",
+      "category": "CONTENT",
+      "score": 84,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Rust",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 72,
+      "repository": "unopim/unopim",
+      "category": "ECOMMERCE",
+      "score": 84,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Laravel",
+        "Next.js",
+        "PHP/Composer",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 73,
+      "repository": "chuanman2707/CapyInn",
+      "category": "HOTEL",
+      "score": 83,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "Rails",
+        "React",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "SQLite"
+      ],
+      "docker": false,
+      "setupComplexity": "LOW",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 74,
+      "repository": "DayuanJiang/next-ai-draw-io",
+      "category": "PRODUCTIVITY",
+      "score": 83,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 75,
+      "repository": "pixlcore/xyops",
+      "category": "AUTOMATION",
+      "score": 83,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "Redis",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 76,
+      "repository": "gchq/CyberChef",
+      "category": "SECURITY",
+      "score": 82,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 77,
+      "repository": "go-gitea/gitea",
+      "category": "DEVELOPER_PRODUCT",
+      "score": 82,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go",
+        "Python",
+        "Svelte",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 78,
+      "repository": "jai3546/AI_ROCKERS",
+      "category": "LMS",
+      "score": 82,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL"
+      ],
+      "docker": false,
+      "setupComplexity": "LOW",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 79,
+      "repository": "likaia/nginxpulse",
+      "category": "ANALYTICS",
+      "score": 82,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go",
+        "Next.js",
+        "React",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 80,
+      "repository": "meshery/meshery",
+      "category": "DEVELOPER_PRODUCT",
+      "score": 82,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 81,
+      "repository": "directus-labs/agency-os",
+      "category": "ERP",
+      "score": 81,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 82,
+      "repository": "umbraco/Umbraco-CMS",
+      "category": "CMS",
+      "score": 81,
+      "classification": "REVIEW",
+      "stack": [
+        "Express"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Library/SDK/framework wording is present without enough static UI evidence; retain for human review rather than auto-drop."
+      ]
+    },
+    {
+      "rank": 83,
+      "repository": "Zleap-AI/SAG",
+      "category": "KNOWLEDGE_BASE",
+      "score": 81,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "FastAPI",
+        "Next.js",
+        "Python",
+        "React",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB",
+        "PostgreSQL",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 84,
+      "repository": "BookStackApp/BookStack",
+      "category": "KNOWLEDGE_BASE",
+      "score": 80,
+      "classification": "REVIEW",
+      "stack": [
+        "Laravel",
+        "PHP/Composer",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": false,
+      "reasons": [
+        "Static evidence is insufficient for an automated sandbox-ready decision; review setup and runtime behavior without executing code."
+      ]
+    },
+    {
+      "rank": 85,
+      "repository": "crmeb/crmeb_java",
+      "category": "ECOMMERCE",
+      "score": 80,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB",
+        "Redis"
+      ],
+      "docker": false,
+      "setupComplexity": "MEDIUM",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 86,
+      "repository": "dockpeek/dockpeek",
+      "category": "DEVELOPER_PRODUCT",
+      "score": 80,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "Python",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 87,
+      "repository": "gocronx-team/gocron",
+      "category": "AUTOMATION",
+      "score": 80,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Go",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB",
+        "PostgreSQL",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 88,
+      "repository": "ItzCrazyKns/Vane",
+      "category": "AI_ASSISTANT",
+      "score": 80,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 89,
+      "repository": "LearningCircuit/local-deep-research",
+      "category": "AI_ASSISTANT",
+      "score": 80,
+      "classification": "REVIEW",
+      "stack": [
+        "Next.js",
+        "Python"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": false,
+      "reasons": [
+        "Static evidence is insufficient for an automated sandbox-ready decision; review setup and runtime behavior without executing code."
+      ]
+    },
+    {
+      "rank": 90,
+      "repository": "Tanq16/ExpenseOwl",
+      "category": "FINANCE",
+      "score": 80,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go",
+        "Next.js"
+      ],
+      "packageManager": null,
+      "database": [
+        "PostgreSQL"
+      ],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 91,
+      "repository": "companion-inc/feynman",
+      "category": "AI_AGENT",
+      "score": 79,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "React",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": false,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 92,
+      "repository": "emaildelivery/edcom-ce",
+      "category": "EMAIL_MARKETING",
+      "score": 79,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Go",
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 93,
+      "repository": "kirilkirkov/Ecommerce-CodeIgniter-Bootstrap",
+      "category": "ECOMMERCE",
+      "score": 79,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "PHP/Composer"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB"
+      ],
+      "docker": false,
+      "setupComplexity": "LOW",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 94,
+      "repository": "lissy93/dashy",
+      "category": "DASHBOARD",
+      "score": 79,
+      "classification": "REVIEW",
+      "stack": [
+        "Express",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "LOW",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": false,
+      "reasons": [
+        "Static evidence is insufficient for an automated sandbox-ready decision; review setup and runtime behavior without executing code."
+      ]
+    },
+    {
+      "rank": 95,
+      "repository": "RealEstateWebTools/property_web_scraper",
+      "category": "REAL_ESTATE",
+      "score": 79,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Rails",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": false,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 96,
+      "repository": "sgasser/pasteguard",
+      "category": "SECURITY",
+      "score": 79,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Python"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 97,
+      "repository": "aryadwiputra/point-of-sales",
+      "category": "POS",
+      "score": 78,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Laravel",
+        "Next.js",
+        "PHP/Composer",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": false,
+      "setupComplexity": "LOW",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 98,
+      "repository": "fabyo0/pos-app",
+      "category": "POS",
+      "score": 78,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Laravel",
+        "PHP/Composer"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB"
+      ],
+      "docker": false,
+      "setupComplexity": "LOW",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 99,
+      "repository": "laravelio/laravel.io",
+      "category": "CMS",
+      "score": 78,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Laravel",
+        "PHP/Composer"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB"
+      ],
+      "docker": false,
+      "setupComplexity": "LOW",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 100,
+      "repository": "MCSManager/MCSManager",
+      "category": "DEVELOPER_PRODUCT",
+      "score": 78,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "Apache-2.0",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 101,
+      "repository": "NifrasUsanar/InfoShop",
+      "category": "POS",
+      "score": 78,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Laravel",
+        "PHP/Composer",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB"
+      ],
+      "docker": false,
+      "setupComplexity": "LOW",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 102,
+      "repository": "Selleo/mentingo",
+      "category": "LMS",
+      "score": 78,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "NestJS",
+        "Next.js"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL",
+        "Redis"
+      ],
+      "docker": false,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 103,
+      "repository": "drhenner/ror_ecommerce",
+      "category": "ECOMMERCE",
+      "score": 77,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Rails"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 104,
+      "repository": "polius/Wally",
+      "category": "FINANCE",
+      "score": 77,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "FastAPI",
+        "Python"
+      ],
+      "packageManager": null,
+      "database": [
+        "PostgreSQL",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 105,
+      "repository": "xliking/wechat_ai",
+      "category": "CUSTOMER_SUPPORT",
+      "score": 77,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Spring Boot"
+      ],
+      "packageManager": null,
+      "database": [
+        "Redis"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 106,
+      "repository": "chubin/wttr.in",
+      "category": "OTHER",
+      "score": 76,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go",
+        "Next.js"
+      ],
+      "packageManager": null,
+      "database": [],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 107,
+      "repository": "DrewThomasson/ebook2audiobook",
+      "category": "CONTENT",
+      "score": 76,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Python"
+      ],
+      "packageManager": null,
+      "database": [],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 108,
+      "repository": "gamosoft/NoteDiscovery",
+      "category": "KNOWLEDGE_BASE",
+      "score": 76,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Next.js",
+        "Python"
+      ],
+      "packageManager": null,
+      "database": [],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 109,
+      "repository": "madebyaris/poinf-of-sales",
+      "category": "RESTAURANT",
+      "score": 76,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go",
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 110,
+      "repository": "netbox-community/netbox",
+      "category": "FILE_MANAGEMENT",
+      "score": 76,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": false,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 111,
+      "repository": "webmin/webmin",
+      "category": "DEVELOPER_PRODUCT",
+      "score": 76,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [],
+      "packageManager": null,
+      "database": [
+        "MySQL/MariaDB"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 112,
+      "repository": "blackcandy-org/blackcandy",
+      "category": "CONTENT",
+      "score": 75,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Rails"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "PostgreSQL",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 113,
+      "repository": "composio-community/open-claude-cowork",
+      "category": "AI_ASSISTANT",
+      "score": 75,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": false,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 114,
+      "repository": "gogs/gogs",
+      "category": "DEVELOPER_PRODUCT",
+      "score": 75,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Go",
+        "Next.js",
+        "React"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB",
+        "PostgreSQL",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 115,
+      "repository": "Panelica/pnlcs",
+      "category": "CLIENT_PORTAL",
+      "score": 75,
+      "classification": "READY_FOR_SANDBOX",
+      "stack": [
+        "Express",
+        "Laravel",
+        "PHP/Composer",
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [
+        "MySQL/MariaDB",
+        "PostgreSQL",
+        "Redis",
+        "SQLite"
+      ],
+      "docker": false,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Documented runtime path, standalone product evidence and self-hosting signals are present."
+      ]
+    },
+    {
+      "rank": 116,
+      "repository": "aelassas/servy",
+      "category": "DEVELOPER_PRODUCT",
+      "score": 74,
+      "classification": "REVIEW",
+      "stack": [
+        "Rust"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": false,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Static evidence is insufficient for an automated sandbox-ready decision; review setup and runtime behavior without executing code."
+      ]
+    },
+    {
+      "rank": 117,
+      "repository": "drkNsubuga/PharmaSpot",
+      "category": "POS",
+      "score": 74,
+      "classification": "REVIEW",
+      "stack": [
+        "Express",
+        "PHP/Composer"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": false,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Static evidence is insufficient for an automated sandbox-ready decision; review setup and runtime behavior without executing code."
+      ]
+    },
+    {
+      "rank": 118,
+      "repository": "imzyb/MiSub",
+      "category": "SUBSCRIPTION_MANAGEMENT",
+      "score": 74,
+      "classification": "REVIEW",
+      "stack": [
+        "Vue"
+      ],
+      "packageManager": "npm",
+      "database": [],
+      "docker": false,
+      "setupComplexity": "MEDIUM",
+      "license": "MIT",
+      "licenseMatchesMetadata": true,
+      "reasons": [
+        "Static evidence is insufficient for an automated sandbox-ready decision; review setup and runtime behavior without executing code."
+      ]
+    },
+    {
+      "rank": 119,
+      "repository": "steipete/CodexBar",
+      "category": "ANALYTICS",
+      "score": 74,
+      "classification": "REVIEW",
+      "stack": [
+        "Next.js"
+      ],
+      "packageManager": null,
+      "database": [
+        "SQLite"
+      ],
+      "docker": false,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Static evidence is insufficient for an automated sandbox-ready decision; review setup and runtime behavior without executing code."
+      ]
+    },
+    {
+      "rank": 120,
+      "repository": "9001/copyparty",
+      "category": "FILE_MANAGEMENT",
+      "score": 73,
+      "classification": "REVIEW",
+      "stack": [
+        "Next.js",
+        "Python",
+        "Rust"
+      ],
+      "packageManager": null,
+      "database": [
+        "Redis",
+        "SQLite"
+      ],
+      "docker": true,
+      "setupComplexity": "MEDIUM",
+      "license": null,
+      "licenseMatchesMetadata": null,
+      "reasons": [
+        "Static evidence is insufficient for an automated sandbox-ready decision; review setup and runtime behavior without executing code."
+      ]
+    }
+  ]
+}
